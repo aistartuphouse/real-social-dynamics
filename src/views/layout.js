@@ -13,7 +13,7 @@ export function layout(cfg, { title, description, body, path = '/', bodyClass = 
 <title>${title}</title>
 <meta name="description" content="${description || 'The RSD Legacy Archive: The Prequel Collection.'}">
 ${!cfg.publicSite && (cfg.isStaging || !cfg.publishApproved) ? raw('<meta name="robots" content="noindex, nofollow">') : ''}
-<link rel="icon" href="/img/rsd-logo.png">
+<link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png?v=2"><link rel="icon" type="image/png" sizes="512x512" href="/img/icon-512.png?v=2"><link rel="apple-touch-icon" href="/img/apple-touch-icon.png?v=2">
 <meta property="og:image" content="/img/rsd-vault-bundle.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
