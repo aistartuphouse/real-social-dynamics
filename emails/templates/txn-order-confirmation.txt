@@ -8,11 +8,7 @@ OPEN MY LIBRARY: {{secureLibraryURL}}
 
 Book your included RSD Success Coaching Call: {{secureBookingURL}}
 
-View your private RSD Nation briefing invitation: {{secureInvitationURL}}
-
 {{approvedCallTerms}}
-
-{{approvedBriefingTerms}}
 
 Your receipt and access terms: {{receiptURL}}
 

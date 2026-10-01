@@ -79,22 +79,6 @@
       "condition": "call terms approved"
     },
     {
-      "templateId": "day09-bonus-rsd-nation",
-      "dayOffset": 8,
-      "localTime": "09:00",
-      "segments": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F"
-      ],
-      "variant": "subject A/B",
-      "approval": "pending",
-      "condition": "briefing terms approved"
-    },
-    {
       "templateId": "day11-preparation",
       "dayOffset": 10,
       "localTime": "09:00",

@@ -10,7 +10,7 @@ The call is with a current RSD Success Coach, not a promised session with Julien
 
 UNLOCK THE ARCHIVE + SUCCESS CALL: {{siteUrl}}/#package?utm_source=email&utm_campaign=rsd-is-back-2026
 
-The package also includes the private RSD Nation relaunch-briefing invitation. Both bonuses are exclusive to qualifying package purchases during this promotion.
+The call is exclusive to qualifying package purchases during this promotion.
 
 {{approvedCallTermsShort}}
 
@@ -25,4 +25,4 @@ Manage preferences: {{preferencesURL}}
 Unsubscribe: {{unsubscribeURL}}
 Help with an existing purchase: {{supportURL}}
 
-This is an RSD archive promotion sent by the identified sender. Historical course attribution does not imply current participation or endorsement by the original instructor. The free success call and private briefing invitation are conditional on the qualifying package purchase and the published terms.
+This is an RSD archive promotion sent by the identified sender. Historical course attribution does not imply current participation or endorsement by the original instructor. The free success call is conditional on the qualifying package purchase and the published terms.

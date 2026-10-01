@@ -39,7 +39,7 @@ export function homePage(cfg, state, programs, catalog) {
         <h1 id="hero-h" class="hero-h1">What did <span class="rotator" data-names="${JSON.stringify(heroNames)}">${heroNames[0] || 'they'}</span> know before teaching personal transformation?</h1>
         <p class="hero-sub">Go back to Julien Blanc's earlier RSD training, and ${yrs} of lessons from Tyler, Madison, Jeffy, and other instructors, to build greater social confidence, communicate more effectively, meet more people, and create your own blueprint for dating and social success.</p>
         <p class="hero-hook">You already know what personal transformation feels like on the inside. Now explore how RSD taught people to practice confidence, communication, and social skills in the situations where they actually matter.</p>
-        <p class="hero-body"><strong>Study the lessons. Apply what fits. Get live guidance from an RSD Success Coach.</strong> Then arrive better prepared for the next generation of RSD live programs. For 14 days: the Complete RSD Legacy Archive (${programCount} programs, ${lessonCount} lessons, from ${instructorCount} instructors), a live Success Coaching Call, and an exclusive RSD Nation relaunch-briefing invitation.</p>
+        <p class="hero-body"><strong>Study the lessons. Apply what fits. Get live guidance from an RSD Success Coach.</strong> Then arrive better prepared for the next generation of RSD live programs. For 14 days: the Complete RSD Legacy Archive (${programCount} programs, ${lessonCount} lessons, from ${instructorCount} instructors), plus a live Success Coaching Call with dedicated lifetime phone access.</p>
       </div>
       <div class="hero-panel">
         <p class="hero-price">Launch package: <strong>${priceLine(cfg)} one-time.</strong></p>
@@ -48,7 +48,7 @@ export function homePage(cfg, state, programs, catalog) {
           ${vaultCta(cfg, 'btn btn-white btn-lg')}
           <a class="btn btn-ghost btn-lg" href="/legacy">Explore the programs</a>
         </div>
-        <p class="hero-fine">"Complete" means every program and edition listed in this release, not every RSD product ever made. Both launch bonuses come only with this package during the promotion. Exact editions and access terms are listed below.</p>
+        <p class="hero-fine">"Complete" means every program and edition listed in this release, not every RSD product ever made. The launch bonus comes only with this package during the promotion. Exact editions and access terms are listed below.</p>
       </div>
     </div>
 
@@ -71,7 +71,7 @@ export function homePage(cfg, state, programs, catalog) {
       <div role="listitem"><span class="stat">${programCount}</span><span class="stat-l">programs in this release</span></div>
       ${lessonCount ? html`<div role="listitem"><span class="stat">${lessonCount}</span><span class="stat-l">lessons in the vault</span></div>` : ''}
       <div role="listitem"><span class="stat">${instructorCount}</span><span class="stat-l">instructors, compared side by side</span></div>
-      <div role="listitem"><span class="stat">2</span><span class="stat-l">package-only live bonuses</span></div>
+      <div role="listitem"><span class="stat">1</span><span class="stat-l">package-only live bonus</span></div>
       ${cfg.customersServedDisplay && (cfg.customersServedSubstantiated || cfg.isStaging) ? html`<div role="listitem"><span class="stat">${cfg.customersServedDisplay}</span><span class="stat-l">customers served</span></div>` : ''}
     </div>
     <p><a class="textlink" href="/about">Read the original RSD company bio →</a></p>
@@ -235,8 +235,8 @@ ${julien.length ? html`<section class="band band-white" aria-labelledby="julien-
     <p class="eyebrow eyebrow-light">The value stack</p>
     <h2 id="value-h" class="h-xl">${sn.pricedCount
       ? `Add it up: bought separately, these ${sn.pricedCount} programs cost ${formatPrice(sn.separateCents)}${sn.bonusCents ? `. Add ${formatPrice(sn.bonusCents)} in bonuses and that's ${formatPrice(sn.totalCents)} in total value` : ''}. Your price for everything: ${priceLine(cfg)}.`
-      : `Add it up: ${programCount} programs, a live coaching call, and a private briefing invitation, all for ${priceLine(cfg)}.`}</h2>
-    <p class="lede lede-light">Every program below is sold on its own at the price shown. The launch package gives you all of them, plus two bonuses you can't buy separately, for ${priceLine(cfg)}. ${sn.totalCents > cfg.priceCents ? `You save ${formatPrice(sn.totalCents - cfg.priceCents)} off the total value.` : ''}</p>
+      : `Add it up: ${programCount} programs plus a live coaching call, all for ${priceLine(cfg)}.`}</h2>
+    <p class="lede lede-light">Every program below is sold on its own at the price shown. The launch package gives you all of them, plus a bonus you can't buy separately, for ${priceLine(cfg)}. ${sn.totalCents > cfg.priceCents ? `You save ${formatPrice(sn.totalCents - cfg.priceCents)} off the total value.` : ''}</p>
     ${valueStack(cfg, programs)}
     <div class="cta-row cta-center">${vaultCta(cfg, 'btn btn-white btn-lg')}</div>
   </div>
@@ -247,14 +247,13 @@ ${julien.length ? html`<section class="band band-white" aria-labelledby="julien-
     <div>
       ${banner('signup')}
     <p class="eyebrow">The Complete RSD Legacy Archive</p>
-      <h2 id="pkg-h" class="h-xl">Don't buy the chapters one at a time. Get the whole story, plus two package-only bonuses, for ${priceLine(cfg)}.</h2>
+      <h2 id="pkg-h" class="h-xl">Don't buy the chapters one at a time. Get the whole story, plus a package-only bonus, for ${priceLine(cfg)}.</h2>
       <p class="lede">The Complete RSD Legacy Archive gives you every cleared program in this release, organized across instructors, eras, and themes. One library. One account. One place to study the evolution. ${claim(cfg, cfg.relaunchAssignmentsReady, 'New in this relaunch: assignments and goal blocks for each program, so the material turns into action.', '', 'needs assignments built')} ${deliveryLine(cfg)}</p>
       <h3 class="h-sm">During the launch, your package also includes:</h3>
       <ol class="bonus-list">
         <li><strong>A complimentary live RSD Success Coaching Call, plus dedicated permanent lifetime access on phone.</strong> A current RSD Success Coach helps you identify the material most relevant to your goals and build a practical starting plan, and you keep phone access to RSD coaching for life.${bonusCents ? html` <strong>(${formatPrice(cfg.bonusValues.successCallCents)} value)</strong>` : ''}</li>
-        <li><strong>An exclusive invitation to the package-holder RSD Nation relaunch briefing.</strong> Hear the next-chapter plans and how the community and separately sold live programs are intended to connect.${bonusCents && cfg.bonusValues.briefingInviteCents ? html` <strong>(${formatPrice(cfg.bonusValues.briefingInviteCents)} value)</strong>` : ''}</li>
       </ol>
-      <p class="note">"Complete" means every program and edition expressly listed in this release. The call and briefing invitation are package-only launch bonuses; individual purchases don't include them. Bootcamp tuition, global-tour tickets, travel, accommodation, and future memberships aren't included. You'll see the full inventory, access duration, refund, coaching, and briefing terms again before checkout.</p>
+      <p class="note">"Complete" means every program and edition expressly listed in this release. The coaching call is a package-only launch bonus; individual purchases don't include them. Bootcamp tuition, global-tour tickets, travel, accommodation, and future memberships aren't included. You'll see the full inventory, access duration, refund, and coaching terms again before checkout.</p>
     </div>
     ${packageCard(cfg, state)}
   </div>
@@ -276,23 +275,6 @@ ${julien.length ? html`<section class="band band-white" aria-labelledby="julien-
       <div><dt>Booking</dt><dd>Private booking link in your account after purchase</dd></div>
     </dl>
     ${vaultCta(cfg, 'btn btn-navy btn-lg')}
-  </div>
-</section>
-
-<section class="band band-black" aria-labelledby="b2-h">
-  <div class="wrap narrow">
-    <p class="eyebrow eyebrow-light">Bonus 2 · package holders only</p>
-    <h2 id="b2-h" class="h-xl">This archive is the past. Bonus 2 is about what comes next: your invitation to the private RSD Nation relaunch briefing.</h2>
-    <p>Complete Archive customers during this launch receive an exclusive invitation to the RSD Nation relaunch briefing, reserved for this package's holders.</p>
-    <p>See the direction of the new community, hear what's being developed, and learn about future programs as they're confirmed. ${label('planned')}</p>
-    <p>The exclusive part is this specific briefing. Ordinary RSD Nation access is unchanged, and the invitation doesn't include future paid events or memberships.</p>
-    <dl class="terms terms-dark">
-      <div><dt>When</dt><dd>${tokenOr(cfg, cfg.briefingDate, 'briefingDateAndTime')}</dd></div>
-      <div><dt>Format</dt><dd>${claim(cfg, cfg.briefingTermsApproved, cfg.briefingFormat, '', 'proposed')}</dd></div>
-      <div><dt>Hosts</dt><dd>${tokenOr(cfg, cfg.briefingHosts, 'confirmedHosts')}</dd></div>
-      <div><dt>Commitment</dt><dd>${tokenOr(cfg, cfg.briefingDeliveryDeadline && `Held by ${cfg.briefingDeliveryDeadline}`, 'briefingDeliveryCommitment')}</dd></div>
-    </dl>
-    ${vaultCta(cfg, 'btn btn-white btn-lg')}
   </div>
 </section>
 
@@ -326,8 +308,8 @@ ${cfg.tylerPrecedentApproved || cfg.isStaging ? html`<section class="band band-m
     ${banner('schedule')}
     <p class="eyebrow eyebrow-light">The deadline</p>
     <h2 id="why-h" class="h-xl">In 14 days, this offer changes.</h2>
-    <p>Not "everything disappears forever." Here's exactly what happens: the ${priceLine(cfg)} Complete Archive launch price and both launch-only bonuses end at <strong>${deadlineText}</strong>.</p>
-    <p>This is the insider window, ahead of RSD's planned full-catalog relaunch and new live programs ${label('planned')}. The private RSD Nation relaunch briefing is reserved for people who hold this package. If you want to be in that room when the next chapter is explained, this is your ticket.</p>
+    <p>Not "everything disappears forever." Here's exactly what happens: the ${priceLine(cfg)} Complete Archive launch price and the launch-only bonus end at <strong>${deadlineText}</strong>.</p>
+    <p>This is the insider window, ahead of RSD's planned full-catalog relaunch and new live programs ${label('planned')}.</p>
     <p>${claim(cfg, Boolean(cfg.postLaunchStatement), cfg.postLaunchStatement || 'What remains available after the deadline will be stated here.', '', 'post-launch availability must be stated')} The deadline is the same for everyone, and we won't reset it for returning visitors.</p>
     ${countdownClock(state, { tone: 'navy', size: 'clock-lg' })}
     ${vaultCta(cfg, 'btn btn-white btn-lg')}
@@ -340,7 +322,7 @@ ${cfg.tylerPrecedentApproved || cfg.isStaging ? html`<section class="band band-m
     <p class="eyebrow">Existing customers</p>
     <h2 id="own-h" class="h-xl">Already bought RSD training? Good. Don't pay twice.</h2>
     <div class="narrow">
-        <p>Check what you already own before you purchase, and see exactly what this release adds: the chapters you don't have, the organization, and the two launch bonuses.</p>
+        <p>Check what you already own before you purchase, and see exactly what this release adds: the chapters you don't have, the organization, and the launch bonus.</p>
         <p class="callout"><strong>Already have some of these programs?</strong> ${claim(cfg, cfg.relaunchAssignmentsReady, "Your original copies don't include the assignments and goal blocks we've built into this relaunch of the programs. Each one now comes with practical assignments and goal blocks to help you turn what you watch into action.", '', 'assignments & goal blocks must exist before launch')} ${label('policy')}</p>
         <p>Having trouble accessing a previous purchase? Contact support before placing another order${cfg.supportPhone ? html`, or call RSD Support at ${supportPhoneLink(cfg)}${cfg.supportEmail ? html` or email ${supportEmailLink(cfg)}` : ''}` : ''}. Fixing a valid access issue never depends on buying this package.</p>
         <div class="cta-row"><a class="btn btn-navy" href="/access">Check my existing access</a><a class="btn btn-outline" href="/support">Get help with a past purchase</a></div>
@@ -374,18 +356,18 @@ ${cfg.tylerPrecedentApproved || cfg.isStaging ? html`<section class="band band-m
     <h2 id="close-h" class="h-xxl">You've seen the sequel. Now watch the prequel.</h2>
     <p class="beats beats-center">Before the transformation programs.<br>Before the later philosophies.<br>Before the instructors became the people you recognize today.</p>
     <p>There were years of experiments, frameworks, successes, mistakes, teaching, and evolution. The archive lets you study that history for yourself.</p>
-    <p class="close-stack"><strong>THE COMPLETE RSD LEGACY ARCHIVE</strong><br><strong>+ LIVE RSD SUCCESS COACHING CALL</strong><br><strong>+ EXCLUSIVE RSD NATION RELAUNCH-BRIEFING INVITATION</strong></p>
+    <p class="close-stack"><strong>THE COMPLETE RSD LEGACY ARCHIVE</strong><br><strong>+ LIVE RSD SUCCESS COACHING CALL</strong></p>
     <p class="close-price">${priceLine(cfg)} one-time</p>
     ${countdownClock(state, { tone: 'dark' })}
     ${vaultCta(cfg, 'btn btn-white btn-lg')}
-    <p class="hero-fine">Package-only bonuses; published booking and briefing terms apply. Live-tour admission and bootcamp tuition sold separately.</p>
+    <p class="hero-fine">Package-only bonus; published booking terms apply. Live-tour admission and bootcamp tuition sold separately.</p>
     <p class="sign-off">Study the past. Build your next chapter.</p>
   </div>
 </section>
 
 <section class="band band-white letter ps" aria-label="Postscript">
   <div class="wrap narrow">
-    <p><strong>P.S.</strong> If you skimmed straight to the bottom, here it is in one breath: ${programCount} historical RSD programs from ${instructorCount} instructors, one live call with a current RSD Success Coach, and a private invitation to the RSD Nation relaunch briefing, all for ${priceLine(cfg)} during the launch. After that, the launch price and both bonuses end. ${vaultCta(cfg, 'textlink')} →</p>
+    <p><strong>P.S.</strong> If you skimmed straight to the bottom, here it is in one breath: ${programCount} historical RSD programs from ${instructorCount} instructors, and one live call with a current RSD Success Coach, all for ${priceLine(cfg)} during the launch. After that, the launch price and the bonus end. ${vaultCta(cfg, 'textlink')} →</p>
     <p><strong>P.P.S.</strong> Already bought an RSD program and can't get in? Don't buy it again. <a href="/support">Get help with your past purchase</a>${cfg.supportPhone ? html` or call ${supportPhoneLink(cfg)}${cfg.supportEmail ? html` / email ${supportEmailLink(cfg)}` : ''}` : ''}. Support never requires a new order.</p>
   </div>
 </section>`;

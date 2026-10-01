@@ -8,14 +8,13 @@ And with 671 lessons, the real question is where to start. That is exactly what 
 
 - The RSD Vault: 16 programs, 671 lessons, from Julien Blanc, Tyler, Madison, Jeffy, Luke and more ($9,026 if bought separately)
 - Bonus 1: a live 1-on-1 RSD Success Coaching Call plus dedicated permanent lifetime access on phone ($997 value)
-- Bonus 2: your private invitation to the RSD Nation relaunch briefing
 - New for this relaunch: assignments and goal blocks for each program
 
 Total value: $10,023. Your price during the launch: $997 one-time.
 
 CLICK HERE TO GET THE RSD VAULT: https://buy.stripe.com/4gM00k2eqdaJ0Uvdsd1oI10
 
-The launch price and both bonuses end {{launchEndLocal}}.
+The launch price and the bonus end {{launchEndLocal}}.
 
 The RSD Team
 Real Social Dynamics
@@ -31,4 +30,4 @@ Manage preferences: {{preferencesURL}}
 Unsubscribe: {{unsubscribeURL}}
 Help with an existing purchase: {{supportURL}}
 
-This is an RSD archive promotion sent by the identified sender. Historical course attribution does not imply current participation or endorsement by the original instructor. The free success call and private briefing invitation are conditional on the qualifying package purchase and the published terms.
+This is an RSD archive promotion sent by the identified sender. Historical course attribution does not imply current participation or endorsement by the original instructor. The free success call is conditional on the qualifying package purchase and the published terms.

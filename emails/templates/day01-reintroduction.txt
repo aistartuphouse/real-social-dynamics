@@ -12,7 +12,7 @@ We are bringing those chapters together in the RSD Legacy Archive: The Prequel C
 
 This is not an invitation to copy someone else's personality. It is an opportunity to study the earlier work, compare perspectives, and decide what belongs in your own next chapter.
 
-During the 14-day return promotion, the $997 package includes the listed archive plus one live RSD Success Coaching Call and an invitation to a private package-holder RSD Nation relaunch briefing.
+During the 14-day return promotion, the $997 package includes the listed archive plus one live RSD Success Coaching Call.
 
 EXPLORE THE PREQUEL COLLECTION: {{siteUrl}}/?utm_source=email&utm_campaign=rsd-is-back-2026
 
@@ -32,4 +32,4 @@ Manage preferences: {{preferencesURL}}
 Unsubscribe: {{unsubscribeURL}}
 Help with an existing purchase: {{supportURL}}
 
-This is an RSD archive promotion sent by the identified sender. Historical course attribution does not imply current participation or endorsement by the original instructor. The free success call and private briefing invitation are conditional on the qualifying package purchase and the published terms.
+This is an RSD archive promotion sent by the identified sender. Historical course attribution does not imply current participation or endorsement by the original instructor. The free success call is conditional on the qualifying package purchase and the published terms.

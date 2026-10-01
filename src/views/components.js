@@ -56,7 +56,6 @@ export function packageCard(cfg, state, { id = 'package-card' } = {}) {
     <ul class="stack">
       <li><span class="tick" aria-hidden="true">✓</span><div><strong>The RSD Legacy Archive</strong>: every program and edition listed in this release, organized in one customer library${cfg.relaunchAssignmentsReady || cfg.isStaging ? html`, <strong>now with new assignments and goal blocks</strong> not included in the original releases` : ''}.</div></li>
       <li><span class="tick" aria-hidden="true">✓</span><div><strong>Bonus 1: A live RSD Success Coaching Call plus dedicated lifetime phone access</strong>${(cfg.bonusValuesSubstantiated || cfg.isStaging) && cfg.bonusValues?.successCallCents ? html` <span class="bonus-value">(${formatPrice(cfg.bonusValues.successCallCents)} value, yours free)</span>` : ''} with a current RSD Success Coach. ${claim(cfg, cfg.callTermsApproved, `${cfg.callDurationMinutes} minutes, one-to-one, by video, booked within ${cfg.bookingWindowDays} days of purchase.`, '', 'call format proposed')}</div></li>
-      <li><span class="tick" aria-hidden="true">✓</span><div><strong>Bonus 2: An exclusive invitation to the private RSD Nation relaunch briefing</strong>${(cfg.bonusValuesSubstantiated || cfg.isStaging) && cfg.bonusValues?.briefingInviteCents ? html` <span class="bonus-value">(${formatPrice(cfg.bonusValues.briefingInviteCents)} value, yours free)</span>` : ''}, reserved for package holders. ${claim(cfg, cfg.briefingTermsApproved, cfg.briefingDate ? `Scheduled ${cfg.briefingDate}.` : 'Date announced to package holders.', '', 'date & hosts not set')}</div></li>
     </ul>
     <div class="price-row">
       <span class="price">${priceLine(cfg)}</span><span class="price-sub">one-time${cfg.taxDisclosure ? html`, ${cfg.taxDisclosure}` : html`, before applicable taxes`}</span>
@@ -70,7 +69,7 @@ export function packageCard(cfg, state, { id = 'package-card' } = {}) {
     </dl>
     ${open ? vaultCta(cfg, 'btn btn-navy btn-lg btn-block')
       : html`<p class="closed-note">${state.phase === 'upcoming' ? 'The launch package opens soon.' : state.phase === 'closed' ? 'The launch package has ended.' : 'The launch package is not yet open.'}</p>`}
-    <p class="fine">The call and private-briefing invitation are package-only launch bonuses. Individual purchases do not include them.</p>
+    <p class="fine">The coaching call is a package-only launch bonus. Individual purchases do not include them.</p>
     ${countdownClock(state, { tone: 'light', size: 'clock-sm' })}
     ${state.phase === 'open' ? '' : deadline(cfg, state)}
   </div>`;

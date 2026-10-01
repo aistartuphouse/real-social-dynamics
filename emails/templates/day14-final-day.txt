@@ -6,11 +6,11 @@ Today is the final day of the RSD Legacy Archive return promotion. RSD is back, 
 
 You may already know the later personal-growth chapter. This collection lets you explore earlier dating and communication material, compare instructors, and choose a path through the archive.
 
-The qualifying package also includes the live success call and private RSD Nation relaunch-briefing invitation.
+The qualifying package also includes the live success call.
 
 $997 one-time. Offer ends {{launchEndLocal}}.
 
-UNLOCK THE ARCHIVE + BOTH BONUSES: {{siteUrl}}/#package?utm_source=email&utm_campaign=rsd-is-back-2026
+UNLOCK THE ARCHIVE + SUCCESS CALL: {{siteUrl}}/#package?utm_source=email&utm_campaign=rsd-is-back-2026
 
 Bootcamps and future tour programs are sold separately. The recordings do not imply current instructor participation. Need help with an earlier purchase? Use support instead of buying it again.
 
@@ -26,4 +26,4 @@ Manage preferences: {{preferencesURL}}
 Unsubscribe: {{unsubscribeURL}}
 Help with an existing purchase: {{supportURL}}
 
-This is an RSD archive promotion sent by the identified sender. Historical course attribution does not imply current participation or endorsement by the original instructor. The free success call and private briefing invitation are conditional on the qualifying package purchase and the published terms.
+This is an RSD archive promotion sent by the identified sender. Historical course attribution does not imply current participation or endorsement by the original instructor. The free success call is conditional on the qualifying package purchase and the published terms.

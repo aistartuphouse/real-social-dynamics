@@ -27,4 +27,4 @@ Manage preferences: {{preferencesURL}}
 Unsubscribe: {{unsubscribeURL}}
 Help with an existing purchase: {{supportURL}}
 
-This is an RSD archive promotion sent by the identified sender. Historical course attribution does not imply current participation or endorsement by the original instructor. The free success call and private briefing invitation are conditional on the qualifying package purchase and the published terms.
+This is an RSD archive promotion sent by the identified sender. Historical course attribution does not imply current participation or endorsement by the original instructor. The free success call is conditional on the qualifying package purchase and the published terms.

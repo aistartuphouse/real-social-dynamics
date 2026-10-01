@@ -26,7 +26,7 @@ test('staging end-to-end: checkout -> signed webhook -> entitlements -> library'
   assert.equal(paid.status, 303);
   const ents = t.store.data.entitlements.filter((e) => e.orderId === orderId);
   assert.equal(ents.filter((e) => e.kind === 'bonus:success-call').length, 1);
-  assert.equal(ents.filter((e) => e.kind === 'bonus:briefing-invite').length, 1);
+  assert.equal(ents.filter((e) => e.kind === 'bonus:briefing-invite').length, 0);
   assert.ok(t.store.data.outbox.some((m) => m.to === 'buyer@example.test'));
   await t.close();
 });

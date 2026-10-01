@@ -30,7 +30,7 @@ export function legacyPage(cfg, programs, catalog) {
       <div class="wrap"><h2 class="h-lg">${c.title}</h2><p class="small">${c.blurb}</p>
       <div class="pgrid">${items.map((p) => programCard(cfg, p))}</div></div></section>`;
   })}
-  <section class="band band-navy"><div class="wrap center"><h2 class="h-lg">All ${programCount} programs, plus two package-only bonuses, for ${priceLine(cfg)}.</h2>${vaultCta(cfg, 'btn btn-white btn-lg')}</div></section>`;
+  <section class="band band-navy"><div class="wrap center"><h2 class="h-lg">All ${programCount} programs, plus a package-only bonus, for ${priceLine(cfg)}.</h2>${vaultCta(cfg, 'btn btn-white btn-lg')}</div></section>`;
 }
 
 export function programPage(cfg, p, state, programs) {
@@ -54,14 +54,14 @@ export function programPage(cfg, p, state, programs) {
       <h2 class="h-sm">How to buy</h2>
       ${p.individualPriceCents && cfg.individualSalesEnabled ? html`<div class="buy-options">
         ${cfg.publicSite && !p.stripePaymentLink ? '' : html`<div class="buy-opt"><p class="buy-l">This program only</p><p class="buy-p">$${(p.individualPriceCents / 100).toFixed(0)}</p><p class="small">No launch bonuses.</p><a class="btn btn-outline btn-block" href="${p.stripePaymentLink || `/checkout?program=${p.slug}`}"${p.stripePaymentLink ? html` rel="noopener"` : ''}>Buy ${p.title.replace(/\s*\(.*\)$/, '')} only</a></div>`}
-        <div class="buy-opt buy-best"><p class="buy-l">Best value · launch package</p><p class="buy-p">$${(cfg.priceCents / 100).toFixed(0)}</p><p class="small">This program plus every other program in the release, the live coaching call, and the RSD Nation briefing invitation.</p>${vaultCta(cfg, 'btn btn-navy btn-block')}</div>
+        <div class="buy-opt buy-best"><p class="buy-l">Best value · launch package</p><p class="buy-p">$${(cfg.priceCents / 100).toFixed(0)}</p><p class="small">This program plus every other program in the release and the live coaching call.</p>${vaultCta(cfg, 'btn btn-navy btn-block')}</div>
       </div>` : html`<p>Available in the launch package.</p>`}
       ${p.excludesHistoricalLiveBenefits ? html`<p class="note">Historical live calls, communities, immersion days, raffles, and old bonuses attached to the original sale are not included.</p>` : ''}
     </div>
     <aside>${cover(p, { size: 'cover-lg' })}</aside>
   </div></section>
   <section class="band band-mist"><div class="wrap pkg-grid">
-    <div><h2 class="h-lg">${p.title} is included in the launch package, with a live coaching call and your RSD Nation briefing invitation.</h2>
+    <div><h2 class="h-lg">${p.title} is included in the launch package, plus a live coaching call.</h2>
       ${related.length ? html`<h3 class="h-sm">Compare with</h3><ul class="related">${related.map((r) => html`<li><a href="/programs/${r.slug}">${r.title}</a> · ${r.instructor}</li>`)}</ul>` : ''}
     </div>
     ${packageCard(cfg, state, { id: 'pkg' })}
@@ -87,7 +87,7 @@ export function welcomeBackPage(cfg, state, programs) {
     <p>Many returning customers already own some of the programs in this release. Verify your purchase email to see what this release adds. Valid existing access is never conditional on buying again.</p>
     <div class="cta-row"><a class="btn btn-navy" href="/access">Check my existing access</a><a class="btn btn-outline" href="/support">Get help with a past purchase</a></div>
   </div></section>
-  <section class="band band-white" id="package"><div class="wrap pkg-grid"><div><h2 class="h-xl">Add the earlier chapters, a live coaching call, and your RSD Nation briefing invitation.</h2><p class="lede">One package, ${priceLine(cfg)}, for the 14-day return promotion.</p></div>${packageCard(cfg, state)}</div></section>`;
+  <section class="band band-white" id="package"><div class="wrap pkg-grid"><div><h2 class="h-xl">Add the earlier chapters plus a live coaching call.</h2><p class="lede">One package, ${priceLine(cfg)}, for the 14-day return promotion.</p></div>${packageCard(cfg, state)}</div></section>`;
 }
 
 export function preparationPage(cfg) {
@@ -135,7 +135,7 @@ export function globalTourPage(cfg) {
       <tr><th scope="row">Preparation requirement</th><td>${cfg.preparationPolicyApproved ? 'Published with each designated program' : 'Proposed; will be published with each program'}</td></tr>
     </tbody></table>
     ${(cfg.liveEvents || []).length ? html`<h2 class="h-lg">Live events open now</h2><ul class="live-links">${cfg.liveEvents.map((e) => html`<li><a href="${e.url}" rel="noopener" target="_blank"><strong>${e.label}</strong></a>: ${e.blurb}</li>`)}</ul><p class="small">Sold separately; not included in the archive package.</p>` : ''}
-    <p>Package holders will hear the plans first-hand at the private RSD Nation relaunch briefing. Confirmed announcements will appear here.</p>
+    <p>Confirmed announcements will appear here.</p>
     ${vaultCta(cfg)}
   </div></section>`;
 }

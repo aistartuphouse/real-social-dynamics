@@ -2,7 +2,7 @@ Hi {{firstNameOrThere}},
 
 This is the last email I'll send you about the RSD return special. The 14-day offer ends at {{launchEndLocal}}.
 
-The listed RSD Legacy Archive, one live success call, and your private RSD Nation briefing invitation are $997 together during this window.
+The listed RSD Legacy Archive and one live success call are $997 together during this window.
 
 REVIEW THE OFFER: {{siteUrl}}/#package?utm_source=email&utm_campaign=rsd-is-back-2026
 
@@ -21,4 +21,4 @@ Manage preferences: {{preferencesURL}}
 Unsubscribe: {{unsubscribeURL}}
 Help with an existing purchase: {{supportURL}}
 
-This is an RSD archive promotion sent by the identified sender. Historical course attribution does not imply current participation or endorsement by the original instructor. The free success call and private briefing invitation are conditional on the qualifying package purchase and the published terms.
+This is an RSD archive promotion sent by the identified sender. Historical course attribution does not imply current participation or endorsement by the original instructor. The free success call is conditional on the qualifying package purchase and the published terms.

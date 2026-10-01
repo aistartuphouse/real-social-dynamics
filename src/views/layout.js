@@ -46,7 +46,7 @@ ${body}
   </div>
   <div class="wrap legal-bar"><a href="/terms">Terms &amp; Conditions</a><span aria-hidden="true">·</span><a href="/privacy">Privacy Policy</a><span aria-hidden="true">·</span><a href="/terms#gdpr">GDPR &amp; Your Data Rights</a><span aria-hidden="true">·</span><a href="/support">Contact Support</a></div>
 </footer>
-${stickyCta ? html`<div class="sticky-cta" data-sticky hidden><span>Archive + 2 package-only bonuses</span>${vaultCta(cfg, 'btn btn-white btn-sm')}<button class="sticky-close" type="button" aria-label="Dismiss">×</button></div>` : ''}
+${stickyCta ? html`<div class="sticky-cta" data-sticky hidden><span>Archive + package-only bonus</span>${vaultCta(cfg, 'btn btn-white btn-sm')}<button class="sticky-close" type="button" aria-label="Dismiss">×</button></div>` : ''}
 </body>
 </html>`;
 }

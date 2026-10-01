@@ -30,7 +30,7 @@
   "reschedulePolicy": null,
   "coachingCapacity": null,
   "schedulingProvider": null,
-  "briefingBonusEnabled": true,
+  "briefingBonusEnabled": false,
   "briefingTermsApproved": false,
   "briefingDate": null,
   "briefingFormat": "Private online package-holder briefing (proposed)",

@@ -2,13 +2,13 @@ Hi {{firstNameOrThere}},
 
 You've had 12 days. Now there are 48 hours left.
 
-16 programs. 671 lessons. A live coaching call. An insider invitation to the RSD Nation relaunch briefing. $997.
+16 programs. 671 lessons. A live coaching call with lifetime phone access. $997.
 
-Bought one at a time, the programs alone come to $9,026. With both bonuses, that's $10,023 in total value.
+Bought one at a time, the programs alone come to $9,026. With the bonus, that's $10,023 in total value.
 
 CLICK HERE TO GET THE RSD VAULT: https://buy.stripe.com/4gM00k2eqdaJ0Uvdsd1oI10
 
-When the deadline passes on {{launchEndLocal}}, the launch price and both bonuses end. We won't reset the clock.
+When the deadline passes on {{launchEndLocal}}, the launch price and the bonus end. We won't reset the clock.
 
 The RSD Team
 Real Social Dynamics
@@ -24,4 +24,4 @@ Manage preferences: {{preferencesURL}}
 Unsubscribe: {{unsubscribeURL}}
 Help with an existing purchase: {{supportURL}}
 
-This is an RSD archive promotion sent by the identified sender. Historical course attribution does not imply current participation or endorsement by the original instructor. The free success call and private briefing invitation are conditional on the qualifying package purchase and the published terms.
+This is an RSD archive promotion sent by the identified sender. Historical course attribution does not imply current participation or endorsement by the original instructor. The free success call is conditional on the qualifying package purchase and the published terms.

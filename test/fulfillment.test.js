@@ -17,7 +17,7 @@ test('pending order grants nothing until a verified payment event', () => {
   handlePaymentEvent(s, cfg, paid(o));
   const kinds = s.entitlementsFor('usr_tm').map((e) => e.kind);
   assert.ok(kinds.includes('bonus:success-call'));
-  assert.ok(kinds.includes('bonus:briefing-invite'));
+  assert.ok(!kinds.includes('bonus:briefing-invite'), 'briefing bonus retired');
   assert.equal(kinds.filter((k) => k === 'bonus:success-call').length, 1);
   assert.ok(o.snapshot.manifest.length > 0, 'manifest snapshotted at purchase');
 });
