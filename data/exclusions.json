@@ -100,6 +100,11 @@
       "pattern": "Alex Social|Social Encrypted|NRYNE|No Reason You.re Not Enough|Flawless Natural|\\bRSD Tim\\b",
       "flags": "i",
       "why": "Owner removed Flawless Natural and Alex Social's programs (2026-10-01)"
+    },
+    {
+      "pattern": "Brad Branson|\\bEvolutions\\b|Lifestyle Academy",
+      "flags": "i",
+      "why": "Owner removed Brad Branson's programs (2026-10-01)"
     }
   ]
 }

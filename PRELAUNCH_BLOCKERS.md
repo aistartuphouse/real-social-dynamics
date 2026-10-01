@@ -114,6 +114,7 @@ Every program is currently `candidate`, not `approved`. **Production lists zero 
 | E4d 🟡 | **"Planned · not yet scheduled" badges removed (owner direction).** Planned items (the global tour, new bootcamps, the RSD Nation relaunch and partnerships, the preparation requirement) are still described as planned or "as confirmed" in the text itself; keep that wording so they don't read as confirmed. | Nikky |
 | E4e ✅ | **Transformation Mastery removed (owner direction).** The program is on hold and its name is gone from pages and emails; copy now says "Julien's later transformation work". A test blocks the title. The Julien sequence is now PIMP, SHIFT, TenGame. | Nikky |
 | E4f ✅ | **Flawless Natural (Tim) and Alex Social's programs (Social Encrypted, NRYNE) removed (owner direction).** On hold; their instructor blocks, hero names, prices and timeline mention are gone; a test blocks the titles. | Nikky |
+| E4g ✅ | **Brad Branson's programs (Evolutions, Lifestyle Academy) removed (owner direction).** On hold; test blocks them. | Nikky |
 | E5 🔴 | **Footer values**: sender legal name, postal address, and the subscription explanation per segment. | Counsel |
 | E6 🟡 | **Segment tagging** (A–I) from verified purchase history. The December 2025 announcement follow-up line is used only for the segment that received it. | Ops |
 | E7 🟡 | **Sending ramp plan**: start with the engaged lawful segment and halt before a 0.3% spam rate. | Ops |
