@@ -89,7 +89,7 @@ export function countdownClock(state, { tone = 'dark', size = '' } = {}) {
   if (state.phase !== 'open') return '';
   const ms = state.msRemaining;
   const parts = [['days', Math.floor(ms / 86400000)], ['hours', Math.floor(ms / 3600000) % 24], ['minutes', Math.floor(ms / 60000) % 60], ['seconds', Math.floor(ms / 1000) % 60]];
-  return html`<div class="clock clock-${tone} ${size}" data-clock="${state.endsAt.toISOString()}" role="timer" aria-label="Time left until the launch offer ends at ${state.endsLocal}">
+  return html`<div class="clock clock-${tone} ${size}" data-clock="${state.endsAt.toISOString()}" role="timer" aria-label="Time left until the launch offer ends">
     <p class="clock-label">Launch offer ends in</p>
     <div class="clock-units">${parts.map(([u, v]) => html`<div class="clock-unit"><span class="clock-num" data-unit="${u}">${String(v).padStart(2, '0')}</span><span class="clock-u">${u}</span></div>`)}</div>
   </div>`;
