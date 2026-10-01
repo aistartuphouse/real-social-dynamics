@@ -1,4 +1,7 @@
 import { html, raw } from '../lib/html.js';
+import { readFileSync } from 'node:fs';
+import path from 'node:path';
+import { ROOT } from '../lib/config.js';
 import { claim, tokenOr, preparationParagraph, priceLine, supportPhoneLink, supportEmailLink, vaultCta } from '../lib/claims.js';
 import { stats, julienSequence } from '../lib/catalog.js';
 import { label, cover, programCard, packageCard, faq, deadline, banner } from './components.js';
@@ -161,12 +164,31 @@ export function supportPage(cfg, { csrf, sent = false, error = '' } = {}) {
   </div></section>`;
 }
 
+// Legal pages: owner-supplied text in data/{terms,privacy}.txt. "# " / "## " lines are headings;
+// {{supportEmail}} resolves from config. Other policies fall back to the pending notice.
+const LEGAL = { terms: ['terms', 'Terms & Conditions'], privacy: ['privacy', 'Privacy Policy'] };
 export function policyPage(cfg, kind) {
-  const titles = { terms: 'Terms of sale', privacy: 'Privacy notice', refunds: 'Refunds and statutory rights' };
+  const titles = { terms: 'Terms & Conditions', privacy: 'Privacy Policy', refunds: 'Refunds and statutory rights' };
+  if (LEGAL[kind]) {
+    const raw = readFileSync(path.join(ROOT, `data/${kind}.txt`), 'utf8').replace(/\{\{supportEmail\}\}/g, cfg.supportEmail || 'support@rsdnation.com');
+    const blocks = raw.trim().split(/\n\s*\n/);
+    const [first, ...rest] = blocks;
+    return html`<section class="band band-white page-head"><div class="wrap">
+      ${kind === 'terms' ? banner('terms') : ''}
+      <div class="narrow legal">
+        <h1 class="h-xxl">${first.trim()}</h1>
+        ${rest.map((b) => {
+          const t = b.trim();
+          if (t.startsWith('## ')) return html`<h2 class="h-sm">${t.slice(3)}</h2>`;
+          if (t.startsWith('# ')) return html`<h2 class="h-sm">${t.slice(2)}</h2>`;
+          return html`<p>${t}</p>`;
+        })}
+      </div>
+    </div></section>`;
+  }
   return html`<section class="band band-white page-head"><div class="wrap narrow">
     <h1 class="h-xxl">${titles[kind]}</h1>
-    <p class="lede">The approved ${titles[kind].toLowerCase()} will be published here verbatim before any sale or data collection beyond this staging preview.</p>
-    ${cfg.isStaging ? html`<span class="staging-flag">STAGING · owner/counsel must supply this policy</span>` : ''}
+    <p class="lede">The approved ${titles[kind].toLowerCase()} will be published here.</p>
     <p>Nothing on this site waives rights you have under applicable consumer law.</p>
   </div></section>`;
 }

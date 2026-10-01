@@ -40,6 +40,7 @@ ${body}
     <div>
       <div class="footer-logo"><img src="/img/rsd-logo.png" alt="Real Social Dynamics" width="150" height="40"></div>
       <p class="small${cfg.sellerLegalName ? '' : ' review-only'}">Seller: ${tokenOr(cfg, cfg.sellerLegalName, 'sellerLegalName')}${cfg.sellerPostalAddress ? html` · ${cfg.sellerPostalAddress}` : ''}</p>
+      <p class="footer-legal"><a href="/terms">Terms &amp; Conditions</a> · <a href="/privacy">Privacy Policy</a></p>
       ${cfg.supportPhone ? html`<p class="footer-phone">Real Social Dynamics Support: ${supportPhoneLink(cfg)}${cfg.supportEmail ? html` · ${supportEmailLink(cfg)}` : ''}</p>` : ''}
     </div>
   </div>

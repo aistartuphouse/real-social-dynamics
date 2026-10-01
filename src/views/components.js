@@ -100,7 +100,7 @@ const BANNER_ALT = {
   about: 'About Us: original Real Social Dynamics illustration', contact: 'Contact: original RSD illustration', faq: 'FAQ: original RSD illustration',
   instructors: 'Instructors: original RSD illustration', signup: 'Sign-up: original RSD illustration', schedule: 'Schedule: original RSD illustration',
   bootcamp: 'Bootcamp: original RSD illustration', seminars: 'Seminars and workshops: original RSD illustration', 'home-study': 'Home study courses: original RSD illustration',
-  'attract-women': 'How to attract women: original RSD illustration', news: 'News: original RSD illustration',
+  'attract-women': 'How to attract women: original RSD illustration', news: 'News: original RSD illustration', terms: 'Terms and conditions: original RSD illustration', privacy: 'Privacy policy: original RSD illustration',
 };
 export function banner(name, { cls = '' } = {}) {
   return html`<figure class="rsd-banner ${cls}"><img src="/img/banners/${name}.webp" alt="${BANNER_ALT[name] || 'Original RSD illustration'}" loading="lazy" decoding="async" width="1600" height="520"></figure>`;

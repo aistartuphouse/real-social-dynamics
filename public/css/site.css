@@ -451,3 +451,14 @@ body:not(.show-notes) .terms-mini > div:has(.token) { display: none !important; 
 .cover-img { padding: 0; background: var(--white); display: flex; align-items: center; justify-content: center; }
 .cover-img img { width: 100%; height: 100%; object-fit: contain; }
 .bio p { font-size: 1.1rem; }
+.legal p { font-size: 1rem; line-height: 1.65; }
+.legal h2 { margin-top: 32px; }
+.footer-legal a { color: var(--white); font: 600 .9rem var(--display); }
+
+/* Timeline images */
+.timeline li { grid-template-columns: 110px 200px 1fr; align-items: start; }
+.tl-img { width: 200px; height: 150px; object-fit: cover; border-radius: 3px; display: block; }
+@media (max-width: 760px) {
+  .timeline li { grid-template-columns: 1fr; }
+  .tl-img { width: 100%; height: auto; max-width: 420px; }
+}
