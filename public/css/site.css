@@ -435,3 +435,5 @@ body:not(.show-notes) .terms-mini > div:has(.token) { display: none !important; 
 .support-phone { font: 600 1.1rem/1.5 var(--display); }
 .cta-center { justify-content: center; margin-top: 32px; }
 .vault-cta { letter-spacing: .06em; }
+.live-links { margin: 8px 0 10px; padding-left: 20px; }
+.live-links li { margin-bottom: 6px; }

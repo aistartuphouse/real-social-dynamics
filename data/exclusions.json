@@ -75,6 +75,11 @@
       "pattern": "1,?997",
       "flags": "",
       "why": "Hidden optional future price must not leak into front-end source"
+    },
+    {
+      "pattern": "\\bTodd\\b|VanDeHey|Valentine|3 Girls a Day|Daygame by Todd|Text (&|&amp;) Dates",
+      "flags": "i",
+      "why": "Owner removed Todd Valentine and his programs from the site for now (2026-10-01)"
     }
   ]
 }

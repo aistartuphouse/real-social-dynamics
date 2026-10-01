@@ -65,7 +65,7 @@ export function homePage(cfg, state, programs, catalog) {
       <li><span class="tl-year">2008</span><div>${label('history')}<p>The multi-day <strong>Blueprint</strong> presentation is discussed on the RSD blog: a connected framework rather than isolated tips.</p></div></li>
       <li><span class="tl-year">2014–18</span><div>${label('history')}<p>Official sales pages for <strong>PIMP</strong> (captured 2014), <strong>SHIFT</strong> (2015), <strong>Social Encrypted</strong> (2015 program), <strong>Social Circle Blueprint</strong> (2017), and <strong>The Resonator</strong> (2017) are preserved in the Internet Archive.</p></div></li>
       <li><span class="tl-year">2026</span><div>${label('policy')}<p>The archive reopens, curated for study and comparison, with a live Success Coaching Call from a current coach.</p></div></li>
-      <li><span class="tl-year">Next</span><div>${label('planned')}<p>A full-catalog relaunch, new bootcamps, and a global-tour rollout. Cities, dates, coaches, and fees are announced only when confirmed.</p></div></li>
+      ${(cfg.liveEvents || []).length ? html`<li><span class="tl-year">Live</span><div>${label('live')}<p>Take it off the screen. RSD live events are open now:</p><ul class="live-links">${cfg.liveEvents.map((e) => html`<li><a href="${e.url}" rel="noopener" target="_blank"><strong>${e.label}</strong></a>: ${e.blurb}</li>`)}</ul><p class="small">Live events are sold separately and are not included in the archive package.</p></div></li>` : ''}
     </ol>
   </div>
 </section>

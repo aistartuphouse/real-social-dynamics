@@ -128,6 +128,7 @@ export function globalTourPage(cfg) {
       <tr><th scope="row">Prices</th><td>Not yet announced; sold separately from the archive</td></tr>
       <tr><th scope="row">Preparation requirement</th><td>${cfg.preparationPolicyApproved ? 'Published with each designated program' : 'Proposed; will be published with each program'}</td></tr>
     </tbody></table>
+    ${(cfg.liveEvents || []).length ? html`<h2 class="h-lg">Live events open now</h2><ul class="live-links">${cfg.liveEvents.map((e) => html`<li><a href="${e.url}" rel="noopener" target="_blank"><strong>${e.label}</strong></a>: ${e.blurb}</li>`)}</ul><p class="small">Sold separately; not included in the archive package.</p>` : ''}
     <p>Package holders will hear the plans first-hand at the private RSD Nation relaunch briefing. Confirmed announcements will appear here.</p>
     ${vaultCta(cfg)}
   </div></section>`;

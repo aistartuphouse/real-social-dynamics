@@ -4,7 +4,7 @@ import { formatPrice } from '../lib/offer.js';
 import { programLogo } from './logos.js';
 
 export const label = (kind) => {
-  const map = { history: ['Confirmed history', 'lbl-history'], policy: ['New RSD policy · proposed', 'lbl-policy'], planned: ['Planned · not yet scheduled', 'lbl-planned'] };
+  const map = { live: ['Live events · open now', 'lbl-policy'], history: ['Confirmed history', 'lbl-history'], policy: ['New RSD policy · proposed', 'lbl-policy'], planned: ['Planned · not yet scheduled', 'lbl-planned'] };
   const [t, c] = map[kind];
   return html`<span class="lbl ${c}">${t}</span>`;
 };
