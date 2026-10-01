@@ -47,7 +47,7 @@ test('staging pages are noindex and robots disallows all', async () => {
 test('sales copy leads with the owner hero headline; "RSD IS BACK" lives in email only', async () => {
   const t = await startApp();
   const home = (await t.req('/')).text;
-  assert.match(home, /<h1[^>]*>You(&#39;|')ve done the inner work\. Now put it to work\.<\/h1>/);
+  assert.match(home, /<h1[^>]*>What did <span class="rotator" data-names="[^"]*Julien Blanc[^"]*Madison[^"]*">Julien Blanc<\/span> know before teaching personal transformation\?<\/h1>/);
   assert.doesNotMatch(home, /RSD IS BACK/i);
   assert.doesNotMatch(home, /Original artwork appears once licensed/);
   await t.close();

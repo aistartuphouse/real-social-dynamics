@@ -7,6 +7,9 @@ import { formatPrice } from '../lib/offer.js';
 import { faqItems } from './faq.js';
 import { instructorBlocks } from './instructors.js';
 
+// Hero rotator names (owner direction). Julien first: his later personal-transformation work is sourced (R04).
+const HERO_NAMES = { julien: 'Julien Blanc', tyler: 'Owen Cook', madison: 'RSD Madison', jeffy: 'Jeffy Allen', alex: 'Alex Social', brad: 'Brad Branson', glenn: 'Glenn Ackerman', tim: 'RSD Tim', derek: 'RSD Derek', luke: 'RSD Luke' };
+
 const SPOTLIGHT = ['foundations', 'blueprint-decoded', 'transformations', 'jeffy-show', 'resonator', 'boss', 'social-circle-blueprint', 'execute-the-program-2'];
 const shortName = (p) => p.instructor.replace(/\s*\(.*\)$/, '').replace(/ (Blanc|Branson|Ackerman|Social)$/, '');
 
@@ -21,6 +24,8 @@ export function homePage(cfg, state, programs, catalog) {
   const yrs = yearsPhrase(cfg), Yrs = yearsPhrase(cfg, { cap: true });
   const deadlineText = state.endsLocal || 'the announced deadline';
   const mosaic = programs.slice(0, 9);
+  const keys = new Set(programs.map((p) => p.instructorKey));
+  const heroNames = Object.entries(HERO_NAMES).filter(([k]) => keys.has(k)).map(([, n]) => n);
   const names = [...new Set(programs.filter((p) => !['multi'].includes(p.instructorKey)).map(shortName))];
   const spotlight = SPOTLIGHT.map((id) => programs.find((p) => p.id === id)).filter(Boolean);
   const julienTitles = julien.filter((p) => p.id !== 'transformation-mastery').map((p) => p.title.replace(/\s*\(.*\)$/, ''));
@@ -30,7 +35,7 @@ export function homePage(cfg, state, programs, catalog) {
   <div class="wrap hero-grid">
     <div class="hero-copy">
       <p class="eyebrow eyebrow-light">REAL SOCIAL DYNAMICS | 14-DAY RETURN SPECIAL</p>
-      <h1 id="hero-h" class="hero-h1">You've done the inner work. Now put it to work.</h1>
+      <h1 id="hero-h" class="hero-h1">What did <span class="rotator" data-names="${JSON.stringify(heroNames)}">${heroNames[0] || 'they'}</span> know before teaching personal transformation?</h1>
       <p class="hero-sub">Go back to Julien Blanc's earlier RSD training, and ${yrs} of lessons from Tyler, Madison, Jeffy, and other instructors, to build greater social confidence, communicate more effectively, meet more people, and create your own blueprint for dating and social success.</p>
       <p class="hero-hook">You already know what personal transformation feels like on the inside. Now explore how RSD taught people to practice confidence, communication, and social skills in the situations where they actually matter.</p>
       <p class="hero-body"><strong>Study the lessons. Apply what fits. Get live guidance from an RSD Success Coach.</strong> Then arrive better prepared for the next generation of RSD live programs. For 14 days: the Complete RSD Legacy Archive (${programCount} programs from ${instructorCount} instructors), a live Success Coaching Call, and an exclusive RSD Nation relaunch-briefing invitation.</p>

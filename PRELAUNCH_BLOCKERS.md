@@ -145,7 +145,7 @@ Every program is currently `candidate`, not `approved`. **Production lists zero 
 - "Something the old archive never had" is now **"something recordings alone can't give you"**, because some old programs included live calls.
 - Program hooks keep only verified themes. The added topics (qualification, follow-up, self-esteem, conditioning, tonality, nonverbal layer) were held back until the files are inspected.
 - **Hero (owner direction):** the site leads with "What did they know before they taught personal transformation?" and "RSD is back" appears only in emails. "The 20+ year archive" renders as "the nearly 20-year archive" until `archiveSinceYear` is sourced. The visible caption explaining the typographic covers was removed at your request; screen readers still announce them as archive cover treatments, and they should be replaced with licensed artwork (R9).
-- **Hero (Oct 1 update):** "You've done the inner work. Now put it to work." The sub-headline names Julien Blanc, so it needs `julienSequenceApproved` like the other Julien copy. The rotating-name headline was retired.
+- **Hero (Oct 1, restored):** the rotating headline "What did [Julien Blanc / Owen Cook / RSD Madison / …] know before teaching personal transformation?" is back at the top (Todd excluded). Only Julien's later personal-transformation work is sourced (R04). Confirm each other name is fair to include, or trim `HERO_NAMES` in src/views/home.js.
 - **Deadline time:** set the end time in the evening Pacific time. The day-14 email says "tonight".
 
 
