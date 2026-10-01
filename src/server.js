@@ -112,7 +112,7 @@ export function createApp({ cfg = loadConfig(), store = new Store(), now = () =>
     // ---------- public pages ----------
     if (method === 'GET' && p === '/') {
       store.track('page_view', { path: '/' }); store.track('offer_view', {});
-      return page(res, { title: 'What Did Julien Blanc Know Before Teaching Personal Transformation? | RSD Legacy Archive', description: 'Go back to the earlier RSD training. The Complete RSD Legacy Archive plus a live Success Coaching Call with lifetime phone access.', path: '/', stickyCta: true, body: homePage(cfg, state, programs, catalog) });
+      return page(res, { title: 'RSD: Julien Blanc, Tyler, Jeffy, Madison, and more...', description: 'Go back to the earlier RSD training. The Complete RSD Legacy Archive plus a live Success Coaching Call with lifetime phone access.', path: '/', stickyCta: true, body: homePage(cfg, state, programs, catalog) });
     }
     if (method === 'GET' && p === '/welcome-back') return page(res, { title: 'Welcome back | RSD Legacy Archive', path: p, body: P.welcomeBackPage(cfg, state, programs) });
     if (method === 'GET' && p === '/legacy') return page(res, { title: 'All programs | RSD Legacy Archive', path: p, body: P.legacyPage(cfg, programs, catalog) });
