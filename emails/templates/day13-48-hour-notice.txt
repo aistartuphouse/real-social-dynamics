@@ -16,7 +16,7 @@ REVIEW THE PACKAGE BEFORE THE DEADLINE: {{siteUrl}}/#package?utm_source=email&ut
 
 After the deadline, {{approvedPostLaunchChange}}. We will not reset this countdown for returning visitors.
 
-Nikky
+The RSD Team
 
 --
 {{actualSenderLegalName}}

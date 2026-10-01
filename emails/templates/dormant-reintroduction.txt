@@ -10,8 +10,8 @@ UPDATE MY EMAIL PREFERENCES: {{preferencesURL}}
 
 No interest? You can unsubscribe below. An existing purchase remains yours under its original terms regardless of your marketing preferences.
 
-Nikky Kho
-Self Mastery Co
+The RSD Team
+Real Social Dynamics
 
 --
 {{actualSenderLegalName}}

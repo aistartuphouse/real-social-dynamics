@@ -109,6 +109,7 @@ Every program is currently `candidate`, not `approved`. **Production lists zero 
 | E2 🔴 | **Email provider + authenticated domain**: SPF, DKIM, DMARC alignment, and one-click unsubscribe, verified from *received headers*, not a settings checkbox. No provider adapter is installed on purpose. | Engineering |
 | E3 🔴 | **Lawful basis per contact.** Which entity collected each address, under what notice, whether a soft opt-in applies to RSD offers, and territorial rules (US CAN-SPAM, UK/EU PECR/GDPR, and others). Unknown permission = no send. | Counsel |
 | E4 🔴 | **Suppression import**: existing unsubscribes, bounces, complaints, and open support, refund, or chargeback cases from the current platform. These must load **before** any contact list. | Ops |
+| E4b ✅ | **Brand separation (owner direction).** Papa / Nikky Kho and the RSD Inner Circle are removed from the site and emails; emails are signed "The RSD Team". A test blocks these names in every public page and email. The brief's draft sender line "Nikky Kho \| Self Mastery Co" is no longer used, so choose the sender name and address for the email provider. | Nikky |
 | E5 🔴 | **Footer values**: sender legal name, postal address, and the subscription explanation per segment. | Counsel |
 | E6 🟡 | **Segment tagging** (A–I) from verified purchase history. The December 2025 announcement follow-up line is used only for the segment that received it. | Ops |
 | E7 🟡 | **Sending ramp plan**: start with the engaged lawful segment and halt before a 0.3% spam rate. | Ops |

@@ -10,7 +10,7 @@ After the deadline, {{approvedPostLaunchChange}}.
 
 Thanks for being part of the conversation, whether you join this release or not.
 
-Nikky
+The RSD Team
 
 --
 {{actualSenderLegalName}}

@@ -14,7 +14,7 @@ EXPLORE THE ARCHIVE AND PREPARATION PATH: {{siteUrl}}/preparation?utm_source=ema
 
 The two package-only bonuses remain included through {{launchEndLocal}}.
 
-Nikky
+The RSD Team
 
 --
 {{actualSenderLegalName}}

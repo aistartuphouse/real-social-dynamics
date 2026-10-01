@@ -14,7 +14,7 @@ The package also includes the private RSD Nation relaunch-briefing invitation. B
 
 {{approvedCallTermsShort}}
 
-Nikky
+The RSD Team
 
 --
 {{actualSenderLegalName}}

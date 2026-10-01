@@ -80,6 +80,11 @@
       "pattern": "\\bTodd\\b|VanDeHey|Valentine|3 Girls a Day|Daygame by Todd|Text (&|&amp;) Dates",
       "flags": "i",
       "why": "Owner removed Todd Valentine and his programs from the site for now (2026-10-01)"
+    },
+    {
+      "pattern": "\\bPapa\\b|Inner Circle|\\bNikky\\b|\\bKho\\b|Nick Hoss",
+      "flags": "i",
+      "why": "Owner direction (2026-10-01): Nikky Kho / Papa and the RSD Inner Circle are separated from the RSD brand"
     }
   ]
 }

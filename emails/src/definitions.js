@@ -4,8 +4,8 @@
 // The 'last email' subject is used ONLY on the final-hours note, which is the true last campaign email.
 // Block types: string paragraph | {cta} | {list} | {sig} | {note} | {prep: 'planned'|'approved', text}
 
-const SIG_FULL = { sig: ['Nikky Kho', 'Self Mastery Co | Real Social Dynamics'] };
-const SIG = { sig: ['Nikky'] };
+const SIG_FULL = { sig: ['The RSD Team', 'Real Social Dynamics'] };
+const SIG = { sig: ['The RSD Team'] };
 const u = (path) => `{{siteUrl}}${path}?utm_source=email&utm_campaign=rsd-is-back-2026`;
 
 export const EMAILS = [
@@ -168,7 +168,7 @@ export const EMAILS = [
       { cta: { label: 'EXPLORE THE PREVIEW', url: u('/') } },
       { cta: { label: 'UPDATE MY EMAIL PREFERENCES', url: '{{preferencesURL}}', secondary: true } },
       'No interest? You can unsubscribe below. An existing purchase remains yours under its original terms regardless of your marketing preferences.',
-      { sig: ['Nikky Kho', 'Self Mastery Co'] },
+      { sig: ['The RSD Team', 'Real Social Dynamics'] },
     ],
   },
   // ---- Transactional (sent regardless of marketing consent; never used to carry marketing) ----
