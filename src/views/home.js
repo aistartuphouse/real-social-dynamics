@@ -1,5 +1,5 @@
 import { html } from '../lib/html.js';
-import { claim, tokenOr, preparationParagraph, priceLine, deliveryLine, yearsPhrase, supportPhoneLink, vaultCta } from '../lib/claims.js';
+import { claim, tokenOr, preparationParagraph, priceLine, deliveryLine, yearsPhrase, supportPhoneLink, supportEmailLink, vaultCta } from '../lib/claims.js';
 import { stats, julienSequence } from '../lib/catalog.js';
 import { label, deadline, cover, packageCard, faq, countdownClock } from './components.js';
 import { valueStack, verifiedTotal, stackNumbers } from './valueStack.js';
@@ -66,7 +66,7 @@ export function homePage(cfg, state, programs, catalog) {
       <li><span class="tl-year">2014–18</span><div>${label('history')}<p>Official sales pages for <strong>PIMP</strong> (captured 2014), <strong>SHIFT</strong> (2015), <strong>Social Encrypted</strong> (2015 program), <strong>Social Circle Blueprint</strong> (2017), and <strong>The Resonator</strong> (2017) are preserved in the Internet Archive.</p></div></li>
       <li><span class="tl-year">2026</span><div>${label('policy')}<p>The archive reopens, curated for study and comparison, with a live Success Coaching Call from a current coach.</p></div></li>
       ${(cfg.liveEvents || []).length ? html`<li><span class="tl-year">Live</span><div>${label('live')}<p>Take it off the screen. RSD live events are open now:</p><ul class="live-links">${cfg.liveEvents.map((e) => html`<li><a href="${e.url}" rel="noopener" target="_blank"><strong>${e.label}</strong></a>: ${e.blurb}</li>`)}</ul><p class="small">Live events are sold separately and are not included in the archive package.</p></div></li>` : ''}
-      <li><span class="tl-year">Next</span><div>${label('planned')}<p><strong>A new global RSD Nation.</strong> RSD is partnering with PUA Training, celebrity dating coaches, and other dating-coaching companies to build an entirely new global RSD Nation, with a new series of immersion programs, bootcamps, phone coaching, and more.*</p><p>${cfg.supportPhone ? html`<strong>Call us for details: ${supportPhoneLink(cfg)}</strong>` : ''}</p><p class="small">*We are actively recruiting new coaches.${cfg.supportPhone ? html` Interested? Call ${supportPhoneLink(cfg)}.` : ''}</p></div></li>
+      <li><span class="tl-year">Next</span><div>${label('planned')}<p><strong>A new global RSD Nation.</strong> RSD is partnering with PUA Training, celebrity dating coaches, and other dating-coaching companies to build an entirely new global RSD Nation, with a new series of immersion programs, bootcamps, phone coaching, and more.*</p><p>${cfg.supportPhone ? html`<strong>Call us for details: ${supportPhoneLink(cfg)}</strong>${cfg.supportEmail ? html` or email ${supportEmailLink(cfg)}` : ''}` : ''}</p><p class="small">*We are actively recruiting new coaches.${cfg.supportPhone ? html` Interested? Call ${supportPhoneLink(cfg)}.` : ''}</p></div></li>
     </ol>
   </div>
 </section>
@@ -318,7 +318,7 @@ ${cfg.tylerPrecedentApproved || cfg.isStaging ? html`<section class="band band-m
     <div class="narrow">
         <p>Check what you already own before you purchase, and see exactly what this release adds: the chapters you don't have, the organization, and the two launch bonuses.</p>
         <p class="callout"><strong>Already have some of these programs?</strong> ${claim(cfg, cfg.relaunchAssignmentsReady, "Your original copies don't include the assignments and goal blocks we've built into this relaunch of the programs. Each one now comes with practical assignments and goal blocks to help you turn what you watch into action.", '', 'assignments & goal blocks must exist before launch')} ${label('policy')}</p>
-        <p>Having trouble accessing a previous purchase? Contact support before placing another order${cfg.supportPhone ? html`, or call RSD Support at ${supportPhoneLink(cfg)}` : ''}. Fixing a valid access issue never depends on buying this package.</p>
+        <p>Having trouble accessing a previous purchase? Contact support before placing another order${cfg.supportPhone ? html`, or call RSD Support at ${supportPhoneLink(cfg)}${cfg.supportEmail ? html` or email ${supportEmailLink(cfg)}` : ''}` : ''}. Fixing a valid access issue never depends on buying this package.</p>
         <div class="cta-row"><a class="btn btn-navy" href="/access">Check my existing access</a><a class="btn btn-outline" href="/support">Get help with a past purchase</a></div>
         ${claim(cfg, Boolean(cfg.upgradeCreditPolicy), cfg.upgradeCreditPolicy || '', '', 'no upgrade credit unless a policy is approved')}
     </div>
@@ -361,7 +361,7 @@ ${cfg.tylerPrecedentApproved || cfg.isStaging ? html`<section class="band band-m
 <section class="band band-white letter ps" aria-label="Postscript">
   <div class="wrap narrow">
     <p><strong>P.S.</strong> If you skimmed straight to the bottom, here it is in one breath: ${programCount} historical RSD programs from ${instructorCount} instructors, one live call with a current RSD Success Coach, and a private invitation to the RSD Nation relaunch briefing, all for ${priceLine(cfg)} until ${deadlineText}. After that, the launch price and both bonuses end. ${vaultCta(cfg, 'textlink')} →</p>
-    <p><strong>P.P.S.</strong> Already bought an RSD program and can't get in? Don't buy it again. <a href="/support">Get help with your past purchase</a>${cfg.supportPhone ? html` or call ${supportPhoneLink(cfg)}` : ''}. Support never requires a new order.</p>
+    <p><strong>P.P.S.</strong> Already bought an RSD program and can't get in? Don't buy it again. <a href="/support">Get help with your past purchase</a>${cfg.supportPhone ? html` or call ${supportPhoneLink(cfg)}${cfg.supportEmail ? html` / email ${supportEmailLink(cfg)}` : ''}` : ''}. Support never requires a new order.</p>
   </div>
 </section>`;
 }

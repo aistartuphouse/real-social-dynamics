@@ -38,6 +38,9 @@ export function yearsPhrase(cfg, { cap = false } = {}) {
   return cap ? s.charAt(0).toUpperCase() + s.slice(1) : s;
 }
 
+export const supportEmailLink = (cfg) => cfg.supportEmail
+  ? html`<a href="mailto:${cfg.supportEmail}">${cfg.supportEmail}</a>` : html``;
+
 export const supportPhoneLink = (cfg) => cfg.supportPhone
   ? html`<a href="tel:+1${cfg.supportPhone.replace(/\D/g, '')}">${cfg.supportPhone}</a>` : html``;
 

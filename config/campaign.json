@@ -19,7 +19,7 @@
   "instantAccessConfirmed": false,
   "sellerLegalName": null,
   "sellerPostalAddress": null,
-  "customerSupportContact": "Real Social Dynamics Support: 310-202-9002",
+  "customerSupportContact": "Real Social Dynamics Support: 310-202-9002 \u00b7 support@realsocialdynamics.com",
   "refundPolicyVersion": null,
   "taxDisclosure": null,
   "coachingBonusEnabled": true,
@@ -87,5 +87,6 @@
       "blurb": "Live immersion with Madison."
     }
   ],
-  "_liveEventsNote": "Owner-supplied live event pages (2026-10-01). Not fetched or verified by the build."
+  "_liveEventsNote": "Owner-supplied live event pages (2026-10-01). Not fetched or verified by the build.",
+  "supportEmail": "support@realsocialdynamics.com"
 }

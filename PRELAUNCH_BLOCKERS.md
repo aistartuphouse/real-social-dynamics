@@ -14,7 +14,7 @@ The live gate status is at `/admin/readiness` in staging. Owners are named in ea
 |---|---|---|---|
 | C1 🔴 | **Price not approved** | Confirm $997 one-time (config `priceApproved`). The optional $1,997 future price stays hidden and must never be called a "former price". | Nikky |
 | C2 🔴 | **No launch dates** | Exact `launchStartsAtUTC` / `launchEndsAtUTC`. Staging uses a preview window (ending Oct 14, 11:59 PM PT) that is **not** a real deadline. | Nikky |
-| C2b ✅ | **Support phone** set to 310-202-9002 (footer, support page, existing-customer section, checkout, P.P.S., email footers). Confirm it's staffed during the launch window and add a monitored support email. | Operations |
+| C2b ✅ | **Support phone** set to 310-202-9002 (footer, support page, existing-customer section, checkout, P.P.S., email footers). Support email support@realsocialdynamics.com added too (footer, support page, existing-customer section, checkout area, P.P.S., emails). Confirm both are monitored during the launch window. Since the domain uses Google Workspace, make sure the support@ mailbox or alias exists. | Operations |
 | C3 🔴 | **Legal seller unknown** | The legal entity that sells, plus a valid postal address. These appear in the footer, checkout, and every email. Is it RSD, Self Mastery Co, or another entity? | Nikky + counsel |
 | C4 🔴 | **Refund and statutory-rights terms** | Approved text for `/refunds` and `/terms`. No money-back guarantee is advertised until one exists. | Counsel |
 | C5 🔴 | **Archive access duration** | Lifetime, N years, or another term. Nothing currently says "lifetime". | Nikky |

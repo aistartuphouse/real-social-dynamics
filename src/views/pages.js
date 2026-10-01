@@ -1,5 +1,5 @@
 import { html, raw } from '../lib/html.js';
-import { claim, tokenOr, preparationParagraph, priceLine, supportPhoneLink, vaultCta } from '../lib/claims.js';
+import { claim, tokenOr, preparationParagraph, priceLine, supportPhoneLink, supportEmailLink, vaultCta } from '../lib/claims.js';
 import { stats, julienSequence } from '../lib/catalog.js';
 import { label, cover, programCard, packageCard, faq, deadline } from './components.js';
 import { instructorBlocks } from './instructors.js';
@@ -141,7 +141,7 @@ export function supportPage(cfg, { csrf, sent = false, error = '' } = {}) {
     <p class="lede">If you can't access an RSD program you bought, tell us here. Resolving a valid access issue never depends on buying this package, and while your case is open you won't receive launch sales emails.</p>
     ${sent ? html`<div class="notice" role="status"><strong>Received.</strong> Your case is open. We have paused launch sales emails to this address until it's resolved.</div>` : ''}
     ${error ? html`<div class="notice notice-error" role="alert">${error}</div>` : ''}
-    ${cfg.supportPhone ? html`<p class="support-phone">Prefer to talk? Call Real Social Dynamics Support at <strong>${supportPhoneLink(cfg)}</strong>.</p>` : ''}
+    ${cfg.supportPhone ? html`<p class="support-phone">Prefer to talk? Call Real Social Dynamics Support at <strong>${supportPhoneLink(cfg)}</strong>${cfg.supportEmail ? html` or email <strong>${supportEmailLink(cfg)}</strong>` : ''}.</p>` : ''}
     <form method="post" action="/support" class="form" novalidate>
       <input type="hidden" name="csrf" value="${csrf}">
       <label for="s-email">Purchase email <span class="req">(required)</span></label>
@@ -172,6 +172,7 @@ export function publicSupportPage(cfg) {
     <p class="eyebrow">Support</p>
     <h1 class="h-xxl">Already a customer, or need help with a past purchase? Call us.</h1>
     <p class="lede">Real Social Dynamics Support can check what you already own, fix access to a past purchase, and answer questions about the RSD Vault. No new order is required for help with something you already bought.</p>
-    ${cfg.supportPhone ? html`<p class="support-phone">Call Real Social Dynamics Support: <strong>${supportPhoneLink(cfg)}</strong></p>` : ''}
+    ${cfg.supportPhone ? html`<p class="support-phone">Call Real Social Dynamics Support: <strong>${supportPhoneLink(cfg)}</strong></p>
+    ${cfg.supportEmail ? html`<p class="support-phone">Or email: <strong>${supportEmailLink(cfg)}</strong></p>` : ''}` : ''}
   </div></section>`;
 }
