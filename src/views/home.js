@@ -315,29 +315,12 @@ ${cfg.tylerPrecedentApproved || cfg.isStaging ? html`<section class="band band-m
   <div class="wrap">
     <p class="eyebrow">Existing customers</p>
     <h2 id="own-h" class="h-xl">Already bought RSD training? Good. Don't pay twice.</h2>
-    <div class="two-col">
-      <div>
+    <div class="narrow">
         <p>Check what you already own before you purchase, and see exactly what this release adds: the chapters you don't have, the organization, and the two launch bonuses.</p>
         <p class="callout"><strong>Already have some of these programs?</strong> ${claim(cfg, cfg.relaunchAssignmentsReady, "Your original copies don't include the assignments and goal blocks we've built into this relaunch of the programs. Each one now comes with practical assignments and goal blocks to help you turn what you watch into action.", '', 'assignments & goal blocks must exist before launch')} ${label('policy')}</p>
         <p>Having trouble accessing a previous purchase? Contact support before placing another order${cfg.supportPhone ? html`, or call RSD Support at ${supportPhoneLink(cfg)}` : ''}. Fixing a valid access issue never depends on buying this package.</p>
         <div class="cta-row"><a class="btn btn-navy" href="/access">Check my existing access</a><a class="btn btn-outline" href="/support">Get help with a past purchase</a></div>
         ${claim(cfg, Boolean(cfg.upgradeCreditPolicy), cfg.upgradeCreditPolicy || '', '', 'no upgrade credit unless a policy is approved')}
-      </div>
-      <div>
-        <table class="compare">
-          <caption>What is genuinely additional in this package</caption>
-          <thead><tr><th scope="col">Item</th><th scope="col">RSD Nation free classics</th><th scope="col">This package</th></tr></thead>
-          <tbody>
-            <tr><th scope="row">Legacy RSD dating &amp; social programs listed here</th><td>Some classics advertised free in members area</td><td>✓ exact editions listed</td></tr>
-            <tr><th scope="row">Transformation Mastery</th><td>—</td><td>✓</td></tr>
-            <tr><th scope="row">Curated prequel library &amp; preparation path</th><td>—</td><td>✓</td></tr>
-            <tr><th scope="row">New assignments &amp; goal blocks for each program</th><td>—</td><td>✓ new in this relaunch</td></tr>
-            <tr><th scope="row">Live Success Coaching Call</th><td>—</td><td>✓ package only</td></tr>
-            <tr><th scope="row">Private RSD Nation relaunch briefing</th><td>Ordinary access unchanged</td><td>✓ package only</td></tr>
-          </tbody>
-        </table>
-        ${cfg.isStaging ? html`<span class="staging-flag">STAGING · audit real RSD Nation and prior-bundle inventories before publishing</span>` : ''}
-      </div>
     </div>
   </div>
 </section>
