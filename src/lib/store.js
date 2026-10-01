@@ -7,7 +7,8 @@ import { ROOT } from './config.js';
 const EMPTY = () => ({ orders: [], entitlements: [], processedEvents: [], suppression: [], supportCases: [], contacts: [], users: [], outbox: [], analytics: [] });
 
 export class Store {
-  constructor(file = process.env.RSD_STORE || path.join(ROOT, 'var/store.json')) {
+  // On Vercel the deployment filesystem is read-only; /tmp is writable but ephemeral (staging demo only).
+  constructor(file = process.env.RSD_STORE || (process.env.VERCEL ? '/tmp/rsd-store.json' : path.join(ROOT, 'var/store.json'))) {
     this.file = file;
     mkdirSync(path.dirname(file), { recursive: true });
     try { this.data = { ...EMPTY(), ...JSON.parse(readFileSync(file, 'utf8')) }; } catch { this.data = EMPTY(); }
