@@ -1,0 +1,28 @@
+Hi {{firstNameOrThere}},
+
+When an instructor's work resonates, it can be tempting to copy how they sound.
+
+I would rather you study what they were trying to explain.
+
+The archive gives you different lenses: the early RSD classics, Resonator's communication focus, social-circle material, and other verified instructor collections.
+
+Compare the approaches. Notice what disagrees. Ask what suits your goals and what needs to be reconsidered in today's context.
+
+A role model can give you a reference point. Your life still needs your judgment.
+
+EXPLORE THE INSTRUCTOR COLLECTIONS: {{siteUrl}}/legacy?utm_source=email&utm_campaign=rsd-is-back-2026
+
+The full launch package includes the listed archive, one live success call, and your package-holder RSD Nation briefing invitation. Individual purchases do not include those launch bonuses.
+
+Nikky
+
+--
+{{actualSenderLegalName}}
+{{currentValidPostalAddress}}
+You are receiving this promotional message because {{verifiedSubscriptionExplanation}}.
+RSD Support: 310-202-9002
+Manage preferences: {{preferencesURL}}
+Unsubscribe: {{unsubscribeURL}}
+Help with an existing purchase: {{supportURL}}
+
+This is an RSD archive promotion sent by the identified sender. Historical course attribution does not imply current participation or endorsement by the original instructor. The free success call and private briefing invitation are conditional on the qualifying package purchase and the published terms.

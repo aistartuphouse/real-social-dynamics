@@ -1,0 +1,25 @@
+Hi {{firstNameOrThere}},
+
+You previously connected with Self Mastery. We are preparing a 14-day release of historical Real Social Dynamics training, focused on the earlier dating, communication, and personal-development chapters.
+
+If that interests you, you can explore the preview and choose whether to receive this campaign's updates.
+
+EXPLORE THE PREVIEW: {{siteUrl}}/?utm_source=email&utm_campaign=rsd-is-back-2026
+
+UPDATE MY EMAIL PREFERENCES: {{preferencesURL}}
+
+No interest? You can unsubscribe below. An existing purchase remains yours under its original terms regardless of your marketing preferences.
+
+Nikky Kho
+Self Mastery Co
+
+--
+{{actualSenderLegalName}}
+{{currentValidPostalAddress}}
+You are receiving this promotional message because {{verifiedSubscriptionExplanation}}.
+RSD Support: 310-202-9002
+Manage preferences: {{preferencesURL}}
+Unsubscribe: {{unsubscribeURL}}
+Help with an existing purchase: {{supportURL}}
+
+This is an RSD archive promotion sent by the identified sender. Historical course attribution does not imply current participation or endorsement by the original instructor. The free success call and private briefing invitation are conditional on the qualifying package purchase and the published terms.

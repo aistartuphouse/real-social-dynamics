@@ -1,0 +1,26 @@
+Hi {{firstNameOrThere}},
+
+We do not want preparation for live training to mean watching every video ever made.
+
+We are developing a preparation path to help customers connect archive study with future RSD live programs. Applicable requirements will be published alongside those programs.
+
+The goal is to arrive with useful context and questions, not just a receipt.
+
+Cities, dates, coaches, admission, and tuition for planned global-tour programs will be announced separately. Buying the archive does not reserve a place.
+
+EXPLORE THE ARCHIVE AND PREPARATION PATH: {{siteUrl}}/preparation?utm_source=email&utm_campaign=rsd-is-back-2026
+
+The two package-only bonuses remain included through {{launchEndLocal}}.
+
+Nikky
+
+--
+{{actualSenderLegalName}}
+{{currentValidPostalAddress}}
+You are receiving this promotional message because {{verifiedSubscriptionExplanation}}.
+RSD Support: 310-202-9002
+Manage preferences: {{preferencesURL}}
+Unsubscribe: {{unsubscribeURL}}
+Help with an existing purchase: {{supportURL}}
+
+This is an RSD archive promotion sent by the identified sender. Historical course attribution does not imply current participation or endorsement by the original instructor. The free success call and private briefing invitation are conditional on the qualifying package purchase and the published terms.

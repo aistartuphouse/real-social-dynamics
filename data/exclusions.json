@@ -1,0 +1,80 @@
+{
+  "_note": "Never rendered in public pages, SEO, JSON-LD, purchase APIs, emails, recommendations or bundle totals (brief \u00a70, \u00a715.4). test/public-output.test.js scans every public route and email for these patterns.",
+  "excludedProducts": [
+    {
+      "name": "RSD World Summit",
+      "reason": "Owner exclusion"
+    },
+    {
+      "name": "All Max-specific products (including The Natural and any Max bonus inside mixed bundles)",
+      "reason": "Owner exclusion"
+    }
+  ],
+  "forbiddenPublicPatterns": [
+    {
+      "pattern": "World Summit",
+      "flags": "i",
+      "why": "Excluded product"
+    },
+    {
+      "pattern": "\\bMax\\b",
+      "flags": "",
+      "why": "Excluded instructor products"
+    },
+    {
+      "pattern": "The Natural\\b",
+      "flags": "",
+      "why": "Max product; do not confuse with Flawless Natural"
+    },
+    {
+      "pattern": "Pimp\\s*Shift",
+      "flags": "i",
+      "why": "Nonexistent combined title"
+    },
+    {
+      "pattern": "Woman Transformations",
+      "flags": "i",
+      "why": "Unverified title"
+    },
+    {
+      "pattern": "Founder'?s Lab|Founders Club",
+      "flags": "i",
+      "why": "Unresolved catalog lead"
+    },
+    {
+      "pattern": "RSD Mastermind",
+      "flags": "",
+      "why": "Unresolved identity"
+    },
+    {
+      "pattern": "Social Circle Blueprint 2\\.0",
+      "flags": "",
+      "why": "Hold until revision mapped"
+    },
+    {
+      "pattern": "93\\s*%",
+      "flags": "",
+      "why": "Misused nonverbal statistic"
+    },
+    {
+      "pattern": "\\$57,529|never (be )?repeated|last chance ever",
+      "flags": "i",
+      "why": "Revived December 2025 valuation / false finality"
+    },
+    {
+      "pattern": "\\$1,?500 coaching|\\$5,?000|\\$300,?000",
+      "flags": "i",
+      "why": "Non-imported earlier offer elements"
+    },
+    {
+      "pattern": "guarantee(d)? (results|dates|sex)",
+      "flags": "i",
+      "why": "Outcome guarantee"
+    },
+    {
+      "pattern": "1,?997",
+      "flags": "",
+      "why": "Hidden optional future price must not leak into front-end source"
+    }
+  ]
+}

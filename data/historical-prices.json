@@ -1,0 +1,260 @@
+{
+  "_note": "Historical published single-program prices observed in Wayback captures of official product pages (checked 2026-10-01). Rule: count the LOWEST price observed (entry tier or cheapest format) \u2014 never top tiers or the pages' 'total value' anchors. Only status 'verified' renders or counts. Owner/counsel must approve the comparison before production (config.historicalPriceComparisonApproved).",
+  "pimpSnapshotR03": {
+    "loaded": true,
+    "notes": "https://web.archive.org/web/20140924035139id_/http://www.pimpingmygame.com/ returned HTTP 200 (~79 KB), title 'PIMP by RSD Julien'. Three one-time-payment tiers: Standard $197, Platinum $397, Diamond $497 ('NO UPSELLS OR MONTHLY PAYMENTS'). Value stack lists 'Grand Total Value $5,481 USD'; bonuses marked '(14 Days Only)'."
+  },
+  "prices": [
+    {
+      "programId": "pimp",
+      "priceCents": 19700,
+      "tier": "Standard tier",
+      "status": "verified",
+      "priceTextObserved": "Standard $197 (One-Time Payment)",
+      "tiersObserved": "Standard (also Platinum $397, Diamond $497)",
+      "captureUrl": "https://web.archive.org/web/20140924035139/http://www.pimpingmygame.com/",
+      "timestamp": "20140924035139",
+      "pageOwnerEvidence": "pimpingmygame.com, title 'PIMP by RSD Julien', the official product domain",
+      "confidence": "high",
+      "rule": "Lowest of three one-time tiers ($197/$397/$497).",
+      "ignoredAnchors": "Historical 'total value' figures on these pages are NOT used.",
+      "checkedAt": "2026-10-01"
+    },
+    {
+      "programId": "foundations",
+      "priceCents": 26900,
+      "tier": "CD edition",
+      "status": "verified",
+      "priceTextObserved": "$369 for the DVD course and/or $269 for the CD course",
+      "tiersObserved": "DVD $369; CD $269",
+      "captureUrl": "https://web.archive.org/web/20071219151113/http://www.getfoundations.com/",
+      "timestamp": "20071219151113",
+      "pageOwnerEvidence": "getfoundations.com, title 'Real Social Dynamics Foundations'",
+      "confidence": "high",
+      "rule": "Lowest observed format price; DVD $369 (2007\u20132014), digital $369 (2017).",
+      "ignoredAnchors": "Historical 'total value' figures on these pages are NOT used.",
+      "checkedAt": "2026-10-01"
+    },
+    {
+      "programId": "shift",
+      "priceCents": 29700,
+      "tier": "Natural tier",
+      "status": "verified",
+      "priceTextObserved": "NATURAL $297",
+      "tiersObserved": "Natural $297 / Supernatural $497 / Unnatural $597",
+      "captureUrl": "https://web.archive.org/web/20150512080802/http://www.makingashift.com/",
+      "timestamp": "20150512080802",
+      "pageOwnerEvidence": "makingashift.com (official SHIFT site; RSD members-area store tabs link to it)",
+      "confidence": "high",
+      "rule": "Lowest of three tiers ($297/$497/$597).",
+      "ignoredAnchors": "Historical 'total value' figures on these pages are NOT used.",
+      "checkedAt": "2026-10-01"
+    },
+    {
+      "programId": "resonator",
+      "priceCents": 19700,
+      "tier": "Attack tier",
+      "status": "verified",
+      "priceTextObserved": "ATTACK $197",
+      "tiersObserved": "Attack $197 / Sustain $297 / Release $397",
+      "captureUrl": "https://web.archive.org/web/20180104034851/http://www.rsdresonator.com/",
+      "timestamp": "20180104034851",
+      "pageOwnerEvidence": "rsdresonator.com, footer address 8491 West Sunset Blvd #452 (RSD) and RSD privacy/terms links",
+      "confidence": "high",
+      "rule": "Lowest of three tiers; capture is ~6 months post-launch.",
+      "ignoredAnchors": "Historical 'total value' figures on these pages are NOT used.",
+      "checkedAt": "2026-10-01"
+    },
+    {
+      "programId": "social-encrypted",
+      "priceCents": 24700,
+      "tier": "White tier",
+      "status": "verified",
+      "priceTextObserved": "White Tier 247 USD",
+      "tiersObserved": "White 247 USD / Red 347 USD / Black 497 USD",
+      "captureUrl": "https://web.archive.org/web/20160109220531/http://socialencrypted.com/",
+      "timestamp": "20160109220531",
+      "pageOwnerEvidence": "socialencrypted.com, the official product domain; testimonials refer to RSD and Alex",
+      "confidence": "medium",
+      "rule": "Lowest of three tiers; official product domain without RSD corporate footer (medium confidence).",
+      "ignoredAnchors": "Historical 'total value' figures on these pages are NOT used.",
+      "checkedAt": "2026-10-01"
+    },
+    {
+      "programId": "flawless-natural",
+      "priceCents": 16900,
+      "tier": "CD edition",
+      "status": "verified",
+      "priceTextObserved": "$269 for the DVD course and/or $169 for the CD",
+      "tiersObserved": "DVD $269; CD $169",
+      "captureUrl": "https://web.archive.org/web/20090107130620/http://www.flawlessnatural.com/",
+      "timestamp": "20090107130620",
+      "pageOwnerEvidence": "flawlessnatural.com, title 'Real Social Dynamics - Flawless Natural Method'",
+      "confidence": "high",
+      "rule": "Lowest observed format price; DVD $269.",
+      "ignoredAnchors": "Historical 'total value' figures on these pages are NOT used.",
+      "checkedAt": "2026-10-01"
+    },
+    {
+      "programId": "blueprint-decoded",
+      "priceCents": 44900,
+      "tier": "CD edition",
+      "status": "verified",
+      "priceTextObserved": "$599 for the DVD version or only $449 for the CD",
+      "tiersObserved": "DVD $599; CD $449",
+      "captureUrl": "https://web.archive.org/web/20090209044525/http://blueprintdecoded.com/",
+      "timestamp": "20090209044525",
+      "pageOwnerEvidence": "blueprintdecoded.com, title 'Real Social Dynamics - The Blueprint Decoded'",
+      "confidence": "high",
+      "rule": "Lowest observed format price; DVD $599. Page's $2,499/$999 anchors ignored.",
+      "ignoredAnchors": "Historical 'total value' figures on these pages are NOT used.",
+      "checkedAt": "2026-10-01"
+    },
+    {
+      "programId": "social-circle-blueprint",
+      "priceCents": 29700,
+      "tier": "Standard tier",
+      "status": "verified",
+      "priceTextObserved": "STANDARD TIER - $297",
+      "tiersObserved": "Standard $297 / Premium $497 / Platinum $597",
+      "captureUrl": "https://web.archive.org/web/20170517193339/http://socialcircleblueprint.com/scb-offer/",
+      "timestamp": "20170517193339",
+      "pageOwnerEvidence": "socialcircleblueprint.com, which redirects through a realsocialdynamics.com tracker to /scb-offer/; page features Luke",
+      "confidence": "high",
+      "rule": "Lowest of three tiers ($297/$497/$597).",
+      "ignoredAnchors": "Historical 'total value' figures on these pages are NOT used.",
+      "checkedAt": "2026-10-01"
+    },
+    {
+      "programId": "three-girls-a-day",
+      "priceCents": 6700,
+      "tier": "Single price",
+      "status": "verified",
+      "priceTextObserved": "Your Price Today: $67",
+      "tiersObserved": "single price",
+      "captureUrl": "https://web.archive.org/web/20150107141934/http://3girlsaday.com/",
+      "timestamp": "20150107141934",
+      "pageOwnerEvidence": "3girlsaday.com, title '3 Girls A Day', author 'Todd Valentine, Online Dating Expert'",
+      "confidence": "medium",
+      "rule": "Official product domain authored by Todd Valentine; no RSD corporate marker (medium confidence).",
+      "ignoredAnchors": "Historical 'total value' figures on these pages are NOT used.",
+      "checkedAt": "2026-10-01"
+    },
+    {
+      "programId": "execute-the-program-2",
+      "priceCents": 19700,
+      "tier": "Kilobyte tier",
+      "status": "needs-review",
+      "priceTextObserved": "KILOBYTE LEVEL $197",
+      "tiersObserved": "Kilobyte $197 / Gigabyte $397 / The Program Level $497",
+      "captureUrl": "https://web.archive.org/web/20150106221334/http://executetheprogram.com/",
+      "timestamp": "20150106221334",
+      "pageOwnerEvidence": "executetheprogram.com, title 'The Program by RSD Jeffy', signed 'Jeffy, Executive Coach, Real Social Dynamics'",
+      "confidence": "medium",
+      "rule": "Capture is 'The Program by RSD Jeffy'; not confirmed to be the 2.0 edition in this release. Not counted.",
+      "ignoredAnchors": "Historical 'total value' figures on these pages are NOT used.",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "notFound": [
+    {
+      "product": "Hot Seat at Home (Tyler)",
+      "tried": [
+        "https://web.archive.org/web/20160130050426/http://hotseatathome.com/vip (pre-launch VIP page: 'released on February 3'; no price)",
+        "https://web.archive.org/web/20170226065244/http://hotseatathome.com/ (JS redirect to /offer; /offer not fetched because I ran out of fetch budget)"
+      ]
+    },
+    {
+      "product": "Transformation Mastery (Julien)",
+      "tried": [
+        "transformationmastery.com captures 2011 (GoDaddy parking), 2014 (site of 'Max and Nancy', so likely Max's and not Julien's), 2019 (opt-in only)"
+      ]
+    },
+    {
+      "product": "Transformations (2007)",
+      "tried": [
+        "realsocialdynamics.com/shop.asp?group=1 captures 2007-12 and 2010-04: these list only live programs (bootcamps, superconferences), no digital products",
+        "rsdtransformations.com (no captures)"
+      ]
+    },
+    {
+      "product": "The Jeffy Show",
+      "tried": [
+        "thejeffyshow.com 20071020050904 (266-byte placeholder, no content)"
+      ]
+    },
+    {
+      "product": "TenGame (Julien)",
+      "tried": [
+        "tengame.com (2004-05 captures predate RSD and are probably unrelated; not fetched)",
+        "rsdtengame.com (no captures)"
+      ]
+    },
+    {
+      "product": "No Reason You're Not Enough / NRYNE (Alex Social)",
+      "tried": [
+        "noreasonyourenotenough.com (no captures)"
+      ]
+    },
+    {
+      "product": "Evolutions (Brad)",
+      "tried": [
+        "rsdevolutions.com (no captures)"
+      ]
+    },
+    {
+      "product": "Lifestyle Academy (Brad)",
+      "tried": [
+        "rsdlifestyleacademy.com (no captures)"
+      ]
+    },
+    {
+      "product": "Ten Commandments of Game (Derek)",
+      "tried": [
+        "tencommandmentsofgame.com (no captures)"
+      ]
+    },
+    {
+      "product": "BOSS (Madison)",
+      "tried": [
+        "rsdboss.com (no captures)"
+      ]
+    },
+    {
+      "product": "Energy Awareness (Glenn)",
+      "tried": [
+        "no domain guessed or checked"
+      ]
+    },
+    {
+      "product": "Daygame by Todd",
+      "tried": [
+        "no domain guessed or checked"
+      ]
+    },
+    {
+      "product": "Text & Dates Machine (Todd)",
+      "tried": [
+        "textanddatesmachine.com (no captures)"
+      ]
+    },
+    {
+      "product": "Valentine University (Todd)",
+      "tried": [
+        "valentineuniversity.com 20141031170021 (default WordPress install, no product or price)"
+      ]
+    },
+    {
+      "product": "Women (Todd)",
+      "tried": [
+        "no domain guessed or checked"
+      ]
+    },
+    {
+      "product": "Execute the Program 2.0 (Jeffy) specifically",
+      "tried": [
+        "executetheprogram.com 2015 capture shows 'The Program' (recorded above); later captures (2016-2020) not fetched"
+      ]
+    }
+  ]
+}

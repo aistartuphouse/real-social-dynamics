@@ -1,0 +1,28 @@
+Hi {{firstNameOrThere}},
+
+A broad library creates a simple question: where do I begin?
+
+That is why this launch package includes one complimentary live RSD Success Coaching Call.
+
+Discuss your goals. Identify the relevant programs. Outline an initial study-and-practice plan. Ask how the published preparation path relates to future RSD-operated live training.
+
+The call is with a current RSD Success Coach, not a promised session with Julien or another historical instructor. It requires no further purchase.
+
+UNLOCK THE ARCHIVE + SUCCESS CALL: {{siteUrl}}/#package?utm_source=email&utm_campaign=rsd-is-back-2026
+
+The package also includes the private RSD Nation relaunch-briefing invitation. Both bonuses are exclusive to qualifying package purchases during this promotion.
+
+{{approvedCallTermsShort}}
+
+Nikky
+
+--
+{{actualSenderLegalName}}
+{{currentValidPostalAddress}}
+You are receiving this promotional message because {{verifiedSubscriptionExplanation}}.
+RSD Support: 310-202-9002
+Manage preferences: {{preferencesURL}}
+Unsubscribe: {{unsubscribeURL}}
+Help with an existing purchase: {{supportURL}}
+
+This is an RSD archive promotion sent by the identified sender. Historical course attribution does not imply current participation or endorsement by the original instructor. The free success call and private briefing invitation are conditional on the qualifying package purchase and the published terms.

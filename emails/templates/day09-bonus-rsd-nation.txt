@@ -1,0 +1,28 @@
+Hi {{firstNameOrThere}},
+
+The archive looks back. The RSD Nation relaunch briefing looks ahead.
+
+Qualifying launch-package buyers receive an invitation to the private package-holder briefing as the second included bonus.
+
+We plan to reconnect the community and explain the next RSD chapter, including planned bootcamps and other live programs as the details are confirmed.
+
+This is an invitation to the specified briefing, not free entry to a global tour, a bootcamp reservation, or a promise that the original instructors will attend.
+
+VIEW THE PACKAGE + BOTH BONUSES: {{siteUrl}}/#package?utm_source=email&utm_campaign=rsd-is-back-2026
+
+{{approvedBriefingTermsShort}}
+
+The archive, success call, and briefing invitation are $997 together during the promotion. Individual courses do not include these two bonuses.
+
+Nikky
+
+--
+{{actualSenderLegalName}}
+{{currentValidPostalAddress}}
+You are receiving this promotional message because {{verifiedSubscriptionExplanation}}.
+RSD Support: 310-202-9002
+Manage preferences: {{preferencesURL}}
+Unsubscribe: {{unsubscribeURL}}
+Help with an existing purchase: {{supportURL}}
+
+This is an RSD archive promotion sent by the identified sender. Historical course attribution does not imply current participation or endorsement by the original instructor. The free success call and private briefing invitation are conditional on the qualifying package purchase and the published terms.

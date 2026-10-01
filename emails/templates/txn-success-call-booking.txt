@@ -1,0 +1,17 @@
+Hi {{firstNameOrThere}},
+
+Your launch package includes one live RSD Success Coaching Call with a current RSD Success Coach.
+
+Use it to talk through what you want to work on, identify the most relevant lessons in your library, and outline a practical first step.
+
+BOOK MY CALL: {{secureBookingURL}}
+
+{{approvedCallTerms}}
+
+This is educational coaching, not therapy, and no further purchase is required. {{optionalProgramsDisclosure}}
+
+Need to reschedule or having trouble booking? {{supportContact}}
+
+--
+{{actualSenderLegalName}} · {{currentValidPostalAddress}}
+Transactional message about your order.

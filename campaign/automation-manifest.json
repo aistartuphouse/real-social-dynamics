@@ -1,0 +1,35 @@
+{
+  "_note": "Disabled-by-default campaign automation (brief §9, §13). dispatchEnabled stays false until the owner authorizes sending AND every send gate passes. Suppression (unsubscribe, hard bounce, complaint, purchase, open support case, loss of eligibility) overrides every step immediately.",
+  "campaignId": "rsd-is-back-2026",
+  "dispatchEnabled": false,
+  "humanApprovalRequired": true,
+  "anchor": "launchStartsAtUTC (owner-approved, not yet set)",
+  "deadline": "launchEndsAtUTC (owner-approved, not yet set)",
+  "globalRules": {
+    "frequencyCapPerContact": 8,
+    "permissionCheck": "contact.permission must be 'verified' for the sending entity; unknown = no send",
+    "purchaseSuppression": "exit sales sequence on validated package purchase; enter fulfillment",
+    "supportSuppression": "any open access/refund/chargeback case removes the contact until resolved and still eligible",
+    "deadlineCheck": "never send after launchEndsAtUTC; never reset deadline for late entrants",
+    "unsubscribe": "one-click (RFC 8058 List-Unsubscribe-Post) + visible footer link; honored immediately, no login",
+    "sendingRamp": "start with lawful, engaged segment; expand only if Google-reported spam rate stays < 0.1%; halt before 0.3%",
+    "noFakeReplyPrefixes": true
+  },
+  "steps": [
+    { "templateId": "day01-reintroduction", "dayOffset": 0, "localTime": "09:00", "segments": ["A","B","C","D","E","F"], "variant": "subject A/B", "approval": "pending" },
+    { "templateId": "day03-prequel-story", "dayOffset": 2, "localTime": "09:00", "segments": ["A","B","C","D","E","F"], "variant": "subject A/B", "approval": "pending", "condition": "Julien titles approved and included" },
+    { "templateId": "day05-beyond-one-role-model", "dayOffset": 4, "localTime": "09:00", "segments": ["A","B","C","D","E","F"], "variant": "subject A/B", "approval": "pending" },
+    { "templateId": "day07-bonus-success-call", "dayOffset": 6, "localTime": "09:00", "segments": ["A","B","C","D","E","F"], "variant": "subject A/B", "approval": "pending", "condition": "call terms approved" },
+    { "templateId": "day09-bonus-rsd-nation", "dayOffset": 8, "localTime": "09:00", "segments": ["A","B","C","D","E","F"], "variant": "subject A/B", "approval": "pending", "condition": "briefing terms approved" },
+    { "templateId": "day11-preparation", "dayOffset": 10, "localTime": "09:00", "segments": ["A","B","C","D","E","F"], "variant": "planned|approved by preparationPolicyApproved", "approval": "pending" },
+    { "templateId": "day13-48-hour-notice", "exactSendAt": "launchEndsAtUTC - 48h", "segments": ["A","B","C","D","E","F"], "variant": "subject A/B", "approval": "pending" },
+    { "templateId": "day14-final-day", "exactSendAt": "deadline day 08:00 local", "segments": ["A","B","C","D","E","F"], "variant": "subject A/B", "approval": "pending" },
+    { "templateId": "final-hours-optional", "exactSendAt": "launchEndsAtUTC - 6h", "segments": ["A","B","C","D","E","F"], "engagedOnly": true, "approval": "pending", "condition": "within frequency cap" },
+    { "templateId": "dormant-reintroduction", "dayOffset": 0, "localTime": "10:00", "segments": ["I"], "approval": "pending", "condition": "lawful basis verified per contact; small batch" }
+  ],
+  "transactional": [
+    { "templateId": "txn-order-confirmation", "trigger": "validated payment.succeeded -> package_entitlement_created" },
+    { "templateId": "txn-success-call-booking", "trigger": "bonus:success-call granted" },
+    { "templateId": "txn-briefing-invitation", "trigger": "bonus:briefing-invite granted AND briefing date confirmed" }
+  ]
+}

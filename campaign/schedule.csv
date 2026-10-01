@@ -1,0 +1,11 @@
+templateId,intendedSegment,dayOffsetOrExactSendTime,frequencyCap,purchaseSuppression,supportSuppression,permissionCheck,finalDeadlineCheck,variant,humanApprovalStatus,dispatchEnabled
+day01-reintroduction,A|B|C|D|E|F,day+0 09:00 America/Los_Angeles,8,yes,yes,verified permission required,no send after launchEndsAtUTC,subject A/B,pending,false
+day03-prequel-story,A|B|C|D|E|F,day+2 09:00 America/Los_Angeles,8,yes,yes,verified permission required,no send after launchEndsAtUTC,subject A/B,pending,false
+day05-beyond-one-role-model,A|B|C|D|E|F,day+4 09:00 America/Los_Angeles,8,yes,yes,verified permission required,no send after launchEndsAtUTC,subject A/B,pending,false
+day07-bonus-success-call,A|B|C|D|E|F,day+6 09:00 America/Los_Angeles,8,yes,yes,verified permission required,no send after launchEndsAtUTC,subject A/B,pending,false
+day09-bonus-rsd-nation,A|B|C|D|E|F,day+8 09:00 America/Los_Angeles,8,yes,yes,verified permission required,no send after launchEndsAtUTC,subject A/B,pending,false
+day11-preparation,A|B|C|D|E|F,day+10 09:00 America/Los_Angeles,8,yes,yes,verified permission required,no send after launchEndsAtUTC,planned|approved by preparationPolicyApproved,pending,false
+day13-48-hour-notice,A|B|C|D|E|F,launchEndsAtUTC - 48h,8,yes,yes,verified permission required,no send after launchEndsAtUTC,subject A/B,pending,false
+day14-final-day,A|B|C|D|E|F,deadline day 08:00 local,8,yes,yes,verified permission required,no send after launchEndsAtUTC,subject A/B,pending,false
+final-hours-optional,A|B|C|D|E|F,launchEndsAtUTC - 6h,8,yes,yes,verified permission required,no send after launchEndsAtUTC,,pending,false
+dormant-reintroduction,I,day+0 10:00 America/Los_Angeles,8,yes,yes,verified permission required,no send after launchEndsAtUTC,,pending,false

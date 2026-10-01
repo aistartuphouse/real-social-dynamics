@@ -1,0 +1,17 @@
+Hi {{firstNameOrThere}},
+
+As a launch-package holder, you are invited to the private RSD Nation relaunch briefing.
+
+- When: {{briefingDateAndTime}}
+- Format: {{briefingFormat}}
+- Hosts: {{confirmedHosts}}
+
+VIEW MY INVITATION: {{secureInvitationURL}}
+
+This invitation is personal to your order. It is not a bootcamp reservation, a global-tour ticket, or a change to ordinary RSD Nation access.
+
+{{briefingDeliveryCommitment}}
+
+--
+{{actualSenderLegalName}} · {{currentValidPostalAddress}}
+Transactional message about your order.

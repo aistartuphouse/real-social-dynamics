@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300" role="img" aria-label="EVOLUTIONS logo">
+<rect width="300" height="300" fill="#FFFFFF"/>
+<g transform="translate(100 46)" color="#0B1F3A"><svg viewBox="0 0 100 100" width="100" height="100"><path d="M18 82V64M40 82V48M62 82V32M84 82V16" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/></svg></g>
+<text x="150" y="200" fill="#0B1F3A" font-family="Archivo, 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="40" text-anchor="middle" letter-spacing="1">EVOLUTIONS</text>
+<text x="150" y="240" fill="#0B1F3A" opacity=".7" font-family="Archivo, 'Helvetica Neue', Arial, sans-serif" font-weight="700" font-size="12" text-anchor="middle" letter-spacing="4">RSD LEGACY ARCHIVE</text>
+</svg>

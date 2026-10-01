@@ -1,0 +1,24 @@
+Hi {{firstNameOrThere}},
+
+This is the last email I'll send you about the RSD return special. The 14-day offer ends at {{launchEndLocal}}.
+
+The listed RSD Legacy Archive, one live success call, and your private RSD Nation briefing invitation are $997 together during this window.
+
+REVIEW THE OFFER: {{siteUrl}}/#package?utm_source=email&utm_campaign=rsd-is-back-2026
+
+After the deadline, {{approvedPostLaunchChange}}.
+
+Thanks for being part of the conversation, whether you join this release or not.
+
+Nikky
+
+--
+{{actualSenderLegalName}}
+{{currentValidPostalAddress}}
+You are receiving this promotional message because {{verifiedSubscriptionExplanation}}.
+RSD Support: 310-202-9002
+Manage preferences: {{preferencesURL}}
+Unsubscribe: {{unsubscribeURL}}
+Help with an existing purchase: {{supportURL}}
+
+This is an RSD archive promotion sent by the identified sender. Historical course attribution does not imply current participation or endorsement by the original instructor. The free success call and private briefing invitation are conditional on the qualifying package purchase and the published terms.

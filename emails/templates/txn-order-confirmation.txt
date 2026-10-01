@@ -1,0 +1,25 @@
+Hi {{firstNameOrThere}},
+
+Thank you for purchasing {{packageName}}. Your order is {{orderNumber}}.
+
+Your included programs and exact editions: {{purchasedManifestSummary}}.
+
+OPEN MY LIBRARY: {{secureLibraryURL}}
+
+Book your included RSD Success Coaching Call: {{secureBookingURL}}
+
+View your private RSD Nation briefing invitation: {{secureInvitationURL}}
+
+{{approvedCallTerms}}
+
+{{approvedBriefingTerms}}
+
+Your receipt and access terms: {{receiptURL}}
+
+Questions about an earlier purchase or this order? {{supportContact}}
+
+This purchase does not include bootcamp tuition, global-tour tickets, travel, or accommodation. Your coaching session is provided by the current RSD team, not a promised historical instructor.
+
+--
+{{actualSenderLegalName}} · {{currentValidPostalAddress}}
+Transactional message about your order.

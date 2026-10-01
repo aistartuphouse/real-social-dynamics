@@ -1,0 +1,30 @@
+Hi {{firstNameOrThere}},
+
+An idea can feel clear when you are watching a lesson and much less clear when you are in a conversation.
+
+That gap is part of what makes an archive worth studying.
+
+PIMP provides an earlier dating-focused reference point. SHIFT discusses identity, beliefs, and experience. TenGame supplies a principle-and-practice perspective. Transformation Mastery gives many returning customers a familiar later chapter to compare with them.
+
+The point is not that the earliest method was perfect, or that one teacher had every answer.
+
+The point is context.
+
+You can examine the differences, keep what is appropriate and useful, and bring better questions to your included RSD Success Coaching Call.
+
+SEE THE JULIEN PREQUEL CHAPTERS: {{siteUrl}}/legacy#julien-prequel?utm_source=email&utm_campaign=rsd-is-back-2026
+
+The launch package is $997, including both package-only bonuses until {{launchEndLocal}}. Existing course access remains separate from this offer.
+
+Nikky
+
+--
+{{actualSenderLegalName}}
+{{currentValidPostalAddress}}
+You are receiving this promotional message because {{verifiedSubscriptionExplanation}}.
+RSD Support: 310-202-9002
+Manage preferences: {{preferencesURL}}
+Unsubscribe: {{unsubscribeURL}}
+Help with an existing purchase: {{supportURL}}
+
+This is an RSD archive promotion sent by the identified sender. Historical course attribution does not imply current participation or endorsement by the original instructor. The free success call and private briefing invitation are conditional on the qualifying package purchase and the published terms.

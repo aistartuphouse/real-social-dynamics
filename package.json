@@ -1,0 +1,15 @@
+{
+  "name": "rsd-legacy-archive-staging",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local/staging build of the RealSocialDynamics.com 'RSD IS BACK' relaunch. Zero runtime dependencies. Not for production deployment without owner authorization.",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test test/*.test.js",
+    "build:emails": "node scripts/build-emails.js",
+    "campaign:dry-run": "node scripts/campaign-dry-run.js",
+    "seed": "node scripts/seed-synthetic.js"
+  }
+}

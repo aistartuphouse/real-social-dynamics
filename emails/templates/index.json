@@ -1,0 +1,292 @@
+[
+  {
+    "file": "day01-reintroduction",
+    "kind": "marketing",
+    "subjects": [
+      "RSD is back. Here's what you missed.",
+      "The RSD prequel is opening",
+      "You know one chapter. Explore the earlier ones.",
+      "The original RSD archive is open",
+      "Nearly 20 years of RSD training just reopened"
+    ],
+    "preheader": "A 14-day archive release, with two package-only launch bonuses.",
+    "mergeTags": [
+      "firstNameOrThere",
+      "siteUrl",
+      "actualSenderLegalName",
+      "currentValidPostalAddress",
+      "verifiedSubscriptionExplanation",
+      "preferencesURL",
+      "unsubscribeURL",
+      "supportURL"
+    ]
+  },
+  {
+    "file": "day03-prequel-story",
+    "kind": "marketing",
+    "subjects": [
+      "You saw the sequel. Want to see the prequel?",
+      "Before Transformation Mastery…",
+      "What Julien was teaching before the transformation era",
+      "The training before the transformation",
+      "The earlier chapters behind familiar ideas"
+    ],
+    "preheader": "PIMP, SHIFT, and TenGame are different programs with different emphases.",
+    "mergeTags": [
+      "firstNameOrThere",
+      "siteUrl",
+      "launchEndLocal",
+      "actualSenderLegalName",
+      "currentValidPostalAddress",
+      "verifiedSubscriptionExplanation",
+      "preferencesURL",
+      "unsubscribeURL",
+      "supportURL"
+    ]
+  },
+  {
+    "file": "day05-beyond-one-role-model",
+    "kind": "marketing",
+    "subjects": [
+      "Don't copy your role models. Study them.",
+      "Why we brought the old RSD programs back",
+      "Some of this training is 15+ years old. Good.",
+      "Study the approach, not just the personality"
+    ],
+    "preheader": "Compare how the archive approaches communication and social life.",
+    "mergeTags": [
+      "firstNameOrThere",
+      "siteUrl",
+      "actualSenderLegalName",
+      "currentValidPostalAddress",
+      "verifiedSubscriptionExplanation",
+      "preferencesURL",
+      "unsubscribeURL",
+      "supportURL"
+    ]
+  },
+  {
+    "file": "day07-bonus-success-call",
+    "kind": "marketing",
+    "subjects": [
+      "Nearly 20 years of material. Where do you start?",
+      "Your RSD Success Coach is included",
+      "Your archive purchase includes a live success call"
+    ],
+    "preheader": "A current RSD Success Coach helps you plan a practical starting point.",
+    "mergeTags": [
+      "firstNameOrThere",
+      "siteUrl",
+      "approvedCallTermsShort",
+      "actualSenderLegalName",
+      "currentValidPostalAddress",
+      "verifiedSubscriptionExplanation",
+      "preferencesURL",
+      "unsubscribeURL",
+      "supportURL"
+    ]
+  },
+  {
+    "file": "day09-bonus-rsd-nation",
+    "kind": "marketing",
+    "subjects": [
+      "The videos are only the beginning",
+      "What comes after the archive",
+      "Your package-holder invitation to the RSD Nation briefing"
+    ],
+    "preheader": "Hear the next-chapter plans through the package-only briefing invitation.",
+    "mergeTags": [
+      "firstNameOrThere",
+      "siteUrl",
+      "approvedBriefingTermsShort",
+      "actualSenderLegalName",
+      "currentValidPostalAddress",
+      "verifiedSubscriptionExplanation",
+      "preferencesURL",
+      "unsubscribeURL",
+      "supportURL"
+    ]
+  },
+  {
+    "file": "day11-preparation.planned",
+    "kind": "marketing",
+    "subjects": [
+      "Study before you arrive. Show up ready to work.",
+      "Before the bootcamp, build the foundation",
+      "A starting path, not an endless video checklist"
+    ],
+    "preheader": "How the archive is intended to connect to future live training.",
+    "mergeTags": [
+      "firstNameOrThere",
+      "siteUrl",
+      "launchEndLocal",
+      "actualSenderLegalName",
+      "currentValidPostalAddress",
+      "verifiedSubscriptionExplanation",
+      "preferencesURL",
+      "unsubscribeURL",
+      "supportURL"
+    ]
+  },
+  {
+    "file": "day11-preparation.approved",
+    "kind": "marketing",
+    "subjects": [
+      "Study before you arrive. Show up ready to work.",
+      "Before the bootcamp, build the foundation",
+      "A starting path, not an endless video checklist"
+    ],
+    "preheader": "How the archive is intended to connect to future live training.",
+    "mergeTags": [
+      "firstNameOrThere",
+      "siteUrl",
+      "launchEndLocal",
+      "actualSenderLegalName",
+      "currentValidPostalAddress",
+      "verifiedSubscriptionExplanation",
+      "preferencesURL",
+      "unsubscribeURL",
+      "supportURL"
+    ]
+  },
+  {
+    "file": "day13-48-hour-notice",
+    "kind": "marketing",
+    "subjects": [
+      "48 hours left",
+      "48 hours left on the RSD archive launch offer",
+      "The package bonuses close with the launch offer"
+    ],
+    "preheader": "The real deadline is {{launchEndLocal}}.",
+    "mergeTags": [
+      "launchEndLocal",
+      "firstNameOrThere",
+      "siteUrl",
+      "approvedPostLaunchChange",
+      "actualSenderLegalName",
+      "currentValidPostalAddress",
+      "verifiedSubscriptionExplanation",
+      "preferencesURL",
+      "unsubscribeURL",
+      "supportURL"
+    ]
+  },
+  {
+    "file": "day14-final-day",
+    "kind": "marketing",
+    "subjects": [
+      "Tonight, the RSD return special ends",
+      "Final day: the RSD prequel package",
+      "The 14-day RSD return special ends tonight"
+    ],
+    "preheader": "Archive + success call + package-holder briefing invitation.",
+    "mergeTags": [
+      "firstNameOrThere",
+      "launchEndLocal",
+      "siteUrl",
+      "actualSenderLegalName",
+      "currentValidPostalAddress",
+      "verifiedSubscriptionExplanation",
+      "preferencesURL",
+      "unsubscribeURL",
+      "supportURL"
+    ]
+  },
+  {
+    "file": "final-hours-optional",
+    "kind": "marketing",
+    "subjects": [
+      "This is the last email I'll send you about the RSD return special",
+      "Final hours: the RSD archive return offer"
+    ],
+    "preheader": "The launch price and both package-only bonuses end at {{launchEndLocal}}.",
+    "mergeTags": [
+      "launchEndLocal",
+      "firstNameOrThere",
+      "siteUrl",
+      "approvedPostLaunchChange",
+      "actualSenderLegalName",
+      "currentValidPostalAddress",
+      "verifiedSubscriptionExplanation",
+      "preferencesURL",
+      "unsubscribeURL",
+      "supportURL"
+    ]
+  },
+  {
+    "file": "dormant-reintroduction",
+    "kind": "marketing",
+    "subjects": [
+      "Would the RSD archive be relevant to you?"
+    ],
+    "preheader": "An invitation from Self Mastery, with a choice about future updates.",
+    "mergeTags": [
+      "firstNameOrThere",
+      "siteUrl",
+      "preferencesURL",
+      "actualSenderLegalName",
+      "currentValidPostalAddress",
+      "verifiedSubscriptionExplanation",
+      "unsubscribeURL",
+      "supportURL"
+    ]
+  },
+  {
+    "file": "txn-order-confirmation",
+    "kind": "transactional",
+    "subjects": [
+      "Your RSD archive access and included launch benefits"
+    ],
+    "preheader": "Order {{orderNumber}}: library, coaching call and briefing invitation.",
+    "mergeTags": [
+      "orderNumber",
+      "firstNameOrThere",
+      "packageName",
+      "purchasedManifestSummary",
+      "secureLibraryURL",
+      "secureBookingURL",
+      "secureInvitationURL",
+      "approvedCallTerms",
+      "approvedBriefingTerms",
+      "receiptURL",
+      "supportContact",
+      "actualSenderLegalName",
+      "currentValidPostalAddress"
+    ]
+  },
+  {
+    "file": "txn-success-call-booking",
+    "kind": "transactional",
+    "subjects": [
+      "Book your included RSD Success Coaching Call"
+    ],
+    "preheader": "One live call with a current RSD Success Coach, included with your package.",
+    "mergeTags": [
+      "firstNameOrThere",
+      "secureBookingURL",
+      "approvedCallTerms",
+      "optionalProgramsDisclosure",
+      "supportContact",
+      "actualSenderLegalName",
+      "currentValidPostalAddress"
+    ]
+  },
+  {
+    "file": "txn-briefing-invitation",
+    "kind": "transactional",
+    "subjects": [
+      "Your private RSD Nation relaunch-briefing invitation"
+    ],
+    "preheader": "Package-holder briefing: {{briefingDateAndTime}}.",
+    "mergeTags": [
+      "briefingDateAndTime",
+      "firstNameOrThere",
+      "briefingFormat",
+      "confirmedHosts",
+      "secureInvitationURL",
+      "briefingDeliveryCommitment",
+      "actualSenderLegalName",
+      "currentValidPostalAddress"
+    ]
+  }
+]
