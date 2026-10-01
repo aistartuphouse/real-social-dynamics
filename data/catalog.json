@@ -1,5 +1,5 @@
 {
-  "_note": "Machine-readable staging catalog (brief \u00a74.4, \u00a76, \u00a712). Copy is newly drafted from the master brief, not quoted from Wayback. Nothing here is publishable until identity, curriculum, rights, copy, media and fulfillment are all approved. publicationState 'hold' entries never render publicly, even in staging preview.",
+  "_note": "Machine-readable staging catalog (brief §4.4, §6, §12). Copy is newly drafted from the master brief, not quoted from Wayback. Nothing here is publishable until identity, curriculum, rights, copy, media and fulfillment are all approved. publicationState 'hold' entries never render publicly, even in staging preview.",
   "catalogVersion": "staging-2026-10-01",
   "collections": [
     {
@@ -144,7 +144,7 @@
       "instructorKey": "tyler",
       "editionId": null,
       "verifiedOriginalYear": null,
-      "historicalNote": "Multi-day original presentation discussed on the RSD blog in 2007\u20132008 (R01, R02).",
+      "historicalNote": "Multi-day original presentation discussed on the RSD blog in 2007–2008 (R01, R02).",
       "collection": "early-classics",
       "featuredOrder": null,
       "cardHeadline": "What if the \"techniques\" were never the real point?",
@@ -275,7 +275,7 @@
       "collection": "julien-prequel",
       "featuredOrder": 2,
       "cardHeadline": "Study the relationship between identity and experience.",
-      "shortCopy": "SHIFT's historical positioning addresses beliefs, motivation, validation, identity, growth, and momentum in social and dating situations. It is a separate program from PIMP.",
+      "shortCopy": "Shift is a program from Julien Blanc, also known as RSD Julien. While the program focuses primarily on dating and success with women, much of the training also applies to personal development, confidence, emotional awareness, and self-improvement.",
       "expandedCopy": "If personal growth is familiar territory, this is an earlier point of comparison: how did the instructor connect what a person believed about themselves with what they did in the social world? Study the framework critically and compare it with the later material. Exact chapters, examples, and bonuses depend on the released edition.",
       "verifiedThemes": [
         "Identity",
@@ -872,7 +872,7 @@
       "closingLine": "You don't need Madison's personality. You need to discover the most charismatic version of your own.",
       "lessonCount": 84,
       "stripePaymentLink": null,
-      "stripeLinkNote": "Link sent for The Boss (\u20261oI1e) opens Get Your Ten in Stripe; awaiting the correct The Boss link.",
+      "stripeLinkNote": "Link sent for The Boss (…1oI1e) opens Get Your Ten in Stripe; awaiting the correct The Boss link.",
       "coverImage": "/img/covers/boss.webp"
     },
     {
@@ -1417,7 +1417,7 @@
     }
   ],
   "laterSelfMasteryRecords": {
-    "_note": "Purchase-history context only (brief \u00a76.30). NOT part of the prequel package unless the owner explicitly adds verified recordings.",
+    "_note": "Purchase-history context only (brief §6.30). NOT part of the prequel package unless the owner explicitly adds verified recordings.",
     "titles": [
       "Transformation Mastery Academy",
       "High Vibe Communication",
