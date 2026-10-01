@@ -15,7 +15,7 @@ export const EMAILS = [
     preheader: 'A 14-day archive release, with two package-only launch bonuses.',
     blocks: [
       'Hi {{firstNameOrThere}},',
-      'If you came to Self Mastery through Transformation Mastery or another later personal-growth program, you may know one part of the story.',
+      'If you came to RSD through Transformation Mastery or another later personal-growth program, you may know one part of the story.',
       'RSD is back.',
       'You\'ve seen the sequel. Real Social Dynamics has the prequel.',
       'Dating-focused teaching. Social situations. Communication. Different instructors explaining how they approached putting ideas into practice.',
@@ -160,10 +160,10 @@ export const EMAILS = [
   {
     id: 'dormant-reintroduction', kind: 'marketing', dayOffset: 0, segments: ['I'],
     subjects: ['Would the RSD archive be relevant to you?'],
-    preheader: 'An invitation from Self Mastery, with a choice about future updates.',
+    preheader: 'An invitation from Real Social Dynamics, with a choice about future updates.',
     blocks: [
       'Hi {{firstNameOrThere}},',
-      'You previously connected with Self Mastery. We are preparing a 14-day release of historical Real Social Dynamics training, focused on the earlier dating, communication, and personal-development chapters.',
+      'You previously connected with Real Social Dynamics. We are preparing a 14-day release of historical Real Social Dynamics training, focused on the earlier dating, communication, and personal-development chapters.',
       'If that interests you, you can explore the preview and choose whether to receive this campaign\'s updates.',
       { cta: { label: 'EXPLORE THE PREVIEW', url: u('/') } },
       { cta: { label: 'UPDATE MY EMAIL PREFERENCES', url: '{{preferencesURL}}', secondary: true } },

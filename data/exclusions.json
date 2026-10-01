@@ -85,6 +85,11 @@
       "pattern": "\\bPapa\\b|Inner Circle|\\bNikky\\b|\\bKho\\b|Nick Hoss",
       "flags": "i",
       "why": "Owner direction (2026-10-01): Nikky Kho / Papa and the RSD Inner Circle are separated from the RSD brand"
+    },
+    {
+      "pattern": "Self ?Mastery|Mastery Academy|High Vibe|Purpose Process|Endless Motivation|Charisma Mastery",
+      "flags": "i",
+      "why": "Owner direction (2026-10-01): no Self Mastery products or brand on this site"
     }
   ]
 }

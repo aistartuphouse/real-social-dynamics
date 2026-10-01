@@ -67,7 +67,7 @@ export function programPage(cfg, p, state, programs) {
 export function welcomeBackPage(cfg, state, programs) {
   const julien = julienSequence(programs);
   return html`<section class="hero"><div class="wrap narrow">
-    <p class="eyebrow eyebrow-light">A RETURN INVITATION FOR ELIGIBLE SELF MASTERY CUSTOMERS</p>
+    <p class="eyebrow eyebrow-light">A RETURN INVITATION FOR RETURNING RSD CUSTOMERS</p>
     <h1 class="mega mega-sm">You know Julien's transformation work. But have you seen what came before it?</h1>
     <p class="hero-body">Before Transformation Mastery, there were years of RSD programs about confidence, social dynamics, dating, communication, identity, and real-world application. For the first time in this relaunch, explore the broader archive and the earlier chapters that came before the ideas you already know.</p>
     <p class="hero-body">This is a historical collection presented by RSD, not an announcement that Julien is joining the relaunch.</p>
@@ -80,7 +80,7 @@ export function welcomeBackPage(cfg, state, programs) {
   </div></section>
   <section class="band band-mist"><div class="wrap narrow">
     <h2 class="h-xl">Already own part of the library? Check before you purchase again.</h2>
-    <p>Many returning customers already own Transformation Mastery or other Self Mastery programs. Verify your purchase email to see what this release adds. Valid existing access is never conditional on buying again.</p>
+    <p>Many returning customers already own Transformation Mastery or other programs in this release. Verify your purchase email to see what this release adds. Valid existing access is never conditional on buying again.</p>
     <div class="cta-row"><a class="btn btn-navy" href="/access">Check my existing access</a><a class="btn btn-outline" href="/support">Get help with a past purchase</a></div>
   </div></section>
   <section class="band band-white" id="package"><div class="wrap pkg-grid"><div><h2 class="h-xl">Add the earlier chapters, a live coaching call, and your RSD Nation briefing invitation.</h2><p class="lede">One package, ${priceLine(cfg)}, for the 14-day return promotion.</p></div>${packageCard(cfg, state)}</div></section>`;
@@ -138,7 +138,7 @@ export function supportPage(cfg, { csrf, sent = false, error = '' } = {}) {
   return html`<section class="band band-white page-head"><div class="wrap narrow">
     <p class="eyebrow">Support</p>
     <h1 class="h-xxl">Trouble with a past purchase? We'll help. No new order required.</h1>
-    <p class="lede">If you can't access an RSD or Self Mastery program you bought, tell us here. Resolving a valid access issue never depends on buying this package, and while your case is open you won't receive launch sales emails.</p>
+    <p class="lede">If you can't access an RSD program you bought, tell us here. Resolving a valid access issue never depends on buying this package, and while your case is open you won't receive launch sales emails.</p>
     ${sent ? html`<div class="notice" role="status"><strong>Received.</strong> Your case is open. We have paused launch sales emails to this address until it's resolved.</div>` : ''}
     ${error ? html`<div class="notice notice-error" role="alert">${error}</div>` : ''}
     ${cfg.supportPhone ? html`<p class="support-phone">Prefer to talk? Call Real Social Dynamics Support at <strong>${supportPhoneLink(cfg)}</strong>.</p>` : ''}

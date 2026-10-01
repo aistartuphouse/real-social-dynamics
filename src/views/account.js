@@ -37,7 +37,7 @@ export function libraryPage(cfg, user, ents, programs) {
       <div>
         <h2 class="h-sm">Programs you already owned before this release</h2>
         ${prior.length ? html`<ul>${prior.map((id) => html`<li>${titleOf.get(id) || id}</li>`)}</ul>` : html`<p>None on record.</p>`}
-        ${(user.priorOtherTitles || []).length ? html`<h2 class="h-sm">Other Self Mastery titles on record</h2><ul>${user.priorOtherTitles.map((t) => html`<li>${t}</li>`)}</ul>` : ''}
+        ${(user.priorOtherTitles || []).length ? html`<h2 class="h-sm">Other titles on record</h2><ul>${user.priorOtherTitles.map((t) => html`<li>${t}</li>`)}</ul>` : ''}
         <h2 class="h-sm">From your launch package</h2>
         ${owned.size ? html`<ul>${[...owned].map((id) => html`<li>${titleOf.get(id) || id} <span class="small">(${cfg.isStaging ? 'test-mode order; playback not yet connected' : 'open'})</span></li>`)}</ul>` : html`<p>No launch package on this account.</p>`}
       </div>

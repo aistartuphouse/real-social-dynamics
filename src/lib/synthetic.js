@@ -1,8 +1,8 @@
 // Synthetic QA data only (brief §12). Never import production contacts here.
 export const SYNTHETIC_USERS = [
-  { id: 'usr_tm', email: 'tm.owner@example.test', firstName: 'Avery', priorEntitlements: ['transformation-mastery'], priorOtherTitles: ['Transformation Mastery Academy'], synthetic: true },
+  { id: 'usr_tm', email: 'tm.owner@example.test', firstName: 'Avery', priorEntitlements: ['transformation-mastery'], priorOtherTitles: [], synthetic: true },
   { id: 'usr_pimp', email: 'pimp.owner@example.test', firstName: 'Jordan', priorEntitlements: ['pimp', 'shift'], priorOtherTitles: [], synthetic: true },
-  { id: 'usr_case', email: 'support.case@example.test', firstName: 'Riley', priorEntitlements: ['transformation-mastery'], priorOtherTitles: ['High Vibe Communication'], synthetic: true },
+  { id: 'usr_case', email: 'support.case@example.test', firstName: 'Riley', priorEntitlements: ['transformation-mastery'], priorOtherTitles: [], synthetic: true },
 ];
 
 // Segments per brief §8.2. permission: 'verified' | 'unknown' | 'withdrawn'.
@@ -35,7 +35,7 @@ export const SAMPLE_MERGE = {
   approvedBriefingTermsShort: '[Approved briefing terms: date, format, hosts]',
   approvedPostLaunchChange: '[what changes after the deadline, as approved]',
   actualSenderLegalName: '[Sender legal name]', currentValidPostalAddress: '[Valid postal address]',
-  verifiedSubscriptionExplanation: '[you purchased a Self Mastery program and did not opt out]',
+  verifiedSubscriptionExplanation: '[you purchased an RSD program and did not opt out]',
   preferencesURL: '#preferences', unsubscribeURL: '#unsubscribe', supportURL: '#support',
   packageName: 'The RSD Legacy Archive: The Prequel Collection', orderNumber: 'ord_sample',
   purchasedManifestSummary: '[exact programs and editions]', secureLibraryURL: '#library', secureBookingURL: '#booking',

@@ -314,7 +314,7 @@ ${cfg.tylerPrecedentApproved || cfg.isStaging ? html`<section class="band band-m
 <section class="band band-white" aria-labelledby="own-h" id="existing">
   <div class="wrap">
     <p class="eyebrow">Existing customers</p>
-    <h2 id="own-h" class="h-xl">Already bought RSD or Self Mastery training? Good. Don't pay twice.</h2>
+    <h2 id="own-h" class="h-xl">Already bought RSD training? Good. Don't pay twice.</h2>
     <div class="two-col">
       <div>
         <p>Check what you already own before you purchase, and see exactly what this release adds: the chapters you don't have, the organization, and the two launch bonuses.</p>
@@ -326,15 +326,14 @@ ${cfg.tylerPrecedentApproved || cfg.isStaging ? html`<section class="band band-m
       <div>
         <table class="compare">
           <caption>What is genuinely additional in this package</caption>
-          <thead><tr><th scope="col">Item</th><th scope="col">RSD Nation free classics</th><th scope="col">Earlier Self Mastery bundle</th><th scope="col">This package</th></tr></thead>
+          <thead><tr><th scope="col">Item</th><th scope="col">RSD Nation free classics</th><th scope="col">This package</th></tr></thead>
           <tbody>
-            <tr><th scope="row">Legacy RSD dating &amp; social programs listed here</th><td>Some classics advertised free in members area</td><td>—</td><td>✓ exact editions listed</td></tr>
-            <tr><th scope="row">Transformation Mastery</th><td>—</td><td>✓</td><td>✓</td></tr>
-            <tr><th scope="row">Later Self Mastery titles (Academy, High Vibe Communication, etc.)</th><td>—</td><td>✓</td><td>Not included</td></tr>
-            <tr><th scope="row">Curated prequel library &amp; preparation path</th><td>—</td><td>—</td><td>✓</td></tr>
-            <tr><th scope="row">New assignments &amp; goal blocks for each program</th><td>—</td><td>—</td><td>✓ new in this relaunch</td></tr>
-            <tr><th scope="row">Live Success Coaching Call</th><td>—</td><td>—</td><td>✓ package only</td></tr>
-            <tr><th scope="row">Private RSD Nation relaunch briefing</th><td>Ordinary access unchanged</td><td>—</td><td>✓ package only</td></tr>
+            <tr><th scope="row">Legacy RSD dating &amp; social programs listed here</th><td>Some classics advertised free in members area</td><td>✓ exact editions listed</td></tr>
+            <tr><th scope="row">Transformation Mastery</th><td>—</td><td>✓</td></tr>
+            <tr><th scope="row">Curated prequel library &amp; preparation path</th><td>—</td><td>✓</td></tr>
+            <tr><th scope="row">New assignments &amp; goal blocks for each program</th><td>—</td><td>✓ new in this relaunch</td></tr>
+            <tr><th scope="row">Live Success Coaching Call</th><td>—</td><td>✓ package only</td></tr>
+            <tr><th scope="row">Private RSD Nation relaunch briefing</th><td>Ordinary access unchanged</td><td>✓ package only</td></tr>
           </tbody>
         </table>
         ${cfg.isStaging ? html`<span class="staging-flag">STAGING · audit real RSD Nation and prior-bundle inventories before publishing</span>` : ''}
@@ -379,7 +378,7 @@ ${cfg.tylerPrecedentApproved || cfg.isStaging ? html`<section class="band band-m
 <section class="band band-white letter ps" aria-label="Postscript">
   <div class="wrap narrow">
     <p><strong>P.S.</strong> If you skimmed straight to the bottom, here it is in one breath: ${programCount} historical RSD programs from ${instructorCount} instructors, one live call with a current RSD Success Coach, and a private invitation to the RSD Nation relaunch briefing, all for ${priceLine(cfg)} until ${deadlineText}. After that, the launch price and both bonuses end. ${vaultCta(cfg, 'textlink')} →</p>
-    <p><strong>P.P.S.</strong> Already bought an RSD or Self Mastery program and can't get in? Don't buy it again. <a href="/support">Get help with your past purchase</a>${cfg.supportPhone ? html` or call ${supportPhoneLink(cfg)}` : ''}. Support never requires a new order.</p>
+    <p><strong>P.P.S.</strong> Already bought an RSD program and can't get in? Don't buy it again. <a href="/support">Get help with your past purchase</a>${cfg.supportPhone ? html` or call ${supportPhoneLink(cfg)}` : ''}. Support never requires a new order.</p>
   </div>
 </section>`;
 }
