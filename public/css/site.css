@@ -496,3 +496,13 @@ body:not(.show-notes) .terms-mini > div:has(.token) { display: none !important; 
 .band-white + .band-white, .band-mist + .band-mist, .band-black + .band-black, .band-navy + .band-navy { padding-top: 0; }
 .band > .wrap > .rsd-banner:first-child, .page-head .rsd-banner:first-child { margin-top: 0; }
 .rsd-banner { margin-bottom: 24px; }
+
+/* Authority: headline left, every program cover in mini size on the right. */
+.auth-head { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: clamp(24px, 3.5vw, 56px); align-items: center; }
+.auth-head .lede { margin-bottom: 0; }
+.minis { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
+.minis li { margin: 0; }
+.minis a { display: block; border-radius: 3px; overflow: hidden; box-shadow: 0 3px 10px rgba(0,0,0,.25); transition: transform .15s ease; }
+.minis a:hover, .minis a:focus-visible { transform: scale(1.06); position: relative; z-index: 1; }
+.minis img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
+@media (max-width: 960px) { .auth-head { grid-template-columns: minmax(0, 1fr); } .minis { max-width: 560px; } }

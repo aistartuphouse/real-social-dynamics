@@ -56,9 +56,16 @@ export function homePage(cfg, state, programs, catalog) {
 
 <section class="band band-white authority" aria-labelledby="auth-h">
   <div class="wrap">
-    <p class="eyebrow">The authority behind the archive</p>
-    <h2 id="auth-h" class="h-xl">This isn't one course. It's ${yrs} of RSD teaching history in one place.</h2>
-    <p class="lede">Before the personal-growth programs you may know, RSD's instructors were recording seminars, programs, and presentations on dating, communication, and social dynamics. RSD's own blog documents it from 2007. Here is the record, with confirmed history kept separate from what is new.</p>
+    <div class="auth-head">
+      <div>
+      <p class="eyebrow">The authority behind the archive</p>
+      <h2 id="auth-h" class="h-xl">This isn't one course. It's ${yrs} of RSD teaching history in one place.</h2>
+      <p class="lede">Before the personal-growth programs you may know, RSD's instructors were recording seminars, programs, and presentations on dating, communication, and social dynamics. RSD's own blog documents it from 2007. Here is the record, with confirmed history kept separate from what is new.</p>
+      </div>
+      <ul class="minis" aria-label="All ${programCount} programs in the RSD Vault">
+          ${programs.filter((p) => p.coverImage).map((p) => html`<li><a href="/programs/${p.slug}" title="${p.title}"><img src="${p.coverImage}" alt="${p.title}" width="320" height="180" loading="lazy" decoding="async"></a></li>`)}
+        </ul>
+    </div>
     <div class="stats" role="list">
       <div role="listitem"><span class="stat">${programCount}</span><span class="stat-l">programs in this release</span></div>
       ${lessonCount ? html`<div role="listitem"><span class="stat">${lessonCount}</span><span class="stat-l">lessons in the vault</span></div>` : ''}
