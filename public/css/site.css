@@ -542,3 +542,8 @@ body:not(.show-notes) .terms-mini > div:has(.token) { display: none !important; 
 .hero-fold .hero-body { font-size: .95rem; line-height: 1.5; margin: 0; color: var(--white); }
 .hero-panel .hero-fine { font-size: .78rem; margin: 14px 0 0; color: rgba(255,255,255,.85); }
 .hero-fold { padding: 20px 0; }
+/* All dark sections use the logo blue (owner request). */
+.band-black, .band-navy, .site-footer { background: #277BA5; }
+.band-black, .band-navy { --on-dark-2: #EAF2F8; }
+.site-footer { color: #EAF2F8; }
+.band-black .note, .band-navy .note { border-color: rgba(255,255,255,.35); }

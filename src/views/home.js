@@ -32,9 +32,6 @@ export function homePage(cfg, state, programs, catalog) {
 
   return html`
 <section class="hero hero-bg" aria-labelledby="hero-h">
-  <div class="hero-bg-art" aria-hidden="true">
-    <img src="/img/rsd-vault-bundle.webp" alt="" width="1590" height="926" fetchpriority="high">
-  </div>
   <div class="wrap hero-grid hero-single">
     <div class="hero-fold">
       <div class="hero-copy">
