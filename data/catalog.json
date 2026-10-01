@@ -740,10 +740,10 @@
       "mediaApproved": false,
       "fulfillmentReady": false,
       "individualPriceCents": 49700,
-      "includedInLaunch": true,
+      "includedInLaunch": false,
       "excludesHistoricalLiveBenefits": true,
-      "publicationState": "candidate",
-      "publicNotes": "Kept on the site at owner direction (2026-10-01).",
+      "publicationState": "hold",
+      "publicNotes": "Removed from the site by owner (2026-10-01).",
       "approvedBy": null,
       "approvedAt": null,
       "stripePaymentLink": null

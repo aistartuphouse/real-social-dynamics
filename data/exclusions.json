@@ -110,6 +110,11 @@
       "pattern": "Glenn|Ackerman|Energy Awareness",
       "flags": "i",
       "why": "Owner removed Glenn Ackerman's program (2026-10-01)"
+    },
+    {
+      "pattern": "Ten Commandments|RSD Derek",
+      "flags": "i",
+      "why": "Owner removed Ten Commandments of Game (2026-10-01)"
     }
   ]
 }
