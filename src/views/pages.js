@@ -170,8 +170,8 @@ const LEGAL = { terms: ['terms', 'Terms & Conditions'], privacy: ['privacy', 'Pr
 export function policyPage(cfg, kind) {
   const titles = { terms: 'Terms & Conditions', privacy: 'Privacy Policy', refunds: 'Refunds and statutory rights' };
   if (LEGAL[kind]) {
-    const raw = readFileSync(path.join(ROOT, `data/${kind}.txt`), 'utf8').replace(/\{\{supportEmail\}\}/g, cfg.supportEmail || 'support@rsdnation.com');
-    const blocks = raw.trim().split(/\n\s*\n/);
+    const text = readFileSync(path.join(ROOT, `data/${kind}.txt`), 'utf8').replace(/\{\{supportEmail\}\}/g, cfg.supportEmail || 'support@rsdnation.com');
+    const blocks = text.trim().split(/\n\s*\n/);
     const [first, ...rest] = blocks;
     return html`<section class="band band-white page-head"><div class="wrap">
       ${kind === 'terms' ? banner('terms') : ''}
@@ -180,7 +180,7 @@ export function policyPage(cfg, kind) {
         ${rest.map((b) => {
           const t = b.trim();
           if (t.startsWith('## ')) return html`<h2 class="h-sm">${t.slice(3)}</h2>`;
-          if (t.startsWith('# ')) return html`<h2 class="h-sm">${t.slice(2)}</h2>`;
+          if (t.startsWith('# ')) return html`<h2 class="h-sm" ${t.includes('GDPR') ? raw('id="gdpr"') : ''}>${t.slice(2)}</h2>`;
           return html`<p>${t}</p>`;
         })}
       </div>

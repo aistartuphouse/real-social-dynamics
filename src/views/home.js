@@ -32,7 +32,13 @@ export function homePage(cfg, state, programs, catalog) {
 
   return html`
 <section class="hero" aria-labelledby="hero-h">
-  <div class="wrap hero-grid">
+  <div class="wrap hero-top">
+    <div class="hero-art hero-art-top" aria-label="Selected programs in the archive">
+      <img class="bundle-img" src="/img/rsd-vault-bundle.webp" alt="The RSD Vault bundle: ${programCount} programs including PIMP, SHIFT, The Ten Game, Foundations, The Blueprint Decoded, Hot Seat at Home, Transformations, The Boss, Get Your Ten and more" width="1590" height="926" fetchpriority="high">
+      <p class="bundle-cap">The RSD Vault: ${programCount} programs · ${lessonCount} lessons</p>
+    </div>
+  </div>
+  <div class="wrap hero-grid hero-single">
     <div class="hero-copy">
       <p class="eyebrow eyebrow-light">REAL SOCIAL DYNAMICS</p>
       <h1 id="hero-h" class="hero-h1">What did <span class="rotator" data-names="${JSON.stringify(heroNames)}">${heroNames[0] || 'they'}</span> know before teaching personal transformation?</h1>
@@ -47,9 +53,7 @@ export function homePage(cfg, state, programs, catalog) {
       ${countdownClock(state, { tone: 'dark' })}
       <p class="hero-fine">"Complete" means every program and edition listed in this release, not every RSD product ever made. Both launch bonuses come only with this package during the promotion. Exact editions and access terms are listed below.</p>
     </div>
-    <div class="hero-art" aria-label="Selected programs in the archive">
-      <div class="mosaic">${mosaic.map((p) => cover(p))}</div>
-    </div>
+
   </div>
 </section>
 
@@ -369,14 +373,14 @@ ${cfg.tylerPrecedentApproved || cfg.isStaging ? html`<section class="band band-m
     <p class="close-price">${priceLine(cfg)} one-time</p>
     ${countdownClock(state, { tone: 'dark' })}
     ${vaultCta(cfg, 'btn btn-white btn-lg')}
-    <p class="hero-fine">Offer ends ${deadlineText}. Package-only bonuses; published booking and briefing terms apply. Live-tour admission and bootcamp tuition sold separately.</p>
+    <p class="hero-fine">Package-only bonuses; published booking and briefing terms apply. Live-tour admission and bootcamp tuition sold separately.</p>
     <p class="sign-off">Study the past. Build your next chapter.</p>
   </div>
 </section>
 
 <section class="band band-white letter ps" aria-label="Postscript">
   <div class="wrap narrow">
-    <p><strong>P.S.</strong> If you skimmed straight to the bottom, here it is in one breath: ${programCount} historical RSD programs from ${instructorCount} instructors, one live call with a current RSD Success Coach, and a private invitation to the RSD Nation relaunch briefing, all for ${priceLine(cfg)} until ${deadlineText}. After that, the launch price and both bonuses end. ${vaultCta(cfg, 'textlink')} →</p>
+    <p><strong>P.S.</strong> If you skimmed straight to the bottom, here it is in one breath: ${programCount} historical RSD programs from ${instructorCount} instructors, one live call with a current RSD Success Coach, and a private invitation to the RSD Nation relaunch briefing, all for ${priceLine(cfg)} during the launch. After that, the launch price and both bonuses end. ${vaultCta(cfg, 'textlink')} →</p>
     <p><strong>P.P.S.</strong> Already bought an RSD program and can't get in? Don't buy it again. <a href="/support">Get help with your past purchase</a>${cfg.supportPhone ? html` or call ${supportPhoneLink(cfg)}${cfg.supportEmail ? html` / email ${supportEmailLink(cfg)}` : ''}` : ''}. Support never requires a new order.</p>
   </div>
 </section>`;

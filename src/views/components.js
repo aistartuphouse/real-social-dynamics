@@ -25,7 +25,7 @@ export function deadline(cfg, state, { tone = 'light' } = {}) {
 }
 
 export function cover(p, { size = '' } = {}) {
-  if (p.coverImage) return html`<div class="cover cover-img ${size}" role="img" aria-label="${p.title} by ${p.instructor}"><img src="${p.coverImage}" alt="" loading="lazy"></div>`;
+  if (p.coverImage) return html`<div class="cover cover-img ${size}"><img src="${p.coverImage}" alt="${p.title}, ${p.instructor}" loading="lazy" width="960" height="540"></div>`;
   return html`<div class="cover cover-${p.collection} ${size}" role="img" aria-label="${p.title} by ${p.instructor}, RSD Legacy Archive logo">
     <span class="cover-brand">RSD ARCHIVE</span>
     ${programLogo(p)}

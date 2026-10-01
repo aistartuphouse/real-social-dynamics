@@ -79,7 +79,8 @@
       "approvedBy": null,
       "approvedAt": null,
       "lessonCount": 8,
-      "stripePaymentLink": "https://buy.stripe.com/7sY5kE4my0nX9r12Nz1oI11"
+      "stripePaymentLink": "https://buy.stripe.com/7sY5kE4my0nX9r12Nz1oI11",
+      "coverImage": "/img/covers/foundations.webp"
     },
     {
       "id": "transformations",
@@ -132,7 +133,8 @@
       ],
       "guestSourceNote": "Owner-stated (2026-10-01). Confirm against the Transformations edition files and credit spellings before launch.",
       "lessonCount": 12,
-      "stripePaymentLink": "https://buy.stripe.com/fZuaEYf1c6Ml46Hco91oI12"
+      "stripePaymentLink": "https://buy.stripe.com/fZuaEYf1c6Ml46Hco91oI12",
+      "coverImage": "/img/covers/transformations.webp"
     },
     {
       "id": "blueprint-decoded",
@@ -174,7 +176,7 @@
       "approvedAt": null,
       "lessonCount": 20,
       "stripePaymentLink": "https://buy.stripe.com/bJeaEY2eq4Edav5bk51oI13",
-      "coverImage": "/img/banners/blueprint-book.webp"
+      "coverImage": "/img/covers/blueprint-decoded.webp"
     },
     {
       "id": "hot-seat-at-home",
@@ -215,7 +217,8 @@
       "approvedBy": null,
       "approvedAt": null,
       "lessonCount": 20,
-      "stripePaymentLink": "https://buy.stripe.com/8x214o6uG9YxfPp1Jv1oI14"
+      "stripePaymentLink": "https://buy.stripe.com/8x214o6uG9YxfPp1Jv1oI14",
+      "coverImage": "/img/covers/hot-seat-at-home.webp"
     },
     {
       "id": "pimp",
@@ -257,7 +260,8 @@
       "approvedBy": null,
       "approvedAt": null,
       "lessonCount": 42,
-      "stripePaymentLink": "https://buy.stripe.com/28EbJ2f1cb2Bbz91Jv1oI15"
+      "stripePaymentLink": "https://buy.stripe.com/28EbJ2f1cb2Bbz91Jv1oI15",
+      "coverImage": "/img/covers/pimp.webp"
     },
     {
       "id": "shift",
@@ -300,7 +304,8 @@
       "approvedBy": null,
       "approvedAt": null,
       "lessonCount": 32,
-      "stripePaymentLink": "https://buy.stripe.com/bJeeVe8CO4EddHh87T1oI16"
+      "stripePaymentLink": "https://buy.stripe.com/bJeeVe8CO4EddHh87T1oI16",
+      "coverImage": "/img/covers/shift.webp"
     },
     {
       "id": "tengame",
@@ -343,7 +348,8 @@
       "approvedBy": null,
       "approvedAt": null,
       "lessonCount": 83,
-      "stripePaymentLink": "https://buy.stripe.com/4gM9AUf1c8Ut32D5ZL1oI17"
+      "stripePaymentLink": "https://buy.stripe.com/4gM9AUf1c8Ut32D5ZL1oI17",
+      "coverImage": "/img/covers/tengame.webp"
     },
     {
       "id": "transformation-mastery",
@@ -424,7 +430,8 @@
       "approvedBy": null,
       "approvedAt": null,
       "lessonCount": 6,
-      "stripePaymentLink": "https://buy.stripe.com/28E7sM4my4EdgTtfAl1oI18"
+      "stripePaymentLink": "https://buy.stripe.com/28E7sM4my4EdgTtfAl1oI18",
+      "coverImage": "/img/covers/jeffy-show.webp"
     },
     {
       "id": "resonator",
@@ -466,7 +473,8 @@
       "approvedBy": null,
       "approvedAt": null,
       "lessonCount": 19,
-      "stripePaymentLink": "https://buy.stripe.com/eVq7sMaKW9Yx6eP73P1oI19"
+      "stripePaymentLink": "https://buy.stripe.com/eVq7sMaKW9Yx6eP73P1oI19",
+      "coverImage": "/img/covers/resonator.webp"
     },
     {
       "id": "execute-the-program-2",
@@ -508,7 +516,8 @@
       "approvedBy": null,
       "approvedAt": null,
       "lessonCount": 61,
-      "stripePaymentLink": "https://buy.stripe.com/9B600k8COeeN1YzfAl1oI1a"
+      "stripePaymentLink": "https://buy.stripe.com/9B600k8COeeN1YzfAl1oI1a",
+      "coverImage": "/img/covers/execute-the-program.webp"
     },
     {
       "id": "flawless-natural",
@@ -548,7 +557,8 @@
       "publicNotes": "Removed from the site by owner (2026-10-01).",
       "approvedBy": null,
       "approvedAt": null,
-      "stripePaymentLink": null
+      "stripePaymentLink": null,
+      "coverImage": "/img/covers/flawless-natural.webp"
     },
     {
       "id": "nryne",
@@ -788,7 +798,8 @@
       "approvedBy": null,
       "approvedAt": null,
       "lessonCount": 110,
-      "stripePaymentLink": "https://buy.stripe.com/bJe14o1am6Ml46H9bX1oI1c"
+      "stripePaymentLink": "https://buy.stripe.com/bJe14o1am6Ml46H9bX1oI1c",
+      "coverImage": "/img/covers/social-circle-blueprint.webp"
     },
     {
       "id": "boss",
@@ -861,7 +872,8 @@
       "closingLine": "You don't need Madison's personality. You need to discover the most charismatic version of your own.",
       "lessonCount": 84,
       "stripePaymentLink": null,
-      "stripeLinkNote": "Link sent for The Boss (\u20261oI1e) opens Get Your Ten in Stripe; awaiting the correct The Boss link."
+      "stripeLinkNote": "Link sent for The Boss (\u20261oI1e) opens Get Your Ten in Stripe; awaiting the correct The Boss link.",
+      "coverImage": "/img/covers/boss.webp"
     },
     {
       "id": "energy-awareness",
@@ -1279,7 +1291,8 @@
       "publicNotes": "Added from owner's comprehensive list (2026-10-01). Instructor credit and contents to confirm from files.",
       "approvedBy": null,
       "approvedAt": null,
-      "stripePaymentLink": "https://buy.stripe.com/bJe6oIbP03A95aL5ZL1oI1e"
+      "stripePaymentLink": "https://buy.stripe.com/bJe6oIbP03A95aL5ZL1oI1e",
+      "coverImage": "/img/covers/get-your-ten.webp"
     },
     {
       "id": "owens-last-game",
@@ -1318,7 +1331,8 @@
       "publicNotes": "Added from owner's comprehensive list (2026-10-01). Instructor credit and contents to confirm from files.",
       "approvedBy": null,
       "approvedAt": null,
-      "stripePaymentLink": "https://buy.stripe.com/00wfZibP08UtcDd3RD1oI1f"
+      "stripePaymentLink": "https://buy.stripe.com/00wfZibP08UtcDd3RD1oI1f",
+      "coverImage": "/img/covers/owens-last-game.webp"
     },
     {
       "id": "social-circle-hacking",
@@ -1357,7 +1371,8 @@
       "publicNotes": "Added from owner's comprehensive list (2026-10-01). Instructor credit and contents to confirm from files.",
       "approvedBy": null,
       "approvedAt": null,
-      "stripePaymentLink": "https://buy.stripe.com/14A14ocT4gmV6eP0Fr1oI1g"
+      "stripePaymentLink": "https://buy.stripe.com/14A14ocT4gmV6eP0Fr1oI1g",
+      "coverImage": "/img/covers/social-circle-hacking.webp"
     },
     {
       "id": "influence-mastery",
@@ -1397,7 +1412,8 @@
       "publicNotes": "Added from owner's comprehensive list (2026-10-01). Instructor credit and contents to confirm from files.",
       "approvedBy": null,
       "approvedAt": null,
-      "stripePaymentLink": "https://buy.stripe.com/cNidRa6uG0nXcDdewh1oI1h"
+      "stripePaymentLink": "https://buy.stripe.com/cNidRa6uG0nXcDdewh1oI1h",
+      "coverImage": "/img/covers/influence-mastery.webp"
     }
   ],
   "laterSelfMasteryRecords": {

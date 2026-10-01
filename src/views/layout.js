@@ -14,6 +14,7 @@ export function layout(cfg, { title, description, body, path = '/', bodyClass = 
 <meta name="description" content="${description || 'The RSD Legacy Archive: The Prequel Collection.'}">
 ${!cfg.publicSite && (cfg.isStaging || !cfg.publishApproved) ? raw('<meta name="robots" content="noindex, nofollow">') : ''}
 <link rel="icon" href="/img/rsd-logo.png">
+<meta property="og:image" content="/img/rsd-vault-bundle.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..600&display=swap">
@@ -40,10 +41,10 @@ ${body}
     <div>
       <div class="footer-logo"><img src="/img/rsd-logo.png" alt="Real Social Dynamics" width="150" height="40"></div>
       <p class="small${cfg.sellerLegalName ? '' : ' review-only'}">Seller: ${tokenOr(cfg, cfg.sellerLegalName, 'sellerLegalName')}${cfg.sellerPostalAddress ? html` · ${cfg.sellerPostalAddress}` : ''}</p>
-      <p class="footer-legal"><a href="/terms">Terms &amp; Conditions</a> · <a href="/privacy">Privacy Policy</a></p>
       ${cfg.supportPhone ? html`<p class="footer-phone">Real Social Dynamics Support: ${supportPhoneLink(cfg)}${cfg.supportEmail ? html` · ${supportEmailLink(cfg)}` : ''}</p>` : ''}
     </div>
   </div>
+  <div class="wrap legal-bar"><a href="/terms">Terms &amp; Conditions</a><span aria-hidden="true">·</span><a href="/privacy">Privacy Policy</a><span aria-hidden="true">·</span><a href="/terms#gdpr">GDPR &amp; Your Data Rights</a><span aria-hidden="true">·</span><a href="/support">Contact Support</a></div>
 </footer>
 ${stickyCta ? html`<div class="sticky-cta" data-sticky hidden><span>Archive + 2 package-only bonuses</span>${vaultCta(cfg, 'btn btn-white btn-sm')}<button class="sticky-close" type="button" aria-label="Dismiss">×</button></div>` : ''}
 </body>

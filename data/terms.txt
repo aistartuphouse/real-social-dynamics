@@ -46,6 +46,34 @@ By postal mail: Intellectual Property Counsel, Real Social Dynamics, Inc. 8491 W
 
 4. You understand that by entering your name and email address on the entry page that you are subscribing to a free, no obligation "Real Social Dynamics Email Newsletter". This newsletter is offered as a free service by Real Social Dynamics and RealSocialDynamics.com, and no purchase is necessary. On occasion, subscribers have had trouble removing themselves from this free newsletter. If you have trouble subscribing or removing, you may contact us at {{supportEmail}} for personal attention.
 
+# GDPR AND DATA PROTECTION (EEA, UK AND SWITZERLAND)
+
+1. Scope. This section applies if you are located in the European Economic Area, the United Kingdom or Switzerland, and supplements our Privacy Policy. Where it conflicts with anything else in these Terms and Conditions or the Privacy Policy, this section controls for those users.
+
+2. Data controller. The controller of personal data collected through this Website is the operator of RealSocialDynamics.com. You can contact us about data protection at {{supportEmail}}.
+
+3. What we process and why. We process contact details, account and order information, payment confirmations (card data is handled by our payment processor, Stripe, not stored by us), support communications, and limited technical data (such as IP address and cookie identifiers). Our lawful bases under Article 6 GDPR are: performance of a contract (to deliver your purchase, coaching call and account access); legal obligation (tax, accounting and fraud prevention); legitimate interests (securing the Website, improving our services and handling support), balanced against your rights; and consent (for marketing emails and non-essential cookies), which you can withdraw at any time.
+
+4. Marketing. We send marketing emails only where we have a lawful basis, such as your consent or, where permitted, a similar-products relationship. Every marketing email contains an unsubscribe link, and unsubscribing never affects your access to products you have purchased. Notwithstanding any other provision of these Terms, you may complain to any regulator or authority about our communications, and visiting the Website does not by itself subscribe you to any mailing list where your consent is required by law.
+
+5. Your rights. You have the right to: access your personal data; correct inaccurate data; erasure ("right to be forgotten"); restrict processing; data portability; object to processing based on legitimate interests and to direct marketing at any time; withdraw consent at any time without affecting prior lawful processing; and not be subject to decisions based solely on automated processing that significantly affect you. To exercise any right, email {{supportEmail}}. We will respond within one month, which may be extended by two months for complex requests, and may need to verify your identity.
+
+6. International transfers. We are based in the United States. Where personal data is transferred outside the EEA, UK or Switzerland, we rely on appropriate safeguards such as the European Commission's Standard Contractual Clauses (and the UK Addendum) or an adequacy framework such as the EU-U.S. Data Privacy Framework where our service providers participate.
+
+7. Processors and sharing. We share personal data only with service providers acting on our instructions (for example payment processing, website hosting, email delivery and customer support) under written data processing terms, or where required by law. We do not sell your personal data.
+
+8. Retention. We keep personal data only as long as needed for the purposes above: account and purchase records for as long as you have access to your products and as required for tax and accounting (generally up to seven years); support records for up to three years after the last contact; marketing data until you unsubscribe or withdraw consent.
+
+9. Cookies. Non-essential cookies (such as analytics or advertising cookies) are used only with your consent where required by law. Strictly necessary cookies (such as those that keep you signed in or secure checkout) do not require consent.
+
+10. Security. We use appropriate technical and organisational measures, including encrypted (HTTPS) connections, access controls and reputable processors, and we will notify affected users and the competent supervisory authority of personal data breaches where required by law.
+
+11. Children. The Website is intended for adults aged 18 and over and is not directed at children.
+
+12. Complaints. You have the right to lodge a complaint with the data protection supervisory authority in your country of residence or work (for the UK, the Information Commissioner's Office). We would appreciate the chance to address your concern first at {{supportEmail}}.
+
+13. Mandatory rights. Nothing in these Terms and Conditions limits rights you have under the GDPR, UK GDPR or other applicable data protection and consumer protection law. Any provision that would do so does not apply to you to that extent.
+
 # REPRESENTATIONS AND WARRANTIES
 
 1. You represent, warrant and covenant (a) that no materials of any kind submitted by you or Real Social Dynamics Corporation's use thereof in accordance with the terms and conditions of these Terms of Service, will (i) violate, plagiarize or infringe upon the rights of any third party, including, without limitation, copyright, trademark, privacy or publicity, moral rights, contract or other personal or proprietary rights; (ii) contain unlawful material; (iii) constitute false or misleading indications of origin or statements of fact; (iv) slander, libel or defame any person or entity; or (v) cause injury of any kind to any person or entity; or (vi) violate any applicable laws, rules, regulations or other governmental regulations; and (b) that you are at least 18 years old. You hereby indemnify, defend and hold Real Social Dynamics and its officers, directors, owners, agents, information providers, affiliates, licensors and licensees (collectively, the "Indemnified Parties") harmless from and against any and all liability and costs incurred by the Indemnified Parties in connection with any claim arising out of any breach by you of these Terms of Service or the foregoing representations, warranties and covenants, including, without limitation, reasonable attorneys' fees. You shall cooperate as fully as reasonably required in the defense of any claim. Real Social Dynamics reserves the right, at its own expense, to assume the exclusive defense and control of any matter otherwise subject to indemnification by you. You shall not enter into any settlement agreement, which affects the rights of Real Social Dynamics without Real Social Dynamics' prior written approval.
