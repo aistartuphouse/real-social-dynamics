@@ -6,7 +6,7 @@ export function instructorBlocks(cfg, programs) {
   return loadInstructors().map((ins) => {
     const own = programs.filter((p) => p.instructorKey === ins.key);
     if (!own.length) return '';
-    return html`<article class="ins" id="instructor-${ins.key}">
+    return html`<article class="ins" id="instructor-${ins.key}" data-instructor="${ins.key}" data-search="${[ins.name, ...own.map((p) => p.title)].join(' · ').toLowerCase()}">
       <p class="ins-name">${ins.name}</p>
       <h3 class="ins-head">${ins.headline}</h3>
       <p class="ins-programs">${own.map((p, i) => html`${i ? ' · ' : ''}<a href="/programs/${p.slug}">${p.title}</a>`)}</p>

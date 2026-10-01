@@ -15,7 +15,7 @@ export const EMAILS = [
     preheader: 'A 14-day archive release, with two package-only launch bonuses.',
     blocks: [
       'Hi {{firstNameOrThere}},',
-      'If you came to RSD through Transformation Mastery or another later personal-growth program, you may know one part of the story.',
+      'If you came to RSD through Julien\'s later transformation work or another personal-growth program, you may know one part of the story.',
       'RSD is back.',
       'You\'ve seen the sequel. Real Social Dynamics has the prequel.',
       'Dating-focused teaching. Social situations. Communication. Different instructors explaining how they approached putting ideas into practice.',
@@ -30,14 +30,14 @@ export const EMAILS = [
   },
   {
     id: 'day03-prequel-story', kind: 'marketing', dayOffset: 2, segments: ['A', 'B', 'C', 'D', 'E', 'F'],
-    subjects: ['You saw the sequel. Want to see the prequel?', 'Before Transformation Mastery…', 'What Julien was teaching before the transformation era', 'The training before the transformation', 'The earlier chapters behind familiar ideas'],
+    subjects: ['You saw the sequel. Want to see the prequel?', 'What Julien was teaching before the transformation era', 'The training before the transformation', 'The earlier chapters behind familiar ideas'],
     preheader: 'PIMP, SHIFT, and TenGame are different programs with different emphases.',
     requiresJulienSequence: true,
     blocks: [
       'Hi {{firstNameOrThere}},',
       'An idea can feel clear when you are watching a lesson and much less clear when you are in a conversation.',
       'That gap is part of what makes an archive worth studying.',
-      'PIMP provides an earlier dating-focused reference point. SHIFT discusses identity, beliefs, and experience. TenGame supplies a principle-and-practice perspective. Transformation Mastery gives many returning customers a familiar later chapter to compare with them.',
+      'PIMP provides an earlier dating-focused reference point. SHIFT discusses identity, beliefs, and experience. TenGame supplies a principle-and-practice perspective.',
       'The point is not that the earliest method was perfect, or that one teacher had every answer.',
       'The point is context.',
       'You can examine the differences, keep what is appropriate and useful, and bring better questions to your included RSD Success Coaching Call.',

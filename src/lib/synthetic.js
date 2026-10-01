@@ -23,7 +23,7 @@ export const SYNTHETIC_CONTACTS = [
 export function seedSynthetic(store) {
   store.data.users.push(...SYNTHETIC_USERS.map((u) => ({ ...u })));
   store.data.contacts.push(...SYNTHETIC_CONTACTS.map((c) => ({ ...c })));
-  store.data.supportCases.push({ id: 'case_seed', email: 'support.case@example.test', topic: 'access', message: 'Cannot log in to Transformation Mastery (synthetic).', status: 'open', openedAt: '2026-09-28T17:00:00Z' });
+  store.data.supportCases.push({ id: 'case_seed', email: 'support.case@example.test', topic: 'access', message: 'Cannot log in to a past purchase (synthetic).', status: 'open', openedAt: '2026-09-28T17:00:00Z' });
   store.data.suppression.push({ email: 'unsubscribed@example.test', reason: 'unsubscribe', at: '2026-01-02T00:00:00Z' });
   store.save();
 }

@@ -28,7 +28,7 @@ export function homePage(cfg, state, programs, catalog) {
   const heroNames = Object.entries(HERO_NAMES).filter(([k]) => keys.has(k)).map(([, n]) => n);
   const names = [...new Set(programs.filter((p) => !['multi'].includes(p.instructorKey)).map(shortName))];
   const spotlight = SPOTLIGHT.map((id) => programs.find((p) => p.id === id)).filter(Boolean);
-  const julienTitles = julien.filter((p) => p.id !== 'transformation-mastery').map((p) => p.title.replace(/\s*\(.*\)$/, ''));
+  const julienTitles = julien.map((p) => p.title.replace(/\s*\(.*\)$/, ''));
 
   return html`
 <section class="hero" aria-labelledby="hero-h">
@@ -167,7 +167,7 @@ export function homePage(cfg, state, programs, catalog) {
 ${julien.length ? html`<section class="band band-white" aria-labelledby="julien-h" id="julien-prequel">
   <div class="wrap">
     <p class="eyebrow">Featured prequel sequence</p>
-    <h2 id="julien-h" class="h-xl">Before Transformation Mastery, there was an earlier chapter: Julien's ${julienTitles.join(', ').replace(/, ([^,]*)$/, ', and $1')}.</h2>
+    <h2 id="julien-h" class="h-xl">Before Julien's later transformation work, there was an earlier chapter: ${julienTitles.join(', ').replace(/, ([^,]*)$/, ', and $1')}.</h2>
     <p class="lede">Explore the RSD-era material that came before Julien's later personal-development work, and trace the shift from outward social performance toward identity, awareness, and transformation.</p>
     ${cfg.isStaging && !cfg.julienSequenceApproved ? html`<span class="staging-flag">STAGING · Julien wording renders publicly only once these titles are approved and included</span>` : ''}
     <ol class="sequence">

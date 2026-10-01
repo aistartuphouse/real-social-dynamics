@@ -15,10 +15,10 @@ export function legacyPage(cfg, programs, catalog) {
       <label>Search <input type="search" name="q" placeholder="e.g. storytelling, online, inner game"></label>
       <label>Instructor <select name="instructor"><option value="">All instructors</option>${instructors.map(([k, n]) => html`<option value="${k}">${n}</option>`)}</select></label>
       <label>Collection <select name="collection"><option value="">All collections</option>${catalog.collections.map((c) => html`<option value="${c.id}">${c.title}</option>`)}</select></label>
-      <p class="filter-count" aria-live="polite"><span data-count>${programCount}</span> programs shown</p>
+      <p class="filter-count" aria-live="polite"><span data-count>${programCount}</span> programs shown <button type="button" class="btn btn-outline btn-sm" data-clear hidden>Clear</button></p>
     </form>
   </div></section>
-  <section class="band band-mist" id="by-instructor"><div class="wrap"><h2 class="h-xl">Instructor by instructor: what you'll discover.</h2><div class="ins-grid">${instructorBlocks(cfg, programs)}</div></div></section>
+  <section class="band band-mist" id="by-instructor" data-ins-section><div class="wrap"><h2 class="h-xl">Instructor by instructor: what you'll discover.</h2><div class="ins-grid">${instructorBlocks(cfg, programs)}</div></div></section>
   ${catalog.collections.map((c) => {
     const items = programs.filter((p) => p.collection === c.id);
     if (!items.length) return '';
@@ -69,7 +69,7 @@ export function welcomeBackPage(cfg, state, programs) {
   return html`<section class="hero"><div class="wrap narrow">
     <p class="eyebrow eyebrow-light">A RETURN INVITATION FOR RETURNING RSD CUSTOMERS</p>
     <h1 class="mega mega-sm">You know Julien's transformation work. But have you seen what came before it?</h1>
-    <p class="hero-body">Before Transformation Mastery, there were years of RSD programs about confidence, social dynamics, dating, communication, identity, and real-world application. For the first time in this relaunch, explore the broader archive and the earlier chapters that came before the ideas you already know.</p>
+    <p class="hero-body">Before Julien's later transformation work, there were years of RSD programs about confidence, social dynamics, dating, communication, identity, and real-world application. For the first time in this relaunch, explore the broader archive and the earlier chapters that came before the ideas you already know.</p>
     <p class="hero-body">This is a historical collection presented by RSD, not an announcement that Julien is joining the relaunch.</p>
     ${cfg.isStaging && !cfg.julienSequenceApproved ? html`<span class="staging-flag">STAGING · Julien-specific wording requires approved, included titles</span>` : ''}
     <div class="cta-row"><a class="btn btn-white btn-lg" href="/legacy#julien-prequel">Explore the RSD prequel</a></div>
@@ -80,7 +80,7 @@ export function welcomeBackPage(cfg, state, programs) {
   </div></section>
   <section class="band band-mist"><div class="wrap narrow">
     <h2 class="h-xl">Already own part of the library? Check before you purchase again.</h2>
-    <p>Many returning customers already own Transformation Mastery or other programs in this release. Verify your purchase email to see what this release adds. Valid existing access is never conditional on buying again.</p>
+    <p>Many returning customers already own some of the programs in this release. Verify your purchase email to see what this release adds. Valid existing access is never conditional on buying again.</p>
     <div class="cta-row"><a class="btn btn-navy" href="/access">Check my existing access</a><a class="btn btn-outline" href="/support">Get help with a past purchase</a></div>
   </div></section>
   <section class="band band-white" id="package"><div class="wrap pkg-grid"><div><h2 class="h-xl">Add the earlier chapters, a live coaching call, and your RSD Nation briefing invitation.</h2><p class="lede">One package, ${priceLine(cfg)}, for the 14-day return promotion.</p></div>${packageCard(cfg, state)}</div></section>`;

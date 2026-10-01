@@ -31,25 +31,50 @@
     }, 2600);
   }
 
-  // Catalog filter.
+  // Catalog filter: search text, instructor and collection filter both the program cards and the
+  // instructor sections. Supports deep links like /legacy?q=alex or /legacy?instructor=alex.
   const form = document.querySelector('[data-filter]');
   if (form) {
     const cards = [...document.querySelectorAll('.pcard')];
     const sections = [...document.querySelectorAll('[data-section]')];
+    const insBlocks = [...document.querySelectorAll('.ins[data-instructor]')];
+    const insSection = document.querySelector('[data-ins-section]');
     const count = form.querySelector('[data-count]');
+    const clear = form.querySelector('[data-clear]');
+    const params = new URLSearchParams(location.search);
+    if (params.get('q')) form.q.value = params.get('q');
+    if (params.get('instructor')) form.instructor.value = params.get('instructor');
+    if (params.get('collection')) form.collection.value = params.get('collection');
     const apply = () => {
       const q = form.q.value.trim().toLowerCase();
       const ins = form.instructor.value, col = form.collection.value;
+      const words = q.split(/\s+/).filter(Boolean);
+      const matches = (text) => words.every((w) => text.includes(w));
       let n = 0;
+      const shownInstructors = new Set();
       cards.forEach((c) => {
-        const ok = (!q || c.dataset.search.includes(q)) && (!ins || c.dataset.instructor === ins) && (!col || c.dataset.collection === col);
-        c.hidden = !ok; if (ok) n++;
+        const ok = matches(c.dataset.search) && (!ins || c.dataset.instructor === ins) && (!col || c.dataset.collection === col);
+        c.hidden = !ok;
+        if (ok) { n++; shownInstructors.add(c.dataset.instructor); }
       });
       sections.forEach((s) => { s.hidden = !s.querySelector('.pcard:not([hidden])'); });
+      const filtering = Boolean(words.length || ins || col);
+      insBlocks.forEach((b) => { b.hidden = filtering && !shownInstructors.has(b.dataset.instructor); });
+      if (insSection) insSection.hidden = !insBlocks.some((b) => !b.hidden);
       count.textContent = n;
+      if (clear) clear.hidden = !filtering;
+      const url = new URL(location.href);
+      ['q', 'instructor', 'collection'].forEach((k) => url.searchParams.delete(k));
+      if (words.length) url.searchParams.set('q', form.q.value.trim());
+      if (ins) url.searchParams.set('instructor', ins);
+      if (col) url.searchParams.set('collection', col);
+      history.replaceState(null, '', url);
     };
     form.addEventListener('input', apply);
+    form.addEventListener('change', apply);
     form.addEventListener('submit', (e) => { e.preventDefault(); apply(); });
+    if (clear) clear.addEventListener('click', () => { form.reset(); form.q.value = ''; apply(); form.q.focus(); });
+    apply();
   }
 
   // Mobile sticky CTA: appears after the hero, hides near the package, dismissible for the session.
