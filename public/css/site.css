@@ -437,3 +437,4 @@ body:not(.show-notes) .terms-mini > div:has(.token) { display: none !important; 
 .vault-cta { letter-spacing: .06em; }
 .live-links { margin: 8px 0 10px; padding-left: 20px; }
 .live-links li { margin-bottom: 6px; }
+.timeline .live-links li { display: list-item; padding: 0; border: 0; grid-template-columns: none; }
