@@ -34,8 +34,7 @@ export function valueStack(cfg, programs) {
             ${h ? html`<a class="vs-src" href="${h.captureUrl}" rel="noopener nofollow" target="_blank">originally from ${formatPrice(h.priceCents)} (archived ${year(h.timestamp)})</a>` : ''}</td>
         </tr>`;
         })}
-        <tr class="vs-bonus"><th scope="row"><span class="vs-title">Bonus 1: Live RSD Success Coaching Call</span><span class="vs-by">Current RSD Success Coach</span></th><td class="num">${n.callV ? html`<span class="vs-price">${formatPrice(n.callV)} value</span><span class="vs-src">included free with package</span>` : 'Included with package'}</td></tr>
-        <tr class="vs-bonus"><th scope="row"><span class="vs-title">Bonus 2: Private RSD Nation relaunch-briefing invitation</span><span class="vs-by">Package holders only</span></th><td class="num">${n.briefV ? html`<span class="vs-price">${formatPrice(n.briefV)} value</span><span class="vs-src">included free with package</span>` : 'Included with package'}</td></tr>
+        <tr class="vs-bonus"><th scope="row"><span class="vs-title">Bonus 1: Live RSD Success Coaching Call</span><span class="vs-by">Current RSD Success Coach and Dedicated Permanent Lifetime Access on Phone</span></th><td class="num">${n.callV ? html`<span class="vs-price">${formatPrice(n.callV)} value</span><span class="vs-src">included free with package</span>` : 'Included with package'}</td></tr>
       </tbody>
       <tfoot>
         ${n.pricedCount ? html`<tr><th scope="row">All ${n.pricedCount} programs bought separately</th><td class="num vs-total">${formatPrice(n.separateCents)}</td></tr>` : ''}
@@ -43,7 +42,7 @@ export function valueStack(cfg, programs) {
         <tr class="vs-yours"><th scope="row">Your launch package, everything above</th><td class="num">${formatPrice(cfg.priceCents)}</td></tr>
       </tfoot>
     </table>
-    <p class="vs-note">"Bought separately" is the price at which each program is sold on its own today, without the launch bonuses${cfg.publicSite ? ' (call RSD Support to buy a single program)' : '; you can buy any of them individually from its program page'}. Where we could verify a program's original price on its archived official sales page, it's linked underneath. Bonus values are what RSD assigns to the call and the briefing invitation, which come free only with the package.</p>
+    <p class="vs-note">"Bought separately" is the price at which each program is sold on its own today, without the launch bonuses${cfg.publicSite ? ' (call RSD Support to buy a single program)' : '; you can buy any of them individually from its program page'}. Where we could verify a program's original price on its archived official sales page, it's linked underneath. The bonus value is what RSD assigns to the coaching call and lifetime phone access, which come free only with the package.</p>
   </div>`;
 }
 

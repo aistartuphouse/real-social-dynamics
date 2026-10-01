@@ -53,8 +53,8 @@
   "archiveSinceYear": null,
   "_archiveSinceYearNote": "Set to a first-party-sourced year (e.g. 2003) to switch copy from 'nearly 20 years' to '20+ years'. Earliest sourced year today: 2007 (R01).",
   "bonusValues": {
-    "successCallCents": 49700,
-    "briefingInviteCents": 9700
+    "successCallCents": 99700,
+    "briefingInviteCents": null
   },
   "bonusValuesSubstantiated": false,
   "_bonusValuesNote": "Owner-set bonus values. Shown in staging; production shows them only when bonusValuesSubstantiated is true (a real standalone price at which RSD actually sells the item).",
@@ -88,5 +88,7 @@
     }
   ],
   "_liveEventsNote": "Owner-supplied live event pages (2026-10-01). Not fetched or verified by the build.",
-  "supportEmail": "support@rsdnation.com"
+  "supportEmail": "support@rsdnation.com",
+  "coachingLifetimePhoneAccess": true,
+  "_coachingNote": "Owner direction (2026-10-01): Bonus 1 = live Success Coaching Call + dedicated permanent lifetime phone access, valued $997. Briefing removed from the value stack."
 }

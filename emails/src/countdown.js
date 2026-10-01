@@ -9,7 +9,7 @@ const programs = publicPrograms(cfg);
 const { programCount, lessonCount } = stats(programs);
 const separate = programs.reduce((s, p) => s + (p.individualPriceCents || 0), 0);
 const call = cfg.bonusValues?.successCallCents || 0;
-const brief = cfg.bonusValues?.briefingInviteCents || 0;
+const brief = 0; // briefing no longer valued in the stack (owner, 2026-10-01)
 const total = separate + call + brief;
 const $ = (c) => formatPrice(c);
 const PRICE = $(cfg.priceCents);
@@ -22,8 +22,8 @@ const SUPPORT = `Questions? Call RSD Support at ${cfg.supportPhone || '310-202-9
 const STACK = {
   list: [
     `The RSD Vault: ${programCount} programs, ${lessonCount} lessons, from Julien Blanc, Tyler, Madison, Jeffy, Luke and more (${$(separate)} if bought separately)`,
-    `Bonus 1: a live 1-on-1 RSD Success Coaching Call (${$(call)} value)`,
-    `Bonus 2: your private invitation to the RSD Nation relaunch briefing (${$(brief)} value)`,
+    `Bonus 1: a live 1-on-1 RSD Success Coaching Call plus dedicated permanent lifetime access on phone (${$(call)} value)`,
+    `Bonus 2: your private invitation to the RSD Nation relaunch briefing`,
     `New for this relaunch: assignments and goal blocks for each program`,
   ],
 };
