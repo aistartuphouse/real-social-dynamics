@@ -506,3 +506,28 @@ body:not(.show-notes) .terms-mini > div:has(.token) { display: none !important; 
 .minis a:hover, .minis a:focus-visible { transform: scale(1.06); position: relative; z-index: 1; }
 .minis img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
 @media (max-width: 960px) { .auth-head { grid-template-columns: minmax(0, 1fr); } .minis { max-width: 560px; } }
+
+/* Above-the-fold hero: headline left, price + clock + CTAs right; fills the first screen. Blue-tinted black. */
+.hero { background: #06132A; }
+.hero-bg-art::after { background: linear-gradient(180deg, rgba(6,19,42,.35) 0%, rgba(6,19,42,.6) 40%, rgba(6,19,42,.94) 75%, #06132A 100%), radial-gradient(ellipse at 30% 30%, rgba(6,19,42,.55), transparent 70%) !important; }
+.hero.hero-bg { padding: 0 0 clamp(32px, 4vw, 56px); }
+.hero-fold { min-height: calc(100svh - 73px); display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr); gap: clamp(28px, 4vw, 56px); align-items: center; padding: 24px 0; }
+.hero-fold .hero-h1 { font-size: clamp(2.3rem, 4.4vw, 4rem); }
+.hero-fold .hero-sub { font-size: clamp(1.15rem, 1.6vw, 1.45rem); margin: 0; }
+.hero-panel { background: rgba(4,14,32,.6); border: 1px solid rgba(255,255,255,.18); border-radius: 6px; padding: clamp(18px, 2vw, 28px); backdrop-filter: blur(2px); }
+.hero-panel .hero-price { margin: 0 0 14px; }
+.cta-stack { flex-direction: column; align-items: stretch; margin: 18px 0 0; }
+.cta-stack .btn { width: 100%; text-align: center; }
+.hero-more { max-width: 980px; }
+.hero-more .hero-hook { margin-top: 0; }
+@media (max-width: 960px) { .hero-fold { grid-template-columns: minmax(0, 1fr); min-height: 0; padding: 32px 0; } }
+.hero-bg .hero-single { max-width: 1280px; }
+.hero-fold .hero-h1 { font-size: clamp(2.3rem, 4vw, 3.9rem); }
+/* Lighter blue tint (owner request). */
+.hero { background: #12346B; }
+.hero-bg-art::after { background: linear-gradient(180deg, rgba(18,52,107,.45) 0%, rgba(18,52,107,.68) 40%, rgba(18,52,107,.94) 75%, #12346B 100%), radial-gradient(ellipse at 30% 30%, rgba(14,40,84,.55), transparent 70%) !important; }
+.hero-panel { background: rgba(8,26,58,.6); }
+/* Navy (owner request). */
+.hero { background: #0E2350; }
+.hero-bg-art::after { background: linear-gradient(180deg, rgba(14,35,80,.45) 0%, rgba(14,35,80,.68) 40%, rgba(14,35,80,.94) 75%, #0E2350 100%), radial-gradient(ellipse at 30% 30%, rgba(10,26,62,.55), transparent 70%) !important; }
+.hero-panel { background: rgba(6,18,44,.6); }

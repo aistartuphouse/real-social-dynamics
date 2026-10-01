@@ -36,18 +36,24 @@ export function homePage(cfg, state, programs, catalog) {
     <img src="/img/rsd-vault-bundle.webp" alt="" width="1590" height="926" fetchpriority="high">
   </div>
   <div class="wrap hero-grid hero-single">
-    <div class="hero-copy">
-      <p class="eyebrow eyebrow-light">REAL SOCIAL DYNAMICS · THE RSD VAULT: ${programCount} PROGRAMS · ${lessonCount} LESSONS</p>
-      <h1 id="hero-h" class="hero-h1">What did <span class="rotator" data-names="${JSON.stringify(heroNames)}">${heroNames[0] || 'they'}</span> know before teaching personal transformation?</h1>
-      <p class="hero-sub">Go back to Julien Blanc's earlier RSD training, and ${yrs} of lessons from Tyler, Madison, Jeffy, and other instructors, to build greater social confidence, communicate more effectively, meet more people, and create your own blueprint for dating and social success.</p>
+    <div class="hero-fold">
+      <div class="hero-copy">
+        <p class="eyebrow eyebrow-light">REAL SOCIAL DYNAMICS · THE RSD VAULT: ${programCount} PROGRAMS · ${lessonCount} LESSONS</p>
+        <h1 id="hero-h" class="hero-h1">What did <span class="rotator" data-names="${JSON.stringify(heroNames)}">${heroNames[0] || 'they'}</span> know before teaching personal transformation?</h1>
+        <p class="hero-sub">Go back to Julien Blanc's earlier RSD training, and ${yrs} of lessons from Tyler, Madison, Jeffy, and other instructors, to build greater social confidence, communicate more effectively, meet more people, and create your own blueprint for dating and social success.</p>
+      </div>
+      <div class="hero-panel">
+        <p class="hero-price">Launch package: <strong>${priceLine(cfg)} one-time.</strong></p>
+        ${countdownClock(state, { tone: 'dark' })}
+        <div class="cta-row cta-stack">
+          ${vaultCta(cfg, 'btn btn-white btn-lg')}
+          <a class="btn btn-ghost btn-lg" href="/legacy">Explore the programs</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-more">
       <p class="hero-hook">You already know what personal transformation feels like on the inside. Now explore how RSD taught people to practice confidence, communication, and social skills in the situations where they actually matter.</p>
       <p class="hero-body"><strong>Study the lessons. Apply what fits. Get live guidance from an RSD Success Coach.</strong> Then arrive better prepared for the next generation of RSD live programs. For 14 days: the Complete RSD Legacy Archive (${programCount} programs, ${lessonCount} lessons, from ${instructorCount} instructors), a live Success Coaching Call, and an exclusive RSD Nation relaunch-briefing invitation.</p>
-      <p class="hero-price">Launch package: <strong>${priceLine(cfg)} one-time.</strong></p>
-      <div class="cta-row">
-        ${vaultCta(cfg, 'btn btn-white btn-lg')}
-        <a class="btn btn-ghost btn-lg" href="/legacy">Explore the programs</a>
-      </div>
-      ${countdownClock(state, { tone: 'dark' })}
       <p class="hero-fine">"Complete" means every program and edition listed in this release, not every RSD product ever made. Both launch bonuses come only with this package during the promotion. Exact editions and access terms are listed below.</p>
     </div>
 
