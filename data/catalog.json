@@ -261,7 +261,7 @@
     {
       "id": "shift",
       "slug": "shift",
-      "title": "SHIFT (Making a SHIFT)",
+      "title": "SHIFT",
       "instructor": "Julien Blanc",
       "instructorKey": "julien",
       "editionId": null,
@@ -304,7 +304,7 @@
     {
       "id": "tengame",
       "slug": "tengame",
-      "title": "TenGame (The Ten Game)",
+      "title": "The Ten Game",
       "instructor": "Julien Blanc",
       "instructorKey": "julien",
       "editionId": null,
@@ -792,7 +792,7 @@
     {
       "id": "boss",
       "slug": "boss",
-      "title": "BOSS (The Boss)",
+      "title": "The Boss",
       "instructor": "Madison",
       "instructorKey": "madison",
       "editionId": null,
@@ -801,7 +801,7 @@
       "collection": "communication",
       "featuredOrder": null,
       "cardHeadline": "Don't just walk into the room. Learn how to bring something to it.",
-      "shortCopy": "Conversation. Presence. Body language. Personality. Presentation. Social intelligence. BOSS gives you a window into Madison's approach to becoming a more compelling, expressive, and socially confident man.",
+      "shortCopy": "Conversation. Presence. Body language. Personality. Presentation. Social intelligence. The Boss gives you a window into Madison's approach to becoming a more compelling, expressive, and socially confident man.",
       "expandedCopy": "Study how Madison approached interaction, body language, social presence, and personality, then use those lessons to identify where your own charisma can become stronger.",
       "verifiedThemes": [
         "Conversation",
@@ -860,7 +860,7 @@
       "closingLine": "You don't need Madison's personality. You need to discover the most charismatic version of your own.",
       "lessonCount": 84,
       "stripePaymentLink": null,
-      "stripeLinkNote": "Link sent for BOSS (\u20261oI1e) opens Get Your Ten in Stripe; awaiting the correct BOSS link."
+      "stripeLinkNote": "Link sent for The Boss (\u20261oI1e) opens Get Your Ten in Stripe; awaiting the correct The Boss link."
     },
     {
       "id": "energy-awareness",
@@ -1253,8 +1253,8 @@
       "collection": "communication",
       "featuredOrder": null,
       "cardHeadline": "More charisma, more conversations, more of your personality.",
-      "shortCopy": "Get Your Ten is a 93-lesson Madison program in the RSD archive. Study it alongside BOSS to see how Madison approached social interaction in more depth.",
-      "expandedCopy": "Pair it with BOSS for the full Madison chapter of the archive. Exact lesson topics are listed in your library once the files are inspected.",
+      "shortCopy": "Get Your Ten is a 93-lesson Madison program in the RSD archive. Study it alongside The Boss to see how Madison approached social interaction in more depth.",
+      "expandedCopy": "Pair it with The Boss for the full Madison chapter of the archive. Exact lesson topics are listed in your library once the files are inspected.",
       "verifiedThemes": [
         "Madison's approach to social interaction"
       ],

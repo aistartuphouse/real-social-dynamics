@@ -39,7 +39,7 @@ export const COUNTDOWN_EMAILS = [
       'Hi {{firstNameOrThere}},',
       'RSD is back.',
       'For the next 2 weeks, the RSD Vault is open: the original Real Social Dynamics training that came before the personal-transformation programs you may already know.',
-      `Inside: ${programCount} programs and ${lessonCount} lessons from Julien Blanc, Tyler, Madison, Jeffy, Luke and more. PIMP, SHIFT and The Ten Game. Foundations and The Blueprint Decoded. BOSS and Get Your Ten. Social Circle Blueprint. The Resonator. Transformations, with special guests Ozzie and Hoobie.`,
+      `Inside: ${programCount} programs and ${lessonCount} lessons from Julien Blanc, Tyler, Madison, Jeffy, Luke and more. PIMP, SHIFT and The Ten Game. Foundations and The Blueprint Decoded. The Boss and Get Your Ten. Social Circle Blueprint. The Resonator. Transformations, with special guests Ozzie and Hoobie.`,
       'Personal growth is theory until life tests it. These programs show how RSD instructors put confidence, conversation, charisma and social skills to work in the situations where they actually matter.',
       'Here is everything you get:',
       STACK,
