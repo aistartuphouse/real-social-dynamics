@@ -118,3 +118,20 @@ test('individual program checkout charges the program price and grants no bonuse
   assert.equal((await t.req('/checkout?program=founders-lab')).status, 404);
   await t.close();
 });
+
+test('public site: no staging banner or tools, checkout goes to Stripe, indexable', async () => {
+  const t = await startApp({ overrides: { publicSite: true } });
+  const home = await t.req('/');
+  assert.doesNotMatch(home.text, /STAGING PREVIEW/);
+  assert.doesNotMatch(home.text, /noindex/);
+  assert.equal(home.headers.get('x-robots-tag'), null);
+  assert.equal((await t.req('/admin/readiness')).status, 404);
+  assert.equal((await t.req('/dev/outbox')).status, 404);
+  const co = await t.req('/checkout');
+  assert.equal(co.status, 303);
+  assert.match(co.headers.get('location'), /^https:\/\/buy\.stripe\.com\//);
+  assert.equal((await t.req('/checkout?program=boss')).status, 404);
+  assert.doesNotMatch((await t.req('/programs/boss')).text, /Buy BOSS only/);
+  assert.match((await t.req('/support')).text, /310-202-9002/);
+  await t.close();
+});

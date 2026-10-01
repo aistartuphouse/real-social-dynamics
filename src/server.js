@@ -39,7 +39,7 @@ export function createApp({ cfg = loadConfig(), store = new Store(), now = () =>
     res.setHeader('X-Content-Type-Options', 'nosniff');
     res.setHeader('Referrer-Policy', 'strict-origin-when-cross-origin');
     res.setHeader('Permissions-Policy', 'camera=(), microphone=(), geolocation=()');
-    if (cfg.isStaging || !cfg.publishApproved) res.setHeader('X-Robots-Tag', 'noindex, nofollow');
+    if (!cfg.publicSite && (cfg.isStaging || !cfg.publishApproved)) res.setHeader('X-Robots-Tag', 'noindex, nofollow');
   }
 
   const cookies = (req) => Object.fromEntries((req.headers.cookie || '').split(';').map((c) => c.trim().split('=')).filter(([k]) => k).map(([k, ...v]) => [k, decodeURIComponent(v.join('='))]));
@@ -91,7 +91,7 @@ export function createApp({ cfg = loadConfig(), store = new Store(), now = () =>
     const url = new URL(req.url, 'http://localhost');
     const p = url.pathname.replace(/\/+$/, '') || '/';
     const method = req.method;
-    res.showNotes = cfg.isStaging && url.searchParams.get('notes') === '1';
+    res.showNotes = cfg.isStaging && !cfg.publicSite && url.searchParams.get('notes') === '1';
     res.currentUrl = url.pathname;
     const t = now();
     const state = offerState(cfg, t);
@@ -106,7 +106,7 @@ export function createApp({ cfg = loadConfig(), store = new Store(), now = () =>
       if (!file.startsWith(path.join(ROOT, 'public'))) return notFound(res);
       try { const buf = await readFile(file); securityHeaders(res); res.writeHead(200, { 'Content-Type': MIME[path.extname(file)] || 'application/octet-stream', 'Cache-Control': cfg.isStaging ? 'no-cache' : 'public, max-age=300' }); return res.end(buf); } catch { return notFound(res); }
     }
-    if (p === '/robots.txt') return send(res, 200, cfg.isStaging || !cfg.publishApproved ? 'User-agent: *\nDisallow: /\n' : 'User-agent: *\nDisallow: /my-library\nDisallow: /success-call\nDisallow: /rsd-nation-invitation\n', 'text/plain');
+    if (p === '/robots.txt') return send(res, 200, !cfg.publicSite && (cfg.isStaging || !cfg.publishApproved) ? 'User-agent: *\nDisallow: /\n' : 'User-agent: *\nDisallow: /my-library\nDisallow: /success-call\nDisallow: /rsd-nation-invitation\n', 'text/plain');
     if (p === '/healthz') return send(res, 200, 'ok', 'text/plain');
 
     // ---------- public pages ----------
@@ -131,6 +131,10 @@ export function createApp({ cfg = loadConfig(), store = new Store(), now = () =>
     }
 
     // ---------- support (service-first; suppresses sales sequence) ----------
+    if ((p === '/support' || p === '/access') && cfg.publicSite) {
+      if (method !== 'GET') return notFound(res);
+      return page(res, { title: 'Support | RSD', path: p, body: P.publicSupportPage(cfg) });
+    }
     if (p === '/support') {
       if (method === 'GET') return page(res, { title: 'Support | RSD', path: p, body: P.supportPage(cfg, { csrf: csrfFor(req, res), sent: url.searchParams.has('sent') }) });
       const f = parseForm(await readBody(req));
@@ -177,6 +181,11 @@ export function createApp({ cfg = loadConfig(), store = new Store(), now = () =>
     }
 
     // ---------- checkout (fails closed in production) ----------
+    if (p === '/checkout' && cfg.publicSite) {
+      // Public site: the only live purchase path is the owner's Stripe link.
+      if (url.searchParams.get('program') || !cfg.vaultCheckoutUrl) return notFound(res);
+      securityHeaders(res); res.writeHead(303, { Location: cfg.vaultCheckoutUrl }); return res.end();
+    }
     if (p === '/checkout') {
       const gates = launchGates(cfg);
       if (!cfg.isStaging && !allPass(gates)) return page(res, { title: 'Checkout not open | RSD', body: A.messagePage('Checkout is not open', 'The launch package is not yet available for purchase.') }, 503);
@@ -197,7 +206,7 @@ export function createApp({ cfg = loadConfig(), store = new Store(), now = () =>
     }
 
     if (p.startsWith('/test-pay/')) {
-      if (!cfg.isStaging || cfg.paymentProvider !== 'simulated-test') return notFound(res);
+      if (!cfg.isStaging || cfg.publicSite || cfg.paymentProvider !== 'simulated-test') return notFound(res);
       const order = store.data.orders.find((o) => o.id === p.slice(10));
       if (!order) return notFound(res);
       if (method === 'GET') return page(res, { title: 'Test payment | RSD', body: A.testPayPage(cfg, order, csrfFor(req, res)) });
@@ -239,7 +248,7 @@ export function createApp({ cfg = loadConfig(), store = new Store(), now = () =>
     }
 
     // ---------- staging-only internal tools ----------
-    if (cfg.isStaging && method === 'GET') {
+    if (cfg.isStaging && !cfg.publicSite && method === 'GET') {
       if (p === '/admin/readiness') return page(res, { title: 'Launch readiness | RSD staging', body: Admin.readinessPage(cfg, launchGates(cfg), sendGates(cfg), state) });
       if (p === '/dev/logos') return page(res, { title: 'Program logos | RSD staging', body: html`<section class="band band-white page-head"><div class="wrap"><p class="eyebrow">Program logos · staging</p><h1 class="h-xl">${programs.length} original program logos</h1><p>Standalone SVG files (dark and light) are in <code>public/img/logos/</code>.</p><div class="logo-sheet">${programs.map((pr) => cover(pr))}</div></div></section>` });
       if (p === '/dev/outbox') return page(res, { title: 'Dev outbox | RSD staging', body: Admin.outboxPage(store.data.outbox) });

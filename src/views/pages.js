@@ -49,7 +49,7 @@ export function programPage(cfg, p, state, programs) {
       ${p.editionId && p.curriculumStatus === 'verified' ? html`<p>Edition ${p.editionId}.</p>` : html`<p>Exact edition, running time, and recording list are published here once the archive files are inspected.${cfg.isStaging ? html`<span class="staging-flag">STAGING · manifest required before sale</span>` : ''}</p>`}
       <h2 class="h-sm">How to buy</h2>
       ${p.individualPriceCents && cfg.individualSalesEnabled ? html`<div class="buy-options">
-        <div class="buy-opt"><p class="buy-l">This program only</p><p class="buy-p">$${(p.individualPriceCents / 100).toFixed(0)}</p><p class="small">No launch bonuses.</p><a class="btn btn-outline btn-block" href="/checkout?program=${p.slug}">Buy ${p.title.replace(/\s*\(.*\)$/, '')} only</a></div>
+        ${cfg.publicSite ? '' : html`<div class="buy-opt"><p class="buy-l">This program only</p><p class="buy-p">$${(p.individualPriceCents / 100).toFixed(0)}</p><p class="small">No launch bonuses.</p><a class="btn btn-outline btn-block" href="/checkout?program=${p.slug}">Buy ${p.title.replace(/\s*\(.*\)$/, '')} only</a></div>`}
         <div class="buy-opt buy-best"><p class="buy-l">Best value · launch package</p><p class="buy-p">$${(cfg.priceCents / 100).toFixed(0)}</p><p class="small">This program plus every other program in the release, the live coaching call, and the RSD Nation briefing invitation.</p>${vaultCta(cfg, 'btn btn-navy btn-block')}</div>
       </div>` : html`<p>Available in the launch package.</p>`}
       ${p.excludesHistoricalLiveBenefits ? html`<p class="note">Historical live calls, communities, immersion days, raffles, and old bonuses attached to the original sale are not included.</p>` : ''}
@@ -164,5 +164,14 @@ export function policyPage(cfg, kind) {
     <p class="lede">The approved ${titles[kind].toLowerCase()} will be published here verbatim before any sale or data collection beyond this staging preview.</p>
     ${cfg.isStaging ? html`<span class="staging-flag">STAGING · owner/counsel must supply this policy</span>` : ''}
     <p>Nothing on this site waives rights you have under applicable consumer law.</p>
+  </div></section>`;
+}
+
+export function publicSupportPage(cfg) {
+  return html`<section class="band band-white page-head"><div class="wrap narrow">
+    <p class="eyebrow">Support</p>
+    <h1 class="h-xxl">Already a customer, or need help with a past purchase? Call us.</h1>
+    <p class="lede">Real Social Dynamics Support can check what you already own, fix access to a past purchase, and answer questions about the RSD Vault. No new order is required for help with something you already bought.</p>
+    ${cfg.supportPhone ? html`<p class="support-phone">Call Real Social Dynamics Support: <strong>${supportPhoneLink(cfg)}</strong></p>` : ''}
   </div></section>`;
 }

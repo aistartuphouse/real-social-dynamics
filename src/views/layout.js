@@ -12,7 +12,7 @@ export function layout(cfg, { title, description, body, path = '/', bodyClass = 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${title}</title>
 <meta name="description" content="${description || 'The RSD Legacy Archive: The Prequel Collection.'}">
-${cfg.isStaging || !cfg.publishApproved ? raw('<meta name="robots" content="noindex, nofollow">') : ''}
+${!cfg.publicSite && (cfg.isStaging || !cfg.publishApproved) ? raw('<meta name="robots" content="noindex, nofollow">') : ''}
 <link rel="icon" href="/img/rsd-logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +22,7 @@ ${cfg.isStaging || !cfg.publishApproved ? raw('<meta name="robots" content="noin
 </head>
 <body class="${bodyClass}${showNotes ? ' show-notes' : ''}">
 <a class="skip" href="#main">Skip to content</a>
-${cfg.isStaging ? html`<div class="staging-bar" role="note"><strong>STAGING PREVIEW</strong> · Not public · ${cfg.vaultCheckoutUrl ? 'Vault buttons open the owner\'s Stripe link (may be live)' : 'Test-mode payments only'} · No emails are sent · ${showNotes ? html`<a href="${currentUrl}">Hide review notes</a>` : html`<a href="${currentUrl}?notes=1">Show review notes</a>`} · <a href="/admin/readiness">Launch readiness</a></div>` : ''}
+${cfg.isStaging && !cfg.publicSite ? html`<div class="staging-bar" role="note"><strong>STAGING PREVIEW</strong> · Not public · ${cfg.vaultCheckoutUrl ? 'Vault buttons open the owner\'s Stripe link (may be live)' : 'Test-mode payments only'} · No emails are sent · ${showNotes ? html`<a href="${currentUrl}">Hide review notes</a>` : html`<a href="${currentUrl}?notes=1">Show review notes</a>`} · <a href="/admin/readiness">Launch readiness</a></div>` : ''}
 <header class="site-header">
   <div class="wrap header-inner">
     <a class="brand" href="/" aria-label="Real Social Dynamics home"><img src="/img/rsd-logo.png" alt="Real Social Dynamics" width="174" height="46"></a>

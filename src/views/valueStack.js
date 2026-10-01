@@ -43,7 +43,7 @@ export function valueStack(cfg, programs) {
         <tr class="vs-yours"><th scope="row">Your launch package, everything above</th><td class="num">${formatPrice(cfg.priceCents)}</td></tr>
       </tfoot>
     </table>
-    <p class="vs-note">"Bought separately" is the price at which each program is sold on its own today, without the launch bonuses; you can buy any of them individually from its program page. Where we could verify a program's original price on its archived official sales page, it's linked underneath. Bonus values are what RSD assigns to the call and the briefing invitation, which come free only with the package.</p>
+    <p class="vs-note">"Bought separately" is the price at which each program is sold on its own today, without the launch bonuses${cfg.publicSite ? ' (call RSD Support to buy a single program)' : '; you can buy any of them individually from its program page'}. Where we could verify a program's original price on its archived official sales page, it's linked underneath. Bonus values are what RSD assigns to the call and the briefing invitation, which come free only with the package.</p>
   </div>`;
 }
 

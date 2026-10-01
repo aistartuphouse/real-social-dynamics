@@ -9,7 +9,10 @@ export function loadConfig(overrides = {}) {
   const base = readJson('config/campaign.json');
   const mode = overrides.mode || process.env.RSD_MODE || 'staging';
   if (!['staging', 'production'].includes(mode)) throw new Error(`Unknown RSD_MODE ${mode}`);
-  return { ...base, ...overrides, mode, isStaging: mode === 'staging' };
+  // RSD_PUBLIC=1: publicly visible site (owner direction 2026-10-01). Hides staging banner, admin/dev tools,
+  // simulated checkout and demo-only forms; purchases go through the owner's Stripe link.
+  const publicSite = overrides.publicSite ?? (process.env.RSD_PUBLIC === '1' || process.env.VERCEL_ENV === 'production');
+  return { ...base, ...overrides, mode, isStaging: mode === 'staging', publicSite };
 }
 
 export const loadCatalog = () => readJson('data/catalog.json');
