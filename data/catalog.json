@@ -859,7 +859,8 @@
       ],
       "closingLine": "You don't need Madison's personality. You need to discover the most charismatic version of your own.",
       "lessonCount": 84,
-      "stripePaymentLink": "https://buy.stripe.com/bJe6oIbP03A95aL5ZL1oI1e"
+      "stripePaymentLink": null,
+      "stripeLinkNote": "Link sent for BOSS (\u20261oI1e) opens Get Your Ten in Stripe; awaiting the correct BOSS link."
     },
     {
       "id": "energy-awareness",
@@ -1277,8 +1278,7 @@
       "publicNotes": "Added from owner's comprehensive list (2026-10-01). Instructor credit and contents to confirm from files.",
       "approvedBy": null,
       "approvedAt": null,
-      "stripePaymentLink": null,
-      "stripeLinkNote": "Owner sent the same link as BOSS (\u20261oI1e); awaiting the correct Get Your Ten link."
+      "stripePaymentLink": "https://buy.stripe.com/bJe6oIbP03A95aL5ZL1oI1e"
     },
     {
       "id": "owens-last-game",
