@@ -1,17 +1,17 @@
-program_id,product_name,price_usd,lessons,instructor,paste_payment_link_into_catalog_field
-foundations,Foundations,569,8,Tyler (Owen Cook),stripePaymentLink
-transformations,Transformations,497,12,"Multi-instructor RSD, with special guests Ozzie & Hoobie",stripePaymentLink
-blueprint-decoded,The Blueprint Decoded,749,20,Tyler (Owen Cook),stripePaymentLink
-hot-seat-at-home,Hot Seat at Home,597,20,Tyler (Owen Cook),stripePaymentLink
-pimp,PIMP,497,42,Julien Blanc,stripePaymentLink
-shift,SHIFT (Making a SHIFT),597,32,Julien Blanc,stripePaymentLink
-tengame,TenGame (The Ten Game),597,83,Julien Blanc,stripePaymentLink
-jeffy-show,The Jeffy Show,447,6,Jeffy (Jeffrey Allen),stripePaymentLink
-resonator,The Resonator,497,19,Jeffy (Jeffrey Allen),stripePaymentLink
-execute-the-program-2,Execute the Program,497,61,Jeffy (Jeffrey Allen),stripePaymentLink
-social-circle-blueprint,Social Circle Blueprint,597,110,Luke,stripePaymentLink
-boss,BOSS (The Boss),597,84,Madison,stripePaymentLink
-get-your-ten,Get Your Ten,597,93,Madison,stripePaymentLink
-owens-last-game,Owen's Last Game Program,597,30,Tyler (Owen Cook),stripePaymentLink
-social-circle-hacking,Social Circle Hacking,497,24,RSD,stripePaymentLink
-influence-mastery,Influence Mastery Program,597,27,RSD,stripePaymentLink
+program_id,product_name,price_usd,lessons,instructor,stripe_payment_link
+foundations,Foundations,569,8,Tyler (Owen Cook),https://buy.stripe.com/7sY5kE4my0nX9r12Nz1oI11
+transformations,Transformations,497,12,"Multi-instructor RSD, with special guests Ozzie & Hoobie",https://buy.stripe.com/fZuaEYf1c6Ml46Hco91oI12
+blueprint-decoded,The Blueprint Decoded,749,20,Tyler (Owen Cook),https://buy.stripe.com/bJeaEY2eq4Edav5bk51oI13
+hot-seat-at-home,Hot Seat at Home,597,20,Tyler (Owen Cook),https://buy.stripe.com/8x214o6uG9YxfPp1Jv1oI14
+pimp,PIMP,497,42,Julien Blanc,https://buy.stripe.com/28EbJ2f1cb2Bbz91Jv1oI15
+shift,SHIFT (Making a SHIFT),597,32,Julien Blanc,https://buy.stripe.com/bJeeVe8CO4EddHh87T1oI16
+tengame,TenGame (The Ten Game),597,83,Julien Blanc,https://buy.stripe.com/4gM9AUf1c8Ut32D5ZL1oI17
+jeffy-show,The Jeffy Show,447,6,Jeffy (Jeffrey Allen),https://buy.stripe.com/28E7sM4my4EdgTtfAl1oI18
+resonator,The Resonator,497,19,Jeffy (Jeffrey Allen),https://buy.stripe.com/eVq7sMaKW9Yx6eP73P1oI19
+execute-the-program-2,Execute the Program,497,61,Jeffy (Jeffrey Allen),https://buy.stripe.com/9B600k8COeeN1YzfAl1oI1a
+social-circle-blueprint,Social Circle Blueprint,597,110,Luke,https://buy.stripe.com/bJe14o1am6Ml46H9bX1oI1c
+boss,BOSS (The Boss),597,84,Madison,https://buy.stripe.com/bJe6oIbP03A95aL5ZL1oI1e
+get-your-ten,Get Your Ten,597,93,Madison,MISSING (same link as BOSS was sent)
+owens-last-game,Owen's Last Game Program,597,30,Tyler (Owen Cook),https://buy.stripe.com/00wfZibP08UtcDd3RD1oI1f
+social-circle-hacking,Social Circle Hacking,497,24,RSD,https://buy.stripe.com/14A14ocT4gmV6eP0Fr1oI1g
+influence-mastery,Influence Mastery Program,597,27,RSD,https://buy.stripe.com/cNidRa6uG0nXcDdewh1oI1h

@@ -130,8 +130,19 @@ test('public site: no staging banner or tools, checkout goes to Stripe, indexabl
   const co = await t.req('/checkout');
   assert.equal(co.status, 303);
   assert.match(co.headers.get('location'), /^https:\/\/buy\.stripe\.com\//);
-  assert.equal((await t.req('/checkout?program=boss')).status, 404);
-  assert.doesNotMatch((await t.req('/programs/boss')).text, /Buy BOSS only/);
+  assert.equal((await t.req('/checkout?program=get-your-ten')).status, 404);
+  assert.doesNotMatch((await t.req('/programs/get-your-ten')).text, /Buy Get Your Ten only/);
   assert.match((await t.req('/support')).text, /310-202-9002/);
+  await t.close();
+});
+
+test('public site: single-program buy buttons go to that program\'s own Stripe link', async () => {
+  const t = await startApp({ overrides: { publicSite: true } });
+  const page = (await t.req('/programs/pimp')).text;
+  assert.match(page, /href="https:\/\/buy\.stripe\.com\/28EbJ2f1cb2Bbz91Jv1oI15"[^>]*>Buy PIMP only/);
+  const r = await t.req('/checkout?program=pimp');
+  assert.equal(r.status, 303);
+  assert.equal(r.headers.get('location'), 'https://buy.stripe.com/28EbJ2f1cb2Bbz91Jv1oI15');
+  assert.doesNotMatch((await t.req('/programs/get-your-ten')).text, /Buy Get Your Ten only/);
   await t.close();
 });
