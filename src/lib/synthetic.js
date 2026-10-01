@@ -40,7 +40,7 @@ export const SAMPLE_MERGE = {
   packageName: 'The RSD Legacy Archive: The Prequel Collection', orderNumber: 'ord_sample',
   purchasedManifestSummary: '[exact programs and editions]', secureLibraryURL: '#library', secureBookingURL: '#booking',
   secureInvitationURL: '#invitation', approvedCallTerms: '[Approved call terms]', approvedBriefingTerms: '[Approved briefing terms]',
-  receiptURL: '#receipt', supportContact: 'Real Social Dynamics Support: 310-202-9002 · support@realsocialdynamics.com', optionalProgramsDisclosure: '[optional paid programs disclosure]',
+  receiptURL: '#receipt', supportContact: 'Real Social Dynamics Support: 310-202-9002 · support@rsdnation.com', optionalProgramsDisclosure: '[optional paid programs disclosure]',
   briefingDateAndTime: '[briefing date and time]', briefingFormat: '[briefing format]', confirmedHosts: '[confirmed hosts]',
   briefingDeliveryCommitment: '[briefing delivery commitment]',
 };

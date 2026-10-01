@@ -16,7 +16,7 @@ The RSD Team
 {{actualSenderLegalName}}
 {{currentValidPostalAddress}}
 You are receiving this promotional message because {{verifiedSubscriptionExplanation}}.
-RSD Support: 310-202-9002 · support@realsocialdynamics.com
+RSD Support: 310-202-9002 · support@rsdnation.com
 Manage preferences: {{preferencesURL}}
 Unsubscribe: {{unsubscribeURL}}
 Help with an existing purchase: {{supportURL}}

@@ -23,7 +23,7 @@ export const EMAILS = [
       'This is not an invitation to copy someone else\'s personality. It is an opportunity to study the earlier work, compare perspectives, and decide what belongs in your own next chapter.',
       'During the 14-day return promotion, the $997 package includes the listed archive plus one live RSD Success Coaching Call and an invitation to a private package-holder RSD Nation relaunch briefing.',
       { cta: { label: 'EXPLORE THE PREQUEL COLLECTION', url: u('/') } },
-      'Already own part of it? Check your existing access before purchasing again. Trouble with an old order? Reply for support, call RSD Support at 310-202-9002, or email support@realsocialdynamics.com; another purchase is not required.',
+      'Already own part of it? Check your existing access before purchasing again. Trouble with an old order? Reply for support, call RSD Support at 310-202-9002, or email support@rsdnation.com; another purchase is not required.',
       SIG_FULL,
       { note: 'The recordings are archival. They do not imply current participation by Julien or other original instructors. Future bootcamps and tour events are separate purchases.' },
     ],
@@ -223,6 +223,6 @@ export const FOOTER = {
     'You are receiving this promotional message because {{verifiedSubscriptionExplanation}}.',
   ],
   links: [['Manage preferences', '{{preferencesURL}}'], ['Unsubscribe', '{{unsubscribeURL}}'], ['Help with an existing purchase', '{{supportURL}}']],
-  phone: 'RSD Support: 310-202-9002 · support@realsocialdynamics.com',
+  phone: 'RSD Support: 310-202-9002 · support@rsdnation.com',
   disclosure: 'This is an RSD archive promotion sent by the identified sender. Historical course attribution does not imply current participation or endorsement by the original instructor. The free success call and private briefing invitation are conditional on the qualifying package purchase and the published terms.',
 };
