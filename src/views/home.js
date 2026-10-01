@@ -8,7 +8,7 @@ import { faqItems } from './faq.js';
 import { instructorBlocks } from './instructors.js';
 
 // Hero rotator names (owner direction). Julien first: his later personal-transformation work is sourced (R04).
-const HERO_NAMES = { julien: 'Julien Blanc', tyler: 'Owen Cook', madison: 'RSD Madison', jeffy: 'Jeffy Allen', glenn: 'Glenn Ackerman', derek: 'RSD Derek', luke: 'RSD Luke' };
+const HERO_NAMES = { julien: 'Julien Blanc', tyler: 'Owen Cook', madison: 'RSD Madison', jeffy: 'Jeffy Allen', derek: 'RSD Derek', luke: 'RSD Luke' };
 
 const SPOTLIGHT = ['foundations', 'blueprint-decoded', 'transformations', 'jeffy-show', 'resonator', 'boss', 'social-circle-blueprint', 'execute-the-program-2'];
 const shortName = (p) => p.instructor.replace(/\s*\(.*\)$/, '').replace(/ (Blanc|Branson|Ackerman|Social)$/, '');

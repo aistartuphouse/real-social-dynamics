@@ -105,6 +105,11 @@
       "pattern": "Brad Branson|\\bEvolutions\\b|Lifestyle Academy",
       "flags": "i",
       "why": "Owner removed Brad Branson's programs (2026-10-01)"
+    },
+    {
+      "pattern": "Glenn|Ackerman|Energy Awareness",
+      "flags": "i",
+      "why": "Owner removed Glenn Ackerman's program (2026-10-01)"
     }
   ]
 }

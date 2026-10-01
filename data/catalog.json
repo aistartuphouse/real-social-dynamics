@@ -862,10 +862,10 @@
       "mediaApproved": false,
       "fulfillmentReady": false,
       "individualPriceCents": 49700,
-      "includedInLaunch": true,
+      "includedInLaunch": false,
       "excludesHistoricalLiveBenefits": true,
-      "publicationState": "candidate",
-      "publicNotes": "No treatment claims for any condition.",
+      "publicationState": "hold",
+      "publicNotes": "Removed from the site by owner (2026-10-01).",
       "approvedBy": null,
       "approvedAt": null
     },
