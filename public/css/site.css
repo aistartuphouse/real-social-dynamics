@@ -74,13 +74,13 @@ code { font-size: .9em; background: var(--mist); padding: 1px 5px; }
 .beats { font-style: italic; font-size: 1.25rem; padding-left: 18px; border-left: 3px solid var(--navy); }
 
 /* Bands */
-.band { padding: clamp(64px, 9vw, 112px) 0; }
+.band { padding: clamp(32px, 4.5vw, 56px) 0; }
 .band-white { background: var(--white); }
 .band-mist { background: var(--mist); }
 .band-black { background: var(--black); color: var(--white); }
 .band-navy { background: var(--navy); color: var(--white); }
 .band-black a:not(.btn), .band-navy a:not(.btn) { color: var(--white); }
-.page-head { padding-top: 56px; }
+.page-head { padding-top: 24px; }
 
 /* Buttons */
 .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 14px 24px; border-radius: var(--radius); border: 2px solid transparent; font: 800 .88rem/1.1 var(--display); letter-spacing: .08em; text-transform: uppercase; text-decoration: none; cursor: pointer; transition: background .15s, color .15s; text-align: center; }
@@ -99,7 +99,7 @@ code { font-size: .9em; background: var(--mist); padding: 1px 5px; }
 .textlink { font: 800 .82rem/1.2 var(--display); letter-spacing: .06em; text-decoration: none; }
 
 /* Hero */
-.hero { background: var(--black); color: var(--white); padding: clamp(56px, 8vw, 104px) 0; overflow: hidden; }
+.hero { background: var(--black); color: var(--white); padding: clamp(40px, 5vw, 64px) 0; overflow: hidden; }
 .hero-grid { display: grid; grid-template-columns: 1.25fr .75fr; gap: 56px; align-items: center; }
 .hero-sub { font: 800 clamp(1.5rem, 3vw, 2.3rem)/1.15 var(--display); font-stretch: 85%; margin: 0 0 22px; }
 .hero-hook { font-size: 1.22rem; line-height: 1.55; color: var(--white); border-left: 4px solid var(--white); padding-left: 16px; }
@@ -481,3 +481,18 @@ body:not(.show-notes) .terms-mini > div:has(.token) { display: none !important; 
 .legal-bar { display: flex; flex-wrap: wrap; gap: 10px 14px; justify-content: center; margin-top: 32px; padding-top: 20px; border-top: 1px solid #222; font: 700 .95rem/1.4 var(--display); }
 .legal-bar a { color: var(--white); text-decoration: underline; }
 .legal-bar span { color: var(--on-dark-2); }
+
+/* Hero: faded program-cover collage behind the headline, text in front. */
+.hero-bg { position: relative; isolation: isolate; }
+.hero-bg-art { position: absolute; inset: 0; z-index: -1; overflow: hidden; }
+.hero-bg-art img { width: 100%; height: 100%; max-height: 1100px; object-fit: cover; object-position: center top; opacity: .32; filter: saturate(.8); }
+.hero-bg-art::after { content: ""; position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(10,10,10,.35) 0%, rgba(10,10,10,.55) 35%, rgba(10,10,10,.92) 70%, var(--black) 100%),
+              radial-gradient(ellipse at 30% 30%, rgba(10,10,10,.55), transparent 70%); }
+.hero-bg .hero-h1, .hero-bg .hero-sub, .hero-bg .eyebrow { text-shadow: 0 2px 4px rgba(0,0,0,.9), 0 6px 28px rgba(0,0,0,.85); }
+.hero-bg .hero-hook, .hero-bg .hero-body, .hero-bg .hero-price { text-shadow: 0 1px 3px rgba(0,0,0,.9); }
+.hero-bg .eyebrow { color: var(--white); }
+/* Tighter rhythm: no doubled gaps between same-colour bands, banners hug section tops. */
+.band-white + .band-white, .band-mist + .band-mist, .band-black + .band-black, .band-navy + .band-navy { padding-top: 0; }
+.band > .wrap > .rsd-banner:first-child, .page-head .rsd-banner:first-child { margin-top: 0; }
+.rsd-banner { margin-bottom: 24px; }

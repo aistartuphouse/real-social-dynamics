@@ -31,16 +31,13 @@ export function homePage(cfg, state, programs, catalog) {
   const julienTitles = julien.map((p) => p.title.replace(/\s*\(.*\)$/, ''));
 
   return html`
-<section class="hero" aria-labelledby="hero-h">
-  <div class="wrap hero-top">
-    <div class="hero-art hero-art-top" aria-label="Selected programs in the archive">
-      <img class="bundle-img" src="/img/rsd-vault-bundle.webp" alt="The RSD Vault bundle: ${programCount} programs including PIMP, SHIFT, The Ten Game, Foundations, The Blueprint Decoded, Hot Seat at Home, Transformations, The Boss, Get Your Ten and more" width="1590" height="926" fetchpriority="high">
-      <p class="bundle-cap">The RSD Vault: ${programCount} programs · ${lessonCount} lessons</p>
-    </div>
+<section class="hero hero-bg" aria-labelledby="hero-h">
+  <div class="hero-bg-art" aria-hidden="true">
+    <img src="/img/rsd-vault-bundle.webp" alt="" width="1590" height="926" fetchpriority="high">
   </div>
   <div class="wrap hero-grid hero-single">
     <div class="hero-copy">
-      <p class="eyebrow eyebrow-light">REAL SOCIAL DYNAMICS</p>
+      <p class="eyebrow eyebrow-light">REAL SOCIAL DYNAMICS · THE RSD VAULT: ${programCount} PROGRAMS · ${lessonCount} LESSONS</p>
       <h1 id="hero-h" class="hero-h1">What did <span class="rotator" data-names="${JSON.stringify(heroNames)}">${heroNames[0] || 'they'}</span> know before teaching personal transformation?</h1>
       <p class="hero-sub">Go back to Julien Blanc's earlier RSD training, and ${yrs} of lessons from Tyler, Madison, Jeffy, and other instructors, to build greater social confidence, communicate more effectively, meet more people, and create your own blueprint for dating and social success.</p>
       <p class="hero-hook">You already know what personal transformation feels like on the inside. Now explore how RSD taught people to practice confidence, communication, and social skills in the situations where they actually matter.</p>
