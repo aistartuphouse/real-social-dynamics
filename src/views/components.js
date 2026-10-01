@@ -50,7 +50,7 @@ export function programCard(cfg, p) {
 export function packageCard(cfg, state, { id = 'package-card' } = {}) {
   const open = state.phase === 'open';
   return html`<div class="package-card" id="${id}">
-    <p class="eyebrow">Launch package · 14-day return special</p>
+    <p class="eyebrow">Launch package</p>
     <h3 class="package-title">The RSD Legacy Archive: The Prequel Collection</h3>
     <ul class="stack">
       <li><span class="tick" aria-hidden="true">✓</span><div><strong>The RSD Legacy Archive</strong>: every program and edition listed in this release, organized in one customer library${cfg.relaunchAssignmentsReady || cfg.isStaging ? html`, <strong>now with new assignments and goal blocks</strong> not included in the original releases` : ''}.</div></li>
@@ -89,7 +89,7 @@ export function countdownClock(state, { tone = 'dark', size = '' } = {}) {
   const ms = state.msRemaining;
   const parts = [['days', Math.floor(ms / 86400000)], ['hours', Math.floor(ms / 3600000) % 24], ['minutes', Math.floor(ms / 60000) % 60], ['seconds', Math.floor(ms / 1000) % 60]];
   return html`<div class="clock clock-${tone} ${size}" data-clock="${state.endsAt.toISOString()}" role="timer" aria-label="Time left until the launch offer ends at ${state.endsLocal}">
-    <p class="clock-label">Return special ends in</p>
+    <p class="clock-label">Launch offer ends in</p>
     <div class="clock-units">${parts.map(([u, v]) => html`<div class="clock-unit"><span class="clock-num" data-unit="${u}">${String(v).padStart(2, '0')}</span><span class="clock-u">${u}</span></div>`)}</div>
   </div>`;
 }

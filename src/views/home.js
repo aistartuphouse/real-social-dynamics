@@ -34,7 +34,7 @@ export function homePage(cfg, state, programs, catalog) {
 <section class="hero" aria-labelledby="hero-h">
   <div class="wrap hero-grid">
     <div class="hero-copy">
-      <p class="eyebrow eyebrow-light">REAL SOCIAL DYNAMICS | 14-DAY RETURN SPECIAL</p>
+      <p class="eyebrow eyebrow-light">REAL SOCIAL DYNAMICS</p>
       <h1 id="hero-h" class="hero-h1">What did <span class="rotator" data-names="${JSON.stringify(heroNames)}">${heroNames[0] || 'they'}</span> know before teaching personal transformation?</h1>
       <p class="hero-sub">Go back to Julien Blanc's earlier RSD training, and ${yrs} of lessons from Tyler, Madison, Jeffy, and other instructors, to build greater social confidence, communicate more effectively, meet more people, and create your own blueprint for dating and social success.</p>
       <p class="hero-hook">You already know what personal transformation feels like on the inside. Now explore how RSD taught people to practice confidence, communication, and social skills in the situations where they actually matter.</p>
@@ -234,7 +234,7 @@ ${julien.length ? html`<section class="band band-white" aria-labelledby="julien-
       <p class="eyebrow">The Complete RSD Legacy Archive</p>
       <h2 id="pkg-h" class="h-xl">Don't buy the chapters one at a time. Get the whole story, plus two package-only bonuses, for ${priceLine(cfg)}.</h2>
       <p class="lede">The Complete RSD Legacy Archive gives you every cleared program in this release, organized across instructors, eras, and themes. One library. One account. One place to study the evolution. ${claim(cfg, cfg.relaunchAssignmentsReady, 'New in this relaunch: assignments and goal blocks for each program, so the material turns into action.', '', 'needs assignments built')} ${deliveryLine(cfg)}</p>
-      <h3 class="h-sm">During the 14-day return special, your package also includes:</h3>
+      <h3 class="h-sm">During the launch, your package also includes:</h3>
       <ol class="bonus-list">
         <li><strong>A complimentary live RSD Success Coaching Call.</strong> A current RSD Success Coach helps you identify the material most relevant to your goals and build a practical starting plan.${bonusCents ? html` <strong>(${formatPrice(cfg.bonusValues.successCallCents)} value)</strong>` : ''}</li>
         <li><strong>An exclusive invitation to the package-holder RSD Nation relaunch briefing.</strong> Hear the next-chapter plans and how the community and separately sold live programs are intended to connect.${bonusCents && cfg.bonusValues.briefingInviteCents ? html` <strong>(${formatPrice(cfg.bonusValues.briefingInviteCents)} value)</strong>` : ''}</li>
@@ -355,7 +355,7 @@ ${cfg.tylerPrecedentApproved || cfg.isStaging ? html`<section class="band band-m
     <p class="beats beats-center">Before the transformation programs.<br>Before the later philosophies.<br>Before the instructors became the people you recognize today.</p>
     <p>There were years of experiments, frameworks, successes, mistakes, teaching, and evolution. The archive lets you study that history for yourself.</p>
     <p class="close-stack"><strong>THE COMPLETE RSD LEGACY ARCHIVE</strong><br><strong>+ LIVE RSD SUCCESS COACHING CALL</strong><br><strong>+ EXCLUSIVE RSD NATION RELAUNCH-BRIEFING INVITATION</strong></p>
-    <p class="close-price">${priceLine(cfg)}: 14-day return special</p>
+    <p class="close-price">${priceLine(cfg)} one-time</p>
     ${countdownClock(state, { tone: 'dark' })}
     ${vaultCta(cfg, 'btn btn-white btn-lg')}
     <p class="hero-fine">Offer ends ${deadlineText}. Package-only bonuses; published booking and briefing terms apply. Live-tour admission and bootcamp tuition sold separately.</p>
