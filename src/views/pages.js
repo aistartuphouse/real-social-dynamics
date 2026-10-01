@@ -174,7 +174,7 @@ export function policyPage(cfg, kind) {
     const blocks = text.trim().split(/\n\s*\n/);
     const [first, ...rest] = blocks;
     return html`<section class="band band-white page-head"><div class="wrap">
-      ${kind === 'terms' ? banner('terms') : ''}
+      ${kind === 'terms' || kind === 'privacy' ? banner(kind) : ''}
       <div class="narrow legal">
         <h1 class="h-xxl">${first.trim()}</h1>
         ${rest.map((b) => {
