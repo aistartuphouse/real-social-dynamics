@@ -33,7 +33,7 @@ const BASE = { kind: 'marketing', segments: ['A', 'B', 'C', 'D', 'E', 'F'], seri
 export const COUNTDOWN_EMAILS = [
   {
     ...BASE, id: 'vault-01-launch-2-weeks', dayOffset: 0,
-    subjects: ['RSD is back. The Vault is open for 2 weeks.', 'What did Julien Blanc know before teaching personal transformation?', `${lessonCount} RSD lessons. ${PRICE}. 2 weeks.`],
+    subjects: ['Get Access to the Special Launch for the RSD Vault', 'RSD is back. The Vault is open for 2 weeks.', 'What did Julien Blanc know before teaching personal transformation?', `${lessonCount} RSD lessons. ${PRICE}. 2 weeks.`],
     preheader: `${programCount} programs, ${lessonCount} lessons, a live coaching call, and an RSD Nation invitation. Open for 14 days.`,
     blocks: [
       'Hi {{firstNameOrThere}},',
@@ -54,7 +54,7 @@ export const COUNTDOWN_EMAILS = [
   },
   {
     ...BASE, id: 'vault-02-7-days-left', dayOffset: 7, sendAt: 'deadline-minus-7d',
-    subjects: ['7 days left: the RSD Vault', 'One week left to get the RSD Vault + both bonuses', 'Halfway there: 7 days left'],
+    subjects: ['7 Days Left: Get Access to the Special Launch for the RSD Vault', '7 days left: the RSD Vault', 'One week left to get the RSD Vault + both bonuses', 'Halfway there: 7 days left'],
     preheader: `${PRICE} for ${programCount} programs and ${lessonCount} lessons, plus a live coaching call. 7 days left.`,
     blocks: [
       'Hi {{firstNameOrThere}},',
@@ -71,7 +71,7 @@ export const COUNTDOWN_EMAILS = [
   },
   {
     ...BASE, id: 'vault-03-3-days-left', sendAt: 'deadline-minus-3d',
-    subjects: ['3 days left on the RSD Vault', 'Only 3 days left: archive + coaching call + RSD Nation invitation', 'Before the bootcamp, build the foundation (3 days left)'],
+    subjects: ['3 Days Left: Get Access to the Special Launch for the RSD Vault', '3 days left on the RSD Vault', 'Only 3 days left: archive + coaching call + RSD Nation invitation', 'Before the bootcamp, build the foundation (3 days left)'],
     preheader: `The ${PRICE} launch price and both bonuses end in 3 days.`,
     blocks: [
       'Hi {{firstNameOrThere}},',
@@ -88,7 +88,7 @@ export const COUNTDOWN_EMAILS = [
   },
   {
     ...BASE, id: 'vault-04-2-days-left', sendAt: 'deadline-minus-48h',
-    subjects: ['48 hours left', '2 days left: the RSD Vault', 'You\'ve had 12 days. Now there are 48 hours left.'],
+    subjects: ['48 Hours Left: Get Access to the Special Launch for the RSD Vault', '48 hours left', '2 days left: the RSD Vault', 'You\'ve had 12 days. Now there are 48 hours left.'],
     preheader: `48 hours left to get ${programCount} programs, ${lessonCount} lessons and both bonuses for ${PRICE}.`,
     blocks: [
       'Hi {{firstNameOrThere}},',
@@ -103,7 +103,7 @@ export const COUNTDOWN_EMAILS = [
   },
   {
     ...BASE, id: 'vault-05-12-hours-left', sendAt: 'deadline-minus-12h',
-    subjects: ['12 hours left', 'Tonight: the RSD Vault launch closes', 'Last call: 12 hours left on the RSD Vault'],
+    subjects: ['12 Hours Left: Get Access to the Special Launch for the RSD Vault', '12 hours left', 'Tonight: the RSD Vault launch closes', 'Last call: 12 hours left on the RSD Vault'],
     preheader: `The ${PRICE} launch price and both bonuses end in 12 hours.`,
     blocks: [
       'Hi {{firstNameOrThere}},',
