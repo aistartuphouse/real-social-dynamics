@@ -122,6 +122,7 @@ export function createApp({ cfg = loadConfig(), store = new Store(), now = () =>
       store.track('approved_program_view', { programId: prog.id });
       return page(res, { title: `${prog.title} | RSD Legacy Archive`, description: prog.cardHeadline, path: p, body: P.programPage(cfg, prog, state, programs) });
     }
+    if (method === 'GET' && p === '/about') return page(res, { title: 'About Us | Real Social Dynamics', path: p, body: P.aboutPage(cfg) });
     if (method === 'GET' && p === '/preparation') return page(res, { title: 'Preparation path | RSD', path: p, body: P.preparationPage(cfg) });
     if (method === 'GET' && p === '/global-tour') return page(res, { title: 'Global tour plans | RSD', path: p, body: P.globalTourPage(cfg) });
     if (method === 'GET' && ['/terms', '/privacy', '/refunds'].includes(p)) return page(res, { title: 'Policies | RSD', path: p, body: P.policyPage(cfg, p.slice(1)) });

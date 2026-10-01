@@ -25,6 +25,7 @@ export function deadline(cfg, state, { tone = 'light' } = {}) {
 }
 
 export function cover(p, { size = '' } = {}) {
+  if (p.coverImage) return html`<div class="cover cover-img ${size}" role="img" aria-label="${p.title} by ${p.instructor}"><img src="${p.coverImage}" alt="" loading="lazy"></div>`;
   return html`<div class="cover cover-${p.collection} ${size}" role="img" aria-label="${p.title} by ${p.instructor}, RSD Legacy Archive logo">
     <span class="cover-brand">RSD ARCHIVE</span>
     ${programLogo(p)}
@@ -92,4 +93,15 @@ export function countdownClock(state, { tone = 'dark', size = '' } = {}) {
     <p class="clock-label">Launch offer ends in</p>
     <div class="clock-units">${parts.map(([u, v]) => html`<div class="clock-unit"><span class="clock-num" data-unit="${u}">${String(v).padStart(2, '0')}</span><span class="clock-u">${u}</span></div>`)}</div>
   </div>`;
+}
+
+// Original RSD illustrated banners (owner-supplied, 2026-10-01).
+const BANNER_ALT = {
+  about: 'About Us: original Real Social Dynamics illustration', contact: 'Contact: original RSD illustration', faq: 'FAQ: original RSD illustration',
+  instructors: 'Instructors: original RSD illustration', signup: 'Sign-up: original RSD illustration', schedule: 'Schedule: original RSD illustration',
+  bootcamp: 'Bootcamp: original RSD illustration', seminars: 'Seminars and workshops: original RSD illustration', 'home-study': 'Home study courses: original RSD illustration',
+  'attract-women': 'How to attract women: original RSD illustration', news: 'News: original RSD illustration',
+};
+export function banner(name, { cls = '' } = {}) {
+  return html`<figure class="rsd-banner ${cls}"><img src="/img/banners/${name}.webp" alt="${BANNER_ALT[name] || 'Original RSD illustration'}" loading="lazy" decoding="async" width="1600" height="520"></figure>`;
 }

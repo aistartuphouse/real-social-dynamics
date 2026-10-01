@@ -4,7 +4,7 @@ import { tokenOr, supportPhoneLink, supportEmailLink, vaultCta } from '../lib/cl
 const V = Date.now().toString(36); // cache-busting asset version per server start
 
 export function layout(cfg, { title, description, body, path = '/', bodyClass = '', stickyCta = false, showNotes = false, currentUrl = '/' }) {
-  const nav = [['/legacy', 'Programs'], ['/#package', 'The Package'], ['/preparation', 'Preparation'], ['/access', 'Already a customer?']];
+  const nav = [['/about', 'About Us'], ['/legacy', 'Programs'], ['/#package', 'The Package'], ['/preparation', 'Preparation'], ['/access', 'Already a customer?']];
   return html`<!doctype html>
 <html lang="en">
 <head>

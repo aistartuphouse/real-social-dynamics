@@ -1,7 +1,7 @@
 import { html } from '../lib/html.js';
 import { claim, tokenOr, preparationParagraph, priceLine, deliveryLine, yearsPhrase, supportPhoneLink, supportEmailLink, vaultCta } from '../lib/claims.js';
 import { stats, julienSequence } from '../lib/catalog.js';
-import { label, deadline, cover, packageCard, faq, countdownClock } from './components.js';
+import { label, deadline, cover, packageCard, faq, countdownClock, banner } from './components.js';
 import { valueStack, verifiedTotal, stackNumbers } from './valueStack.js';
 import { formatPrice } from '../lib/offer.js';
 import { faqItems } from './faq.js';
@@ -65,13 +65,14 @@ export function homePage(cfg, state, programs, catalog) {
       <div role="listitem"><span class="stat">2</span><span class="stat-l">package-only live bonuses</span></div>
       ${cfg.customersServedDisplay && (cfg.customersServedSubstantiated || cfg.isStaging) ? html`<div role="listitem"><span class="stat">${cfg.customersServedDisplay}</span><span class="stat-l">customers served</span></div>` : ''}
     </div>
+    <p><a class="textlink" href="/about">Read the original RSD company bio →</a></p>
     <ol class="timeline">
       <li><span class="tl-year">2007</span><div>${label('history')}<p>RSD's blog identifies <strong>Foundations</strong>, the multi-instructor <strong>Transformations</strong>, and <strong>The Jeffy Show</strong> as recorded programs.</p></div></li>
       <li><span class="tl-year">2007</span><div>${label('history')}<p>Tyler describes Foundations as the recorded version of his conference material and says his later bootcamps and products assumed familiarity with it.</p></div></li>
       <li><span class="tl-year">2008</span><div>${label('history')}<p>The multi-day <strong>Blueprint</strong> presentation is discussed on the RSD blog: a connected framework rather than isolated tips.</p></div></li>
       <li><span class="tl-year">2014–18</span><div>${label('history')}<p>Official sales pages for <strong>PIMP</strong> (captured 2014), <strong>SHIFT</strong> (2015), <strong>Social Circle Blueprint</strong> (2017), and <strong>The Resonator</strong> (2017) are preserved in the Internet Archive.</p></div></li>
       <li><span class="tl-year">2026</span><div>${label('policy')}<p>The archive reopens, curated for study and comparison, with a live Success Coaching Call from a current coach.</p></div></li>
-      ${(cfg.liveEvents || []).length ? html`<li><span class="tl-year">Live</span><div>${label('live')}<p>Take it off the screen. RSD live events are open now:</p><ul class="live-links">${cfg.liveEvents.map((e) => html`<li><a href="${e.url}" rel="noopener" target="_blank"><strong>${e.label}</strong></a>: ${e.blurb}</li>`)}</ul><p class="small">Live events are sold separately and are not included in the archive package.</p></div></li>` : ''}
+      ${(cfg.liveEvents || []).length ? html`<li><span class="tl-year">Live</span><div>${label('live')}${banner('seminars', { cls: 'rsd-banner-sm' })}<p>Take it off the screen. RSD live events are open now:</p><ul class="live-links">${cfg.liveEvents.map((e) => html`<li><a href="${e.url}" rel="noopener" target="_blank"><strong>${e.label}</strong></a>: ${e.blurb}</li>`)}</ul><p class="small">Live events are sold separately and are not included in the archive package.</p></div></li>` : ''}
       <li><span class="tl-year">Next</span><div>${label('planned')}<p><strong>A new global RSD Nation.</strong> RSD is partnering with PUA Training, celebrity dating coaches, and other dating-coaching companies to build an entirely new global RSD Nation, with a new series of immersion programs, bootcamps, phone coaching, and more.*</p><p>${cfg.supportPhone ? html`<strong>Call us for details: ${supportPhoneLink(cfg)}</strong>${cfg.supportEmail ? html` or email ${supportEmailLink(cfg)}` : ''}` : ''}</p><p class="small">*We are actively recruiting new coaches.${cfg.supportPhone ? html` Interested? Call ${supportPhoneLink(cfg)}.` : ''}</p></div></li>
     </ol>
   </div>
@@ -79,6 +80,7 @@ export function homePage(cfg, state, programs, catalog) {
 
 <section class="band band-white letter" aria-labelledby="story-h">
   <div class="wrap narrow">
+    ${banner('attract-women')}
     <p class="eyebrow">The prequel</p>
     <h2 id="story-h" class="h-xl">Turn personal growth into real-world charisma, confidence, and connection.</h2>
     <p class="beats beats-plain">You can understand confidence intellectually.<br>You can watch hundreds of hours of personal-development training.<br>You can understand your beliefs, your identity, your emotions, and exactly what you should be doing.</p>
@@ -183,6 +185,7 @@ ${julien.length ? html`<section class="band band-white" aria-labelledby="julien-
 
 <section class="band band-mist" aria-labelledby="beyond-h">
   <div class="wrap">
+    ${banner('instructors')}
     <p class="eyebrow">Beyond one instructor</p>
     <h2 id="beyond-h" class="h-xl">Different men. Different methods. ${instructorCount} instructors and one question: what can you learn from the paths they took?</h2>
     <p class="names">${names.join('. ')}.</p>
@@ -193,6 +196,7 @@ ${julien.length ? html`<section class="band band-white" aria-labelledby="julien-
 
 <section class="band band-white" aria-labelledby="spot-h">
   <div class="wrap">
+    ${banner('home-study')}
     <p class="eyebrow">Inside the archive</p>
     <h2 id="spot-h" class="h-xl">You could hunt for these programs one at a time. Or unlock all ${programCount} in one place.</h2>
     <div class="spotlights">
@@ -232,7 +236,8 @@ ${julien.length ? html`<section class="band band-white" aria-labelledby="julien-
 <section class="band band-white" aria-labelledby="pkg-h" id="package">
   <div class="wrap pkg-grid">
     <div>
-      <p class="eyebrow">The Complete RSD Legacy Archive</p>
+      ${banner('signup')}
+    <p class="eyebrow">The Complete RSD Legacy Archive</p>
       <h2 id="pkg-h" class="h-xl">Don't buy the chapters one at a time. Get the whole story, plus two package-only bonuses, for ${priceLine(cfg)}.</h2>
       <p class="lede">The Complete RSD Legacy Archive gives you every cleared program in this release, organized across instructors, eras, and themes. One library. One account. One place to study the evolution. ${claim(cfg, cfg.relaunchAssignmentsReady, 'New in this relaunch: assignments and goal blocks for each program, so the material turns into action.', '', 'needs assignments built')} ${deliveryLine(cfg)}</p>
       <h3 class="h-sm">During the launch, your package also includes:</h3>
@@ -284,6 +289,7 @@ ${julien.length ? html`<section class="band band-white" aria-labelledby="julien-
 
 <section class="band band-white" aria-labelledby="prep-h">
   <div class="wrap narrow">
+    ${banner('bootcamp')}
     <p class="eyebrow">Preparation for live training</p>
     <h2 id="prep-h" class="h-xl">The videos are the preparation. The next chapter of RSD bootcamps happens live.</h2>
     ${label('planned')}
@@ -308,6 +314,7 @@ ${cfg.tylerPrecedentApproved || cfg.isStaging ? html`<section class="band band-m
 
 <section class="band band-navy" aria-labelledby="why-h">
   <div class="wrap narrow">
+    ${banner('schedule')}
     <p class="eyebrow eyebrow-light">The deadline</p>
     <h2 id="why-h" class="h-xl">In 14 days, this offer changes.</h2>
     <p>Not "everything disappears forever." Here's exactly what happens: the ${priceLine(cfg)} Complete Archive launch price and both launch-only bonuses end at <strong>${deadlineText}</strong>.</p>
@@ -320,6 +327,7 @@ ${cfg.tylerPrecedentApproved || cfg.isStaging ? html`<section class="band band-m
 
 <section class="band band-white" aria-labelledby="own-h" id="existing">
   <div class="wrap">
+    ${banner('contact')}
     <p class="eyebrow">Existing customers</p>
     <h2 id="own-h" class="h-xl">Already bought RSD training? Good. Don't pay twice.</h2>
     <div class="narrow">
@@ -344,6 +352,7 @@ ${cfg.tylerPrecedentApproved || cfg.isStaging ? html`<section class="band band-m
 
 <section class="band band-white" aria-labelledby="faq-h" id="faq">
   <div class="wrap narrow">
+    ${banner('faq')}
     <p class="eyebrow">Questions</p>
     <h2 id="faq-h" class="h-xl">Straight answers before you decide.</h2>
     ${faq(faqItems(cfg))}

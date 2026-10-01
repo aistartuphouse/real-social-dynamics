@@ -173,7 +173,8 @@
       "approvedBy": null,
       "approvedAt": null,
       "lessonCount": 20,
-      "stripePaymentLink": "https://buy.stripe.com/bJeaEY2eq4Edav5bk51oI13"
+      "stripePaymentLink": "https://buy.stripe.com/bJeaEY2eq4Edav5bk51oI13",
+      "coverImage": "/img/banners/blueprint-book.webp"
     },
     {
       "id": "hot-seat-at-home",

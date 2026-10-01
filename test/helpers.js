@@ -27,4 +27,4 @@ export async function startApp({ mode = 'staging', overrides = {}, now } = {}) {
   return { app, store, cfg, req, csrf, close: () => new Promise((r) => server.close(r)) };
 }
 
-export const PUBLIC_ROUTES = ['/', '/welcome-back', '/legacy', '/preparation', '/global-tour', '/support', '/access', '/terms', '/privacy', '/refunds', '/api/catalog.json', '/robots.txt'];
+export const PUBLIC_ROUTES = ['/', '/about', '/welcome-back', '/legacy', '/preparation', '/global-tour', '/support', '/access', '/terms', '/privacy', '/refunds', '/api/catalog.json', '/robots.txt'];

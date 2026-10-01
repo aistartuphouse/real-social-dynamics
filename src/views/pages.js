@@ -1,13 +1,14 @@
 import { html, raw } from '../lib/html.js';
 import { claim, tokenOr, preparationParagraph, priceLine, supportPhoneLink, supportEmailLink, vaultCta } from '../lib/claims.js';
 import { stats, julienSequence } from '../lib/catalog.js';
-import { label, cover, programCard, packageCard, faq, deadline } from './components.js';
+import { label, cover, programCard, packageCard, faq, deadline, banner } from './components.js';
 import { instructorBlocks } from './instructors.js';
 
 export function legacyPage(cfg, programs, catalog) {
   const { programCount, instructorCount } = stats(programs);
   const instructors = [...new Map(programs.filter((p) => !['multi'].includes(p.instructorKey)).map((p) => [p.instructorKey, p.instructor])).entries()];
   return html`<section class="band band-white page-head"><div class="wrap">
+    ${banner('home-study')}
     <p class="eyebrow">The RSD Legacy Archive</p>
     <h1 class="h-xxl">This isn't one course. It's ${programCount} programs from ${instructorCount} instructors in one searchable library.</h1>
     <p class="lede">${stats(programs).lessonCount ? `${stats(programs).lessonCount} lessons in all. ` : ''}Every program below is part of this release. Filter by instructor or theme, or search by topic. Exact editions and contents are shown on each program page.</p>
@@ -88,6 +89,7 @@ export function welcomeBackPage(cfg, state, programs) {
 
 export function preparationPage(cfg) {
   return html`<section class="band band-white page-head"><div class="wrap narrow">
+    ${banner('bootcamp')}
     <p class="eyebrow">Preparation path</p>
     <h1 class="h-xxl">Before the bootcamp, build the foundation.</h1>
     <p>${label(cfg.preparationPolicyApproved ? 'policy' : 'planned')}</p>
@@ -117,6 +119,7 @@ export function preparationPage(cfg) {
 
 export function globalTourPage(cfg) {
   return html`<section class="band band-white page-head"><div class="wrap narrow">
+    ${banner('news')}
     <p class="eyebrow">Global tour</p>
     <h1 class="h-xxl">The next chapter: RSD live, around the world.</h1>
     <p>${label('planned')}</p>
@@ -136,6 +139,7 @@ export function globalTourPage(cfg) {
 
 export function supportPage(cfg, { csrf, sent = false, error = '' } = {}) {
   return html`<section class="band band-white page-head"><div class="wrap narrow">
+    ${banner('contact')}
     <p class="eyebrow">Support</p>
     <h1 class="h-xxl">Trouble with a past purchase? We'll help. No new order required.</h1>
     <p class="lede">If you can't access an RSD program you bought, tell us here. Resolving a valid access issue never depends on buying this package, and while your case is open you won't receive launch sales emails.</p>
@@ -169,10 +173,36 @@ export function policyPage(cfg, kind) {
 
 export function publicSupportPage(cfg) {
   return html`<section class="band band-white page-head"><div class="wrap narrow">
+    ${banner('contact')}
     <p class="eyebrow">Support</p>
     <h1 class="h-xxl">Already a customer, or need help with a past purchase? Call us.</h1>
     <p class="lede">Real Social Dynamics Support can check what you already own, fix access to a past purchase, and answer questions about the RSD Vault. No new order is required for help with something you already bought.</p>
     ${cfg.supportPhone ? html`<p class="support-phone">Call Real Social Dynamics Support: <strong>${supportPhoneLink(cfg)}</strong></p>
     ${cfg.supportEmail ? html`<p class="support-phone">Or email: <strong>${supportEmailLink(cfg)}</strong></p>` : ''}` : ''}
+  </div></section>`;
+}
+
+export function aboutPage(cfg) {
+  return html`<section class="band band-white page-head"><div class="wrap">
+    ${banner('about')}
+    <div class="narrow">
+    <p class="eyebrow">About us</p>
+    <h1 class="h-xxl">Real Social Dynamics: the company behind the archive.</h1>
+    <p class="lede">For years, Real Social Dynamics ran live programs, bootcamps and seminars in cities around the world. This is how the company described itself in its own words, in the original company bio from its early years.</p>
+    <h2 class="h-lg">- Company bio -</h2>
+    <p class="note">The original RSD company bio, as published on realsocialdynamics.com in the company's early years. It's reproduced here as history; offices, programs and the Project Hollywood Mansion described below reflect that era.</p>
+    <div class="bio">
+      <p>Real Social Dynamics (RSD) is an international corporation, based out of Los Angeles, with branch offices developing in New York, London, Sydney, and San Francisco. Programs have been conducted in most major metropolitan English-speaking cities worldwide.</p>
+      <p>Real Social Dynamics have conducted Live Programs for thousands of clients, including a diverse variety of individuals ranging from Fortune 100 executives, royalty, and celebrities...to college students and professionals from over 30 different countries.</p>
+      <p>RSD specializes in image consultation, public representation, and integrating clients into social scenes.</p>
+      <p>Live programs have typically been offered privately or via word of mouth, but are now made available for the public via the Internet and direct phone contact with the RSD Headquarters at its central office and main training facility, the Project Hollywood Mansion.</p>
+      <p>The dating branch of RSD is a top-tier operation, run by the firm's best instructors, who dedicated all of their days and nights for the last few years meeting thousands of attractive women, and meeting the world's most popular dating book authors, image consultants, and executive coaches.</p>
+      <p>Executive Management read and decided to meet the authors of thousands of amazing articles about dating the world's most attractive women. After spending years traveling around the world to meet these men and see them in the field, Executive Management hired those individuals who could demonstrate their skills in the field, while teaching others, to become RSD Instructors.</p>
+      <p>RSD's Live Programs provide students the unique opportunity to meet these instructors, become their wingmen, and hire them as their personal coach and image consultant.</p>
+    </div>
+    <h2 class="h-lg">Today</h2>
+    <p>Today, the recorded programs from that era are back in one place: the RSD Vault. ${cfg.supportPhone ? html`Questions? Call RSD at ${supportPhoneLink(cfg)}${cfg.supportEmail ? html` or email ${supportEmailLink(cfg)}` : ''}.` : ''}</p>
+    <div class="cta-row">${vaultCta(cfg)}<a class="btn btn-outline btn-lg" href="/legacy">Explore the programs</a></div>
+    </div>
   </div></section>`;
 }
