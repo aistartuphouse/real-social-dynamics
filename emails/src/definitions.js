@@ -4,11 +4,14 @@
 // The 'last email' subject is used ONLY on the final-hours note, which is the true last campaign email.
 // Block types: string paragraph | {cta} | {list} | {sig} | {note} | {prep: 'planned'|'approved', text}
 
+import { COUNTDOWN_EMAILS } from './countdown.js';
+
 const SIG_FULL = { sig: ['The RSD Team', 'Real Social Dynamics'] };
 const SIG = { sig: ['The RSD Team'] };
 const u = (path) => `{{siteUrl}}${path}?utm_source=email&utm_campaign=rsd-is-back-2026`;
 
 export const EMAILS = [
+  ...COUNTDOWN_EMAILS,
   {
     id: 'day01-reintroduction', kind: 'marketing', dayOffset: 0, segments: ['A', 'B', 'C', 'D', 'E', 'F'],
     subjects: ['RSD is back. Here\'s what you missed.', 'The RSD prequel is opening', 'You know one chapter. Explore the earlier ones.', 'The original RSD archive is open', 'Nearly 20 years of RSD training just reopened'],

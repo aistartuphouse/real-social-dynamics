@@ -1,0 +1,42 @@
+Hi {{firstNameOrThere}},
+
+RSD is back.
+
+For the next 2 weeks, the RSD Vault is open: the original Real Social Dynamics training that came before the personal-transformation programs you may already know.
+
+Inside: 16 programs and 671 lessons from Julien Blanc, Tyler, Madison, Jeffy, Luke and more. PIMP, SHIFT and The Ten Game. Foundations and The Blueprint Decoded. BOSS and Get Your Ten. Social Circle Blueprint. The Resonator. Transformations, with special guests Ozzie and Hoobie.
+
+Personal growth is theory until life tests it. These programs show how RSD instructors put confidence, conversation, charisma and social skills to work in the situations where they actually matter.
+
+Here is everything you get:
+
+- The RSD Vault: 16 programs, 671 lessons, from Julien Blanc, Tyler, Madison, Jeffy, Luke and more ($9,026 if bought separately)
+- Bonus 1: a live 1-on-1 RSD Success Coaching Call ($497 value)
+- Bonus 2: your private invitation to the RSD Nation relaunch briefing ($97 value)
+- New for this relaunch: assignments and goal blocks for each program
+
+Total value: $9,620. Your price during the launch: $997 one-time.
+
+CLICK HERE TO GET THE RSD VAULT: https://buy.stripe.com/4gM00k2eqdaJ0Uvdsd1oI10
+
+Don't copy the person. Study the process. Then use your live coaching call to build a plan that fits you.
+
+The launch price and both bonuses are available for 2 weeks, until {{launchEndLocal}}.
+
+SEE EVERYTHING INSIDE: {{siteUrl}}/?utm_source=email&utm_campaign=rsd-vault-countdown
+
+The RSD Team
+Real Social Dynamics
+
+Questions? Call RSD Support at 310-202-9002 or email support@rsdnation.com. Already own some of these programs and can't get in? Contact us before buying again; support never requires a new order.
+
+--
+{{actualSenderLegalName}}
+{{currentValidPostalAddress}}
+You are receiving this promotional message because {{verifiedSubscriptionExplanation}}.
+RSD Support: 310-202-9002 · support@rsdnation.com
+Manage preferences: {{preferencesURL}}
+Unsubscribe: {{unsubscribeURL}}
+Help with an existing purchase: {{supportURL}}
+
+This is an RSD archive promotion sent by the identified sender. Historical course attribution does not imply current participation or endorsement by the original instructor. The free success call and private briefing invitation are conditional on the qualifying package purchase and the published terms.

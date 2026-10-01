@@ -1,0 +1,34 @@
+Hi {{firstNameOrThere}},
+
+Three days left.
+
+In 3 days, this offer changes. The launch price and both bonuses (the live Success Coaching Call and your private RSD Nation relaunch-briefing invitation) end on {{launchEndLocal}}.
+
+RSD is building the next chapter: new bootcamps, immersions, and a global RSD Nation. The Vault is how you prepare. Study before you arrive. Show up ready to work.
+
+- The RSD Vault: 16 programs, 671 lessons, from Julien Blanc, Tyler, Madison, Jeffy, Luke and more ($9,026 if bought separately)
+- Bonus 1: a live 1-on-1 RSD Success Coaching Call ($497 value)
+- Bonus 2: your private invitation to the RSD Nation relaunch briefing ($97 value)
+- New for this relaunch: assignments and goal blocks for each program
+
+Total value: $9,620. Your price during the launch: $997 one-time.
+
+CLICK HERE TO GET THE RSD VAULT: https://buy.stripe.com/4gM00k2eqdaJ0Uvdsd1oI10
+
+Already bought RSD training before? Good. Don't pay twice. Your original copies don't include the new assignments and goal blocks in this relaunch, and our support team can check what you already own.
+
+The RSD Team
+Real Social Dynamics
+
+Questions? Call RSD Support at 310-202-9002 or email support@rsdnation.com. Already own some of these programs and can't get in? Contact us before buying again; support never requires a new order.
+
+--
+{{actualSenderLegalName}}
+{{currentValidPostalAddress}}
+You are receiving this promotional message because {{verifiedSubscriptionExplanation}}.
+RSD Support: 310-202-9002 · support@rsdnation.com
+Manage preferences: {{preferencesURL}}
+Unsubscribe: {{unsubscribeURL}}
+Help with an existing purchase: {{supportURL}}
+
+This is an RSD archive promotion sent by the identified sender. Historical course attribution does not imply current participation or endorsement by the original instructor. The free success call and private briefing invitation are conditional on the qualifying package purchase and the published terms.

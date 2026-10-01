@@ -1,5 +1,106 @@
 [
   {
+    "file": "vault-01-launch-2-weeks",
+    "kind": "marketing",
+    "subjects": [
+      "RSD is back. The Vault is open for 2 weeks.",
+      "What did Julien Blanc know before teaching personal transformation?",
+      "671 RSD lessons. $997. 2 weeks."
+    ],
+    "preheader": "16 programs, 671 lessons, a live coaching call, and an RSD Nation invitation. Open for 14 days.",
+    "mergeTags": [
+      "firstNameOrThere",
+      "launchEndLocal",
+      "siteUrl",
+      "actualSenderLegalName",
+      "currentValidPostalAddress",
+      "verifiedSubscriptionExplanation",
+      "preferencesURL",
+      "unsubscribeURL",
+      "supportURL"
+    ]
+  },
+  {
+    "file": "vault-02-7-days-left",
+    "kind": "marketing",
+    "subjects": [
+      "7 days left: the RSD Vault",
+      "One week left to get the RSD Vault + both bonuses",
+      "Halfway there: 7 days left"
+    ],
+    "preheader": "$997 for 16 programs and 671 lessons, plus a live coaching call. 7 days left.",
+    "mergeTags": [
+      "firstNameOrThere",
+      "launchEndLocal",
+      "actualSenderLegalName",
+      "currentValidPostalAddress",
+      "verifiedSubscriptionExplanation",
+      "preferencesURL",
+      "unsubscribeURL",
+      "supportURL"
+    ]
+  },
+  {
+    "file": "vault-03-3-days-left",
+    "kind": "marketing",
+    "subjects": [
+      "3 days left on the RSD Vault",
+      "Only 3 days left: archive + coaching call + RSD Nation invitation",
+      "Before the bootcamp, build the foundation (3 days left)"
+    ],
+    "preheader": "The $997 launch price and both bonuses end in 3 days.",
+    "mergeTags": [
+      "firstNameOrThere",
+      "launchEndLocal",
+      "actualSenderLegalName",
+      "currentValidPostalAddress",
+      "verifiedSubscriptionExplanation",
+      "preferencesURL",
+      "unsubscribeURL",
+      "supportURL"
+    ]
+  },
+  {
+    "file": "vault-04-2-days-left",
+    "kind": "marketing",
+    "subjects": [
+      "48 hours left",
+      "2 days left: the RSD Vault",
+      "You've had 12 days. Now there are 48 hours left."
+    ],
+    "preheader": "48 hours left to get 16 programs, 671 lessons and both bonuses for $997.",
+    "mergeTags": [
+      "firstNameOrThere",
+      "launchEndLocal",
+      "actualSenderLegalName",
+      "currentValidPostalAddress",
+      "verifiedSubscriptionExplanation",
+      "preferencesURL",
+      "unsubscribeURL",
+      "supportURL"
+    ]
+  },
+  {
+    "file": "vault-05-12-hours-left",
+    "kind": "marketing",
+    "subjects": [
+      "12 hours left",
+      "Tonight: the RSD Vault launch closes",
+      "Last call: 12 hours left on the RSD Vault"
+    ],
+    "preheader": "The $997 launch price and both bonuses end in 12 hours.",
+    "mergeTags": [
+      "firstNameOrThere",
+      "launchEndLocal",
+      "actualSenderLegalName",
+      "currentValidPostalAddress",
+      "verifiedSubscriptionExplanation",
+      "preferencesURL",
+      "unsubscribeURL",
+      "supportURL"
+    ]
+  },
+  {
     "file": "day01-reintroduction",
     "kind": "marketing",
     "subjects": [
