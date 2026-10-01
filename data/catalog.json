@@ -77,7 +77,9 @@
       "publicationState": "candidate",
       "publicNotes": "Exact included edition to be confirmed.",
       "approvedBy": null,
-      "approvedAt": null
+      "approvedAt": null,
+      "lessonCount": 8,
+      "stripePaymentLink": null
     },
     {
       "id": "transformations",
@@ -128,7 +130,9 @@
           "role": "Special guest instructor"
         }
       ],
-      "guestSourceNote": "Owner-stated (2026-10-01). Confirm against the Transformations edition files and credit spellings before launch."
+      "guestSourceNote": "Owner-stated (2026-10-01). Confirm against the Transformations edition files and credit spellings before launch.",
+      "lessonCount": 12,
+      "stripePaymentLink": null
     },
     {
       "id": "blueprint-decoded",
@@ -167,7 +171,9 @@
       "publicationState": "candidate",
       "publicNotes": "Running time, disc count and topics only after edition inspection.",
       "approvedBy": null,
-      "approvedAt": null
+      "approvedAt": null,
+      "lessonCount": 20,
+      "stripePaymentLink": null
     },
     {
       "id": "hot-seat-at-home",
@@ -206,7 +212,9 @@
       "publicationState": "candidate",
       "publicNotes": "Identifiable people in footage require distribution review.",
       "approvedBy": null,
-      "approvedAt": null
+      "approvedAt": null,
+      "lessonCount": 20,
+      "stripePaymentLink": null
     },
     {
       "id": "pimp",
@@ -246,7 +254,9 @@
       "publicationState": "candidate",
       "publicNotes": "No texting, mentoring, hours, modules or tier names until verified. Never 'Pimp Shift'.",
       "approvedBy": null,
-      "approvedAt": null
+      "approvedAt": null,
+      "lessonCount": 42,
+      "stripePaymentLink": null
     },
     {
       "id": "shift",
@@ -287,12 +297,14 @@
       "publicationState": "candidate",
       "publicNotes": "Separate from PIMP.",
       "approvedBy": null,
-      "approvedAt": null
+      "approvedAt": null,
+      "lessonCount": 32,
+      "stripePaymentLink": null
     },
     {
       "id": "tengame",
       "slug": "tengame",
-      "title": "TenGame",
+      "title": "TenGame (The Ten Game)",
       "instructor": "Julien Blanc",
       "instructorKey": "julien",
       "editionId": null,
@@ -328,7 +340,9 @@
       "publicationState": "candidate",
       "publicNotes": "Verify recording manifest before release.",
       "approvedBy": null,
-      "approvedAt": null
+      "approvedAt": null,
+      "lessonCount": 83,
+      "stripePaymentLink": null
     },
     {
       "id": "transformation-mastery",
@@ -369,7 +383,8 @@
       "publicationState": "hold",
       "publicNotes": "Removed from the site by owner (2026-10-01).",
       "approvedBy": null,
-      "approvedAt": null
+      "approvedAt": null,
+      "stripePaymentLink": null
     },
     {
       "id": "jeffy-show",
@@ -406,7 +421,9 @@
       "publicationState": "candidate",
       "publicNotes": null,
       "approvedBy": null,
-      "approvedAt": null
+      "approvedAt": null,
+      "lessonCount": 6,
+      "stripePaymentLink": null
     },
     {
       "id": "resonator",
@@ -446,12 +463,14 @@
       "publicationState": "candidate",
       "publicNotes": "Do not reuse the historical nonverbal-percentage claim.",
       "approvedBy": null,
-      "approvedAt": null
+      "approvedAt": null,
+      "lessonCount": 19,
+      "stripePaymentLink": null
     },
     {
       "id": "execute-the-program-2",
-      "slug": "execute-the-program-2",
-      "title": "Execute the Program 2.0",
+      "slug": "execute-the-program",
+      "title": "Execute the Program",
       "instructor": "Jeffy (Jeffrey Allen)",
       "instructorKey": "jeffy",
       "editionId": null,
@@ -469,7 +488,7 @@
         "Online-to-offline transition"
       ],
       "audienceFit": "Customers studying the online-dating branch of the archive.",
-      "cta": "EXPLORE EXECUTE THE PROGRAM 2.0",
+      "cta": "EXPLORE EXECUTE THE PROGRAM",
       "includedAssetIds": [],
       "sourceIds": [
         "R08"
@@ -484,9 +503,11 @@
       "includedInLaunch": true,
       "excludesHistoricalLiveBenefits": true,
       "publicationState": "candidate",
-      "publicNotes": "Original Execute the Program only if distinct files are verified.",
+      "publicNotes": "Title per owner's comprehensive list (2026-10-01): Execute The Program, 61 lessons.",
       "approvedBy": null,
-      "approvedAt": null
+      "approvedAt": null,
+      "lessonCount": 61,
+      "stripePaymentLink": null
     },
     {
       "id": "flawless-natural",
@@ -525,7 +546,8 @@
       "publicationState": "hold",
       "publicNotes": "Removed from the site by owner (2026-10-01).",
       "approvedBy": null,
-      "approvedAt": null
+      "approvedAt": null,
+      "stripePaymentLink": null
     },
     {
       "id": "nryne",
@@ -563,7 +585,8 @@
       "publicationState": "hold",
       "publicNotes": "Removed from the site by owner (2026-10-01).",
       "approvedBy": null,
-      "approvedAt": null
+      "approvedAt": null,
+      "stripePaymentLink": null
     },
     {
       "id": "social-encrypted",
@@ -602,7 +625,8 @@
       "publicationState": "hold",
       "publicNotes": "Removed from the site by owner (2026-10-01).",
       "approvedBy": null,
-      "approvedAt": null
+      "approvedAt": null,
+      "stripePaymentLink": null
     },
     {
       "id": "evolutions",
@@ -641,7 +665,8 @@
       "publicationState": "hold",
       "publicNotes": "Removed from the site by owner (2026-10-01).",
       "approvedBy": null,
-      "approvedAt": null
+      "approvedAt": null,
+      "stripePaymentLink": null
     },
     {
       "id": "lifestyle-academy",
@@ -681,7 +706,8 @@
       "publicationState": "hold",
       "publicNotes": "Removed from the site by owner (2026-10-01).",
       "approvedBy": null,
-      "approvedAt": null
+      "approvedAt": null,
+      "stripePaymentLink": null
     },
     {
       "id": "ten-commandments",
@@ -717,9 +743,10 @@
       "includedInLaunch": true,
       "excludesHistoricalLiveBenefits": true,
       "publicationState": "candidate",
-      "publicNotes": "'Resurrected' edition verified separately if included.",
+      "publicNotes": "Kept on the site at owner direction (2026-10-01).",
       "approvedBy": null,
-      "approvedAt": null
+      "approvedAt": null,
+      "stripePaymentLink": null
     },
     {
       "id": "social-circle-blueprint",
@@ -758,12 +785,14 @@
       "publicationState": "candidate",
       "publicNotes": "Original edition. Old third-party bonuses excluded.",
       "approvedBy": null,
-      "approvedAt": null
+      "approvedAt": null,
+      "lessonCount": 110,
+      "stripePaymentLink": null
     },
     {
       "id": "boss",
       "slug": "boss",
-      "title": "BOSS",
+      "title": "BOSS (The Boss)",
       "instructor": "Madison",
       "instructorKey": "madison",
       "editionId": null,
@@ -828,7 +857,9 @@
           "text": "Break the vague concept of \"being charismatic\" into areas you can actually observe and practice."
         }
       ],
-      "closingLine": "You don't need Madison's personality. You need to discover the most charismatic version of your own."
+      "closingLine": "You don't need Madison's personality. You need to discover the most charismatic version of your own.",
+      "lessonCount": 84,
+      "stripePaymentLink": null
     },
     {
       "id": "energy-awareness",
@@ -867,7 +898,8 @@
       "publicationState": "hold",
       "publicNotes": "Removed from the site by owner (2026-10-01).",
       "approvedBy": null,
-      "approvedAt": null
+      "approvedAt": null,
+      "stripePaymentLink": null
     },
     {
       "id": "three-girls-a-day",
@@ -904,7 +936,8 @@
       "publicationState": "hold",
       "publicNotes": "HELD again 2026-10-01 by owner: Todd Valentine removed from the site for now (rights review, PRELAUNCH_BLOCKERS R4c). Prices kept for later.",
       "approvedBy": null,
-      "approvedAt": null
+      "approvedAt": null,
+      "stripePaymentLink": null
     },
     {
       "id": "daygame-by-todd",
@@ -941,7 +974,8 @@
       "publicationState": "hold",
       "publicNotes": "HELD again 2026-10-01 by owner: Todd Valentine removed from the site for now (rights review, PRELAUNCH_BLOCKERS R4c). Prices kept for later.",
       "approvedBy": null,
-      "approvedAt": null
+      "approvedAt": null,
+      "stripePaymentLink": null
     },
     {
       "id": "text-dates-machine",
@@ -981,7 +1015,8 @@
       "publicationState": "hold",
       "publicNotes": "HELD again 2026-10-01 by owner: Todd Valentine removed from the site for now (rights review, PRELAUNCH_BLOCKERS R4c). Prices kept for later.",
       "approvedBy": null,
-      "approvedAt": null
+      "approvedAt": null,
+      "stripePaymentLink": null
     },
     {
       "id": "valentine-university",
@@ -1018,7 +1053,8 @@
       "publicationState": "hold",
       "publicNotes": "HELD again 2026-10-01 by owner: Todd Valentine removed from the site for now (rights review, PRELAUNCH_BLOCKERS R4c). Prices kept for later.",
       "approvedBy": null,
-      "approvedAt": null
+      "approvedAt": null,
+      "stripePaymentLink": null
     },
     {
       "id": "women",
@@ -1058,7 +1094,8 @@
       "publicationState": "hold",
       "publicNotes": "HELD again 2026-10-01 by owner: Todd Valentine removed from the site for now (rights review, PRELAUNCH_BLOCKERS R4c). Prices kept for later.",
       "approvedBy": null,
-      "approvedAt": null
+      "approvedAt": null,
+      "stripePaymentLink": null
     },
     {
       "id": "rsd-mastermind",
@@ -1094,7 +1131,8 @@
       "publicationState": "hold",
       "publicNotes": null,
       "approvedBy": null,
-      "approvedAt": null
+      "approvedAt": null,
+      "stripePaymentLink": null
     },
     {
       "id": "social-circle-blueprint-2",
@@ -1129,7 +1167,8 @@
       "publicationState": "hold",
       "publicNotes": null,
       "approvedBy": null,
-      "approvedAt": null
+      "approvedAt": null,
+      "stripePaymentLink": null
     },
     {
       "id": "founders-lab",
@@ -1164,7 +1203,8 @@
       "publicationState": "hold",
       "publicNotes": null,
       "approvedBy": null,
-      "approvedAt": null
+      "approvedAt": null,
+      "stripePaymentLink": null
     },
     {
       "id": "supplemental",
@@ -1197,7 +1237,165 @@
       "publicationState": "hold",
       "publicNotes": null,
       "approvedBy": null,
-      "approvedAt": null
+      "approvedAt": null,
+      "stripePaymentLink": null
+    },
+    {
+      "id": "get-your-ten",
+      "slug": "get-your-ten",
+      "title": "Get Your Ten",
+      "instructor": "Madison",
+      "instructorKey": "madison",
+      "editionId": null,
+      "verifiedOriginalYear": null,
+      "historicalNote": null,
+      "collection": "communication",
+      "featuredOrder": null,
+      "cardHeadline": "More charisma, more conversations, more of your personality.",
+      "shortCopy": "Get Your Ten is a 93-lesson Madison program in the RSD archive. Study it alongside BOSS to see how Madison approached social interaction in more depth.",
+      "expandedCopy": "Pair it with BOSS for the full Madison chapter of the archive. Exact lesson topics are listed in your library once the files are inspected.",
+      "verifiedThemes": [
+        "Madison's approach to social interaction"
+      ],
+      "audienceFit": null,
+      "cta": "EXPLORE GET YOUR TEN",
+      "includedAssetIds": [],
+      "sourceIds": [
+        "OWNER-LIST-2026-10-01"
+      ],
+      "identityStatus": "owner-supplied",
+      "curriculumStatus": "lesson-count-only",
+      "rightsStatus": "owner-reported-unverified",
+      "copyApproved": false,
+      "mediaApproved": false,
+      "fulfillmentReady": false,
+      "individualPriceCents": 59700,
+      "includedInLaunch": true,
+      "excludesHistoricalLiveBenefits": true,
+      "publicationState": "candidate",
+      "lessonCount": 93,
+      "publicNotes": "Added from owner's comprehensive list (2026-10-01). Instructor credit and contents to confirm from files.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "stripePaymentLink": null
+    },
+    {
+      "id": "owens-last-game",
+      "slug": "owens-last-game-program",
+      "title": "Owen's Last Game Program",
+      "instructor": "Tyler (Owen Cook)",
+      "instructorKey": "tyler",
+      "editionId": null,
+      "verifiedOriginalYear": null,
+      "historicalNote": null,
+      "collection": "frameworks",
+      "featuredOrder": null,
+      "cardHeadline": "The last chapter of Owen's game teaching.",
+      "shortCopy": "Owen's Last Game Program is a 30-lesson program from Tyler (Owen Cook). Read it as the closing chapter that follows Foundations and The Blueprint Decoded.",
+      "expandedCopy": "Compare the beginning and the end of Owen's dating and social-skills teaching in one archive. Exact lesson topics are listed in your library once the files are inspected.",
+      "verifiedThemes": [
+        "Owen's later game teaching"
+      ],
+      "audienceFit": null,
+      "cta": "EXPLORE OWEN'S LAST GAME PROGRAM",
+      "includedAssetIds": [],
+      "sourceIds": [
+        "OWNER-LIST-2026-10-01"
+      ],
+      "identityStatus": "owner-supplied",
+      "curriculumStatus": "lesson-count-only",
+      "rightsStatus": "owner-reported-unverified",
+      "copyApproved": false,
+      "mediaApproved": false,
+      "fulfillmentReady": false,
+      "individualPriceCents": 59700,
+      "includedInLaunch": true,
+      "excludesHistoricalLiveBenefits": true,
+      "publicationState": "candidate",
+      "lessonCount": 30,
+      "publicNotes": "Added from owner's comprehensive list (2026-10-01). Instructor credit and contents to confirm from files.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "stripePaymentLink": null
+    },
+    {
+      "id": "social-circle-hacking",
+      "slug": "social-circle-hacking",
+      "title": "Social Circle Hacking",
+      "instructor": "RSD",
+      "instructorKey": "rsd-more",
+      "editionId": null,
+      "verifiedOriginalYear": null,
+      "historicalNote": null,
+      "collection": "environments",
+      "featuredOrder": null,
+      "cardHeadline": "Build the social circle, not just the conversation.",
+      "shortCopy": "Social Circle Hacking is a 24-lesson RSD program on social circles. Study it next to Social Circle Blueprint to see a second take on building a social life that compounds.",
+      "expandedCopy": "Exact lesson topics are listed in your library once the files are inspected.",
+      "verifiedThemes": [
+        "Social circles"
+      ],
+      "audienceFit": null,
+      "cta": "EXPLORE SOCIAL CIRCLE HACKING",
+      "includedAssetIds": [],
+      "sourceIds": [
+        "OWNER-LIST-2026-10-01"
+      ],
+      "identityStatus": "owner-supplied",
+      "curriculumStatus": "lesson-count-only",
+      "rightsStatus": "owner-reported-unverified",
+      "copyApproved": false,
+      "mediaApproved": false,
+      "fulfillmentReady": false,
+      "individualPriceCents": 49700,
+      "includedInLaunch": true,
+      "excludesHistoricalLiveBenefits": true,
+      "publicationState": "candidate",
+      "lessonCount": 24,
+      "publicNotes": "Added from owner's comprehensive list (2026-10-01). Instructor credit and contents to confirm from files.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "stripePaymentLink": null
+    },
+    {
+      "id": "influence-mastery",
+      "slug": "influence-mastery-program",
+      "title": "Influence Mastery Program",
+      "instructor": "RSD",
+      "instructorKey": "rsd-more",
+      "editionId": null,
+      "verifiedOriginalYear": null,
+      "historicalNote": null,
+      "collection": "communication",
+      "featuredOrder": null,
+      "cardHeadline": "Influence is a skill. Study how it was taught.",
+      "shortCopy": "Influence Mastery Program is a 27-lesson RSD program on influence and communication.",
+      "expandedCopy": "Exact lesson topics are listed in your library once the files are inspected.",
+      "verifiedThemes": [
+        "Influence",
+        "Communication"
+      ],
+      "audienceFit": null,
+      "cta": "EXPLORE INFLUENCE MASTERY",
+      "includedAssetIds": [],
+      "sourceIds": [
+        "OWNER-LIST-2026-10-01"
+      ],
+      "identityStatus": "owner-supplied",
+      "curriculumStatus": "lesson-count-only",
+      "rightsStatus": "owner-reported-unverified",
+      "copyApproved": false,
+      "mediaApproved": false,
+      "fulfillmentReady": false,
+      "individualPriceCents": 59700,
+      "includedInLaunch": true,
+      "excludesHistoricalLiveBenefits": true,
+      "publicationState": "candidate",
+      "lessonCount": 27,
+      "publicNotes": "Added from owner's comprehensive list (2026-10-01). Instructor credit and contents to confirm from files.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "stripePaymentLink": null
     }
   ],
   "laterSelfMasteryRecords": {

@@ -144,14 +144,14 @@
       "programId": "execute-the-program-2",
       "priceCents": 19700,
       "tier": "Kilobyte tier",
-      "status": "needs-review",
+      "status": "verified",
       "priceTextObserved": "KILOBYTE LEVEL $197",
       "tiersObserved": "Kilobyte $197 / Gigabyte $397 / The Program Level $497",
       "captureUrl": "https://web.archive.org/web/20150106221334/http://executetheprogram.com/",
       "timestamp": "20150106221334",
       "pageOwnerEvidence": "executetheprogram.com, title 'The Program by RSD Jeffy', signed 'Jeffy, Executive Coach, Real Social Dynamics'",
       "confidence": "medium",
-      "rule": "Capture is 'The Program by RSD Jeffy'; not confirmed to be the 2.0 edition in this release. Not counted.",
+      "rule": "Lowest of three tiers ($197/$397/$497). Title matches owner's list (Execute The Program).",
       "ignoredAnchors": "Historical 'total value' figures on these pages are NOT used.",
       "checkedAt": "2026-10-01"
     }

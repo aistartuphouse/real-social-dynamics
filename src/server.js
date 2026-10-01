@@ -183,7 +183,10 @@ export function createApp({ cfg = loadConfig(), store = new Store(), now = () =>
     // ---------- checkout (fails closed in production) ----------
     if (p === '/checkout' && cfg.publicSite) {
       // Public site: the only live purchase path is the owner's Stripe link.
-      if (url.searchParams.get('program') || !cfg.vaultCheckoutUrl) return notFound(res);
+      const slug = url.searchParams.get('program');
+      const one = slug ? findPublicProgram(cfg, slug) : null;
+      if (slug) { if (!one || !one.stripePaymentLink) return notFound(res); securityHeaders(res); res.writeHead(303, { Location: one.stripePaymentLink }); return res.end(); }
+      if (!cfg.vaultCheckoutUrl) return notFound(res);
       securityHeaders(res); res.writeHead(303, { Location: cfg.vaultCheckoutUrl }); return res.end();
     }
     if (p === '/checkout') {

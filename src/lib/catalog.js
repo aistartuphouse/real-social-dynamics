@@ -16,8 +16,9 @@ export function publicPrograms(cfg, catalog = loadCatalog()) {
 export const findPublicProgram = (cfg, slug) => publicPrograms(cfg).find((p) => p.slug === slug) || null;
 
 export function stats(programs) {
-  const instructors = new Set(programs.map((p) => p.instructorKey).filter((k) => !['multi', 'various', 'unresolved'].includes(k)));
-  return { programCount: programs.length, instructorCount: instructors.size };
+  const instructors = new Set(programs.map((p) => p.instructorKey).filter((k) => !['multi', 'various', 'unresolved', 'rsd-more'].includes(k)));
+  const lessonCount = programs.reduce((s, p) => s + (p.lessonCount || 0), 0);
+  return { programCount: programs.length, instructorCount: instructors.size, lessonCount };
 }
 
 export const julienSequence = (programs) =>

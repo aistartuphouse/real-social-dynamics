@@ -440,3 +440,4 @@ body:not(.show-notes) .terms-mini > div:has(.token) { display: none !important; 
 .timeline .live-links li { display: list-item; padding: 0; border: 0; grid-template-columns: none; }
 .ins[hidden], [data-ins-section][hidden], .catalog-section[hidden] { display: none; }
 [data-clear] { margin-left: 10px; vertical-align: middle; }
+.stats { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); }

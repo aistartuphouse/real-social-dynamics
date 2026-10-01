@@ -36,7 +36,7 @@ export function programCard(cfg, p) {
   return html`<article class="pcard" data-collection="${p.collection}" data-instructor="${p.instructorKey}" data-search="${[p.title, p.instructor, ...p.verifiedThemes].join(' ').toLowerCase()}">
     ${cover(p, { size: 'cover-sm' })}
     <div class="pcard-body">
-      <p class="pcard-meta">${p.instructor}</p>
+      <p class="pcard-meta">${p.instructor}${p.lessonCount ? html` · ${p.lessonCount} lessons` : ''}</p>
       <h3><a href="/programs/${p.slug}">${p.title}</a></h3>
       <p class="pcard-head">${p.cardHeadline}</p>
       <p>${p.shortCopy}</p>

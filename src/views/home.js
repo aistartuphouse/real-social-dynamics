@@ -10,13 +10,13 @@ import { instructorBlocks } from './instructors.js';
 // Hero rotator names (owner direction). Julien first: his later personal-transformation work is sourced (R04).
 const HERO_NAMES = { julien: 'Julien Blanc', tyler: 'Owen Cook', madison: 'RSD Madison', jeffy: 'Jeffy Allen', derek: 'RSD Derek', luke: 'RSD Luke' };
 
-const SPOTLIGHT = ['foundations', 'blueprint-decoded', 'transformations', 'jeffy-show', 'resonator', 'boss', 'social-circle-blueprint', 'execute-the-program-2'];
+const SPOTLIGHT = ['foundations', 'blueprint-decoded', 'transformations', 'jeffy-show', 'resonator', 'boss', 'get-your-ten', 'social-circle-blueprint', 'execute-the-program-2', 'owens-last-game'];
 const shortName = (p) => p.instructor.replace(/\s*\(.*\)$/, '').replace(/ (Blanc|Branson|Ackerman|Social)$/, '');
 
 // Direct-response sales letter. Read only the <h2> headlines top to bottom and you get the whole offer
 // (covered by test/public-output.test.js "headline skim test").
 export function homePage(cfg, state, programs, catalog) {
-  const { programCount, instructorCount } = stats(programs);
+  const { programCount, instructorCount, lessonCount } = stats(programs);
   const julien = julienSequence(programs);
   const vt = verifiedTotal(programs);
   const sn = stackNumbers(cfg, programs);
@@ -38,7 +38,7 @@ export function homePage(cfg, state, programs, catalog) {
       <h1 id="hero-h" class="hero-h1">What did <span class="rotator" data-names="${JSON.stringify(heroNames)}">${heroNames[0] || 'they'}</span> know before teaching personal transformation?</h1>
       <p class="hero-sub">Go back to Julien Blanc's earlier RSD training, and ${yrs} of lessons from Tyler, Madison, Jeffy, and other instructors, to build greater social confidence, communicate more effectively, meet more people, and create your own blueprint for dating and social success.</p>
       <p class="hero-hook">You already know what personal transformation feels like on the inside. Now explore how RSD taught people to practice confidence, communication, and social skills in the situations where they actually matter.</p>
-      <p class="hero-body"><strong>Study the lessons. Apply what fits. Get live guidance from an RSD Success Coach.</strong> Then arrive better prepared for the next generation of RSD live programs. For 14 days: the Complete RSD Legacy Archive (${programCount} programs from ${instructorCount} instructors), a live Success Coaching Call, and an exclusive RSD Nation relaunch-briefing invitation.</p>
+      <p class="hero-body"><strong>Study the lessons. Apply what fits. Get live guidance from an RSD Success Coach.</strong> Then arrive better prepared for the next generation of RSD live programs. For 14 days: the Complete RSD Legacy Archive (${programCount} programs, ${lessonCount} lessons, from ${instructorCount} instructors), a live Success Coaching Call, and an exclusive RSD Nation relaunch-briefing invitation.</p>
       <p class="hero-price">Launch package: <strong>${priceLine(cfg)} one-time.</strong></p>
       <div class="cta-row">
         ${vaultCta(cfg, 'btn btn-white btn-lg')}
@@ -60,6 +60,7 @@ export function homePage(cfg, state, programs, catalog) {
     <p class="lede">Before the personal-growth programs you may know, RSD's instructors were recording seminars, programs, and presentations on dating, communication, and social dynamics. RSD's own blog documents it from 2007. Here is the record, with confirmed history kept separate from what is new.</p>
     <div class="stats" role="list">
       <div role="listitem"><span class="stat">${programCount}</span><span class="stat-l">programs in this release</span></div>
+      ${lessonCount ? html`<div role="listitem"><span class="stat">${lessonCount}</span><span class="stat-l">lessons in the vault</span></div>` : ''}
       <div role="listitem"><span class="stat">${instructorCount}</span><span class="stat-l">instructors, compared side by side</span></div>
       <div role="listitem"><span class="stat">2</span><span class="stat-l">package-only live bonuses</span></div>
       ${cfg.customersServedDisplay && (cfg.customersServedSubstantiated || cfg.isStaging) ? html`<div role="listitem"><span class="stat">${cfg.customersServedDisplay}</span><span class="stat-l">customers served</span></div>` : ''}
