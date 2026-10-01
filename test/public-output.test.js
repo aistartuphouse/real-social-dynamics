@@ -72,6 +72,12 @@ test('RSD Vault CTA appears top, middle, and bottom of the sales letter', async 
   await t.close();
 });
 
+test('no Planned badges on the public site', async () => {
+  const t = await startApp({ overrides: { publicSite: true } });
+  for (const r of ['/', '/preparation', '/global-tour']) assert.doesNotMatch((await t.req(r)).text, /not yet scheduled/i, r);
+  await t.close();
+});
+
 test('headline skim test: h2 headlines alone describe the full offer', async () => {
   const t = await startApp();
   const h2 = [...(await t.req('/')).text.matchAll(/<h2[^>]*>([\s\S]*?)<\/h2>/g)].map((m) => m[1].replace(/<[^>]+>/g, '')).join(' | ');
