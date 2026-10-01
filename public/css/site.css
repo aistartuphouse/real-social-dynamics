@@ -457,7 +457,7 @@ body:not(.show-notes) .terms-mini > div:has(.token) { display: none !important; 
 
 /* Timeline images */
 .timeline li { grid-template-columns: 110px 200px 1fr; align-items: start; }
-.tl-img { width: 200px; height: 150px; object-fit: cover; border-radius: 3px; display: block; }
+.tl-img { width: 240px; height: 120px; object-fit: cover; border-radius: 3px; display: block; }
 @media (max-width: 760px) {
   .timeline li { grid-template-columns: 1fr; }
   .tl-img { width: 100%; height: auto; max-width: 420px; }
