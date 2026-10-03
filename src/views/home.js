@@ -331,16 +331,6 @@ ${cfg.tylerPrecedentApproved || cfg.isStaging ? html`<section class="band band-m
   </div>
 </section>
 
-<section class="band band-mist" aria-labelledby="ctx-h">
-  <div class="wrap narrow">
-    <p class="eyebrow">Historical-content note</p>
-    <h2 id="ctx-h" class="h-xl">Yes, some of this material is old. That's why it's called an archive.</h2>
-    <p class="beats">Platforms changed. Culture changed. Dating changed. RSD changed.</p>
-    <p>We're not pretending otherwise. The point is to let you study the original material in its historical context, compare approaches, and decide what's still useful to you today.</p>
-    <p>Terminology, norms, and the instructors' own views may differ from current practice, and inclusion doesn't mean every statement reflects RSD's position today or that the original instructor is part of this relaunch. Current RSD coaching emphasizes mutual interest, consent, respect for boundaries, and lawful conduct. Persistence is never a reason to ignore a "no". The old recordings haven't been rewritten to these standards. They're presented as history, and you and your coach bring today's judgment.</p>
-  </div>
-</section>
-
 <section class="band band-white" aria-labelledby="faq-h" id="faq">
   <div class="wrap narrow">
     ${banner('faq')}
