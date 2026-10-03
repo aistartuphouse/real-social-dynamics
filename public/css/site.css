@@ -548,3 +548,5 @@ body:not(.show-notes) .terms-mini > div:has(.token) { display: none !important; 
 .site-footer { color: #EAF2F8; }
 .band-black .note, .band-navy .note { border-color: rgba(255,255,255,.35); }
 .hero-bg .hero-h1, .hero-bg .hero-sub, .hero-bg .eyebrow, .hero-bg .hero-hook, .hero-bg .hero-body, .hero-bg .hero-price { text-shadow: none; }
+.close-list { display: inline-block; text-align: left; margin: 4px auto 22px; padding-left: 1.2em; font-size: 1.1rem; line-height: 1.7; }
+.close .h-xxl { text-transform: uppercase; }

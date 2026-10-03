@@ -234,7 +234,7 @@ ${julien.length ? html`<section class="band band-white" aria-labelledby="julien-
   <div class="wrap">
     <p class="eyebrow eyebrow-light">The value stack</p>
     <h2 id="value-h" class="h-xl">${sn.pricedCount
-      ? `Add it up: bought separately, these ${sn.pricedCount} programs cost ${formatPrice(sn.separateCents)}${sn.bonusCents ? `. Add ${formatPrice(sn.bonusCents)} in bonuses and that's ${formatPrice(sn.totalCents)} in total value` : ''}. Your price for everything: ${priceLine(cfg)}.`
+      ? `Add it up: bought separately, these ${sn.pricedCount} programs cost ${formatPrice(sn.separateCents)}${sn.bonusCents ? `. Add ${formatPrice(sn.bonusCents)} in bonus value and that's ${formatPrice(sn.totalCents)} in total value` : ''}. Your price for everything: ${priceLine(cfg)}.`
       : `Add it up: ${programCount} programs plus a live coaching call, all for ${priceLine(cfg)}.`}</h2>
     <p class="lede lede-light">Every program below is sold on its own at the price shown. The launch package gives you all of them, plus a bonus you can't buy separately, for ${priceLine(cfg)}. ${sn.totalCents > cfg.priceCents ? `You save ${formatPrice(sn.totalCents - cfg.priceCents)} off the total value.` : ''}</p>
     ${valueStack(cfg, programs)}
@@ -343,11 +343,20 @@ ${cfg.tylerPrecedentApproved || cfg.isStaging ? html`<section class="band band-m
 <section class="band band-black close" aria-labelledby="close-h">
   <div class="wrap narrow center">
     <p class="eyebrow eyebrow-light">Final word</p>
-    <h2 id="close-h" class="h-xxl">You've seen the sequel. Now watch the prequel.</h2>
-    <p class="beats beats-center">Before the transformation programs.<br>Before the later philosophies.<br>Before the instructors became the people you recognize today.</p>
-    <p>There were years of experiments, frameworks, successes, mistakes, teaching, and evolution. The archive lets you study that history for yourself.</p>
+    <h2 id="close-h" class="h-xxl">Become more confident. Connect more naturally. Build better relationships.</h2>
+    <p>Stop overthinking what to say, holding yourself back, or waiting for confidence to appear.</p>
+    <p>Learn practical frameworks designed to help you:</p>
+    <ul class="close-list">
+      <li>Feel confident in social situations</li>
+      <li>Start conversations without hesitation</li>
+      <li>Express yourself more authentically</li>
+      <li>Connect more naturally with new people</li>
+      <li>Improve your communication and relationship skills</li>
+      <li>Break through fear, self-doubt, and social limitations</li>
+      <li>Build a more confident, socially connected life</li>
+    </ul>
     <p class="close-stack"><strong>THE COMPLETE RSD LEGACY ARCHIVE</strong><br><strong>+ LIVE RSD SUCCESS COACHING CALL</strong></p>
-    <p class="close-price">${priceLine(cfg)} one-time</p>
+    <p class="close-price">Turn what you learn into real-world results.</p>
     ${countdownClock(state, { tone: 'dark' })}
     ${vaultCta(cfg, 'btn btn-white btn-lg')}
     <p class="hero-fine">Package-only bonus; published booking terms apply. Live-tour admission and bootcamp tuition sold separately.</p>

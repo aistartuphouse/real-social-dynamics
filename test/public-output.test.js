@@ -81,6 +81,6 @@ test('no Planned badges on the public site', async () => {
 test('headline skim test: h2 headlines alone describe the full offer', async () => {
   const t = await startApp();
   const h2 = [...(await t.req('/')).text.matchAll(/<h2[^>]*>([\s\S]*?)<\/h2>/g)].map((m) => m[1].replace(/<[^>]+>/g, '')).join(' | ');
-  for (const must of [/RSD teaching/, /prequel|screen/i, /Julien/, /instructors/, /\$997/, /Bonus 1/, /14 days/, /bootcamp/i, /Already bought/]) assert.match(h2, must);
+  for (const must of [/RSD teaching/, /confident/i, /Julien/, /instructors/, /\$997/, /Bonus 1/, /14 days/, /bootcamp/i, /Already bought/]) assert.match(h2, must);
   await t.close();
 });
