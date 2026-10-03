@@ -115,8 +115,6 @@ export function preparationPage(cfg) {
       <li>Not a new purchase requirement if you already hold valid access to the specified lessons.</li>
       <li>Not a change to any existing event contract.</li>
     </ul>
-    <h2 class="h-lg">The historical precedent</h2>
-    <p>${label('history')} In June 2007, Tyler wrote that his later bootcamps and products assumed familiarity with Foundations. That is one instructor's approach at the time, not proof that a package like this was ever compulsory.</p>
   </div></section>`;
 }
 
